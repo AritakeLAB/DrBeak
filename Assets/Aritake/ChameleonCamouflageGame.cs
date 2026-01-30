@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 
@@ -23,6 +23,9 @@ public class ChameleonCamouflageGame : MonoBehaviour
     private int currentFrame = 0;
     private float animTimer = 0f;
     private bool isJudging = false;
+
+    [Header("Timer")]
+    public Timer timer;
 
     void Start()
     {
@@ -67,7 +70,20 @@ public class ChameleonCamouflageGame : MonoBehaviour
         // 4. Start judgment sequence with Space key
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
+            //------new add from Yuan-----
+            OnTimeUpOrJudge();
+
+
             StartCoroutine(JudgeSequence());
+
+        }
+
+        //------new add from Yuan-----
+        //judging when times up
+        if (!isJudging && timer != null && timer.IsFinished)
+        {
+            OnTimeUpOrJudge();
+            return;
         }
     }
 
@@ -180,4 +196,34 @@ public class ChameleonCamouflageGame : MonoBehaviour
         float averageError = totalDiff / totalChameleonPixels;
         return (1.0f - averageError) * 100f;
     }
+
+
+    //------new add from Yuan-----
+    #region Timer
+    public void OnTimeUpOrJudge()
+    {
+        if (isJudging) return;
+
+
+        if (timer != null) timer.StopTimer();
+
+        StartCoroutine(JudgeThenNextRound());
+    }
+
+    public void StartNewRound()//new round setting(like adding clear color)
+    {
+        
+        isJudging = false;
+
+    }
+
+    IEnumerator JudgeThenNextRound()
+    {
+        yield return StartCoroutine(JudgeSequence());
+
+        yield return new WaitForSeconds(3f);
+
+        StartNewRound();
+    }
+    #endregion
 }
