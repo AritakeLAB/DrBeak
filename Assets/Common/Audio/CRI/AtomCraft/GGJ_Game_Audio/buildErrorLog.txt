@@ -1,0 +1,4 @@
+======================== 2026-02-01_001428 ========================
+An error occurred while making AWB for ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Public/Music_WU/CueSheet_0.awbTmp"
+Not Found: Cue. "/CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/CueSheet_0"
+Failed to create AWB file.

@@ -1,0 +1,6 @@
+Amb_CIGALES_02.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/ea0ddbd40dc644581ba72757359f96ff.hca
+========== Encoding : Amb_CIGALES_02.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_CIGALES_02/Track_Amb_CIGALES_02/Amb_CIGALES_02.wav
+materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/Amb_CIGALES_02.wav
+Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/ea0ddbd40dc644581ba72757359f96ff.hca"
+Unhash : Amb_CIGALES_02_Enc_48000HCAHigh_2ch3_Public_ec7c2efc_94e39cec.hca

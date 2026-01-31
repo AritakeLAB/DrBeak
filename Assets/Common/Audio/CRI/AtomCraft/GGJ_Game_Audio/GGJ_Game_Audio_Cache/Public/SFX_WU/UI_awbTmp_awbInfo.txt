@@ -1,0 +1,5 @@
+0,C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/88b4182f0f6c1c9227ad0ea07cf66b40.hca
+1,C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/03230788c61686e907a6321d8ae38e88.hca
+2,C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/c4765d2da33f89ac87dea7e46b8e3900.hca
+3,C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/f9be88056f51853ff19e8fe2baf2c026.hca
+4,C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/3bb2a3589c2988f23dca6fe14bdd5bdc.hca

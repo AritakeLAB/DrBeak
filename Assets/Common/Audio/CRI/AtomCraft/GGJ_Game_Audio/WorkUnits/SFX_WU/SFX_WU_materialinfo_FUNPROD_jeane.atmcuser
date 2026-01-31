@@ -4,7 +4,10 @@
   <OrcaTree OrcaName="(no name)">
     <Orca OrcaName="atmcUserFile" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserFile">
       <Orca OrcaName="atmcGeneralViewInfo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup">
-        <Orca OrcaName="Humans" ExpandMulti="&quot;dockMaterialTree&quot;=True" orcaPath="MaterialRootFolder/Humans" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Environment" ExpandMulti="&quot;dockMaterialTree&quot;=True" orcaPath="MaterialRootFolder/Environment" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Human NPC" ExpandMulti="&quot;dockMaterialTree&quot;=True" orcaPath="MaterialRootFolder/Human NPC" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="UI" ExpandMulti="&quot;dockMaterialTree&quot;=True" orcaPath="MaterialRootFolder/UI" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="CriLanguages" ExpandMulti="&quot;dockMaterialTree&quot;=True" orcaPath="MaterialRootFolder/CriLanguages" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       </Orca>
       <Orca OrcaName="atmcTreeSortTypeMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup">
         <Orca OrcaName="SFX_WU_MaterialInfo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>

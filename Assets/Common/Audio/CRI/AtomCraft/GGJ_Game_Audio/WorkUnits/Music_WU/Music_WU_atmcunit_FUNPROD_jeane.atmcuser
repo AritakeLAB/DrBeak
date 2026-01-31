@@ -4,9 +4,8 @@
   <OrcaTree OrcaName="(no name)">
     <Orca OrcaName="atmcUserFile" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserFile">
       <Orca OrcaName="atmcGeneralViewInfo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup">
-        <Orca OrcaName="Music_WU" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="References" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="References" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
-        <Orca OrcaName="Music_WU" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="CueSheetFolder" ExpandMulti="&quot;dockWorkUnitTree&quot;=False" orcaPath="CueSheetFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       </Orca>
       <Orca OrcaName="atmcTreeSortTypeMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
       <Orca OrcaName="atmcTreeSortOrderMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
