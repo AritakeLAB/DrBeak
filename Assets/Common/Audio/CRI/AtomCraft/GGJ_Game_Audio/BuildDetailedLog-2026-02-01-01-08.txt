@@ -1,0 +1,141 @@
+===================== Build Start (2026-02-01 01:08)===================== 
+Check Build Validation...
+Complete
+Building ACF
+Preparing to generate an ACF file (Public)
+Generating an ACF filePublic)
+There is no difference between the output destination file. File update canceled. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/GGJ_Game_Audio.acf"
+Completed making ACF. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/GGJ_Game_Audio.acf"
+Complete
+[1 / 6] Building [Public] CueSheet_Level01_KidsRoom
+Preprocessing to encode...
+Preprocessing to encode... (0/5)
+Preprocessing to encode... (1/5)
+Preprocessing to encode... (2/5)
+Preprocessing to encode... (3/5)
+Preprocessing to encode... (4/5)
+Preprocessing to encode... (5/5)
+Encoding...
+Parallel encoding... (0/5)
+Parallel encoding... (1/5)
+Parallel encoding... (2/5)
+Parallel encoding... (3/5)
+Parallel encoding... (4/5)
+Parallel encoding... (5/5)
+Generating an AWB file... 
+Generating an AWB file... (CueSheet_Level01_KidsRoom.awbTmp)
+Completed making AWB for ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Public/SFX_WU/CueSheet_Level01_KidsRoom.awbTmp"
+Preparing to generate an ACF file (Public)
+Generating an ACF filePublic)
+Preparing to generate an ACB file (CueSheet_Level01_KidsRoom)
+Generating an ACB file (CueSheet_Level01_KidsRoom)
+Completed creating ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_Level01_KidsRoom.acb"
+Complete
+[2 / 6] Building [Public] CueSheet_0
+Preprocessing to encode...
+Not Found: Cue. "/CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/CueSheet_0"
+An error occurred while making AWB for ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Public/Music_WU/CueSheet_0.awbTmp"
+Failed to create AWB file.
+[3 / 6] Building [Public] CueSheet_Player
+Preprocessing to encode...
+Preprocessing to encode... (0/12)
+Preprocessing to encode... (1/12)
+Preprocessing to encode... (2/12)
+Preprocessing to encode... (3/12)
+Preprocessing to encode... (4/12)
+Preprocessing to encode... (5/12)
+Preprocessing to encode... (6/12)
+Preprocessing to encode... (7/12)
+Preprocessing to encode... (8/12)
+Preprocessing to encode... (9/12)
+Preprocessing to encode... (10/12)
+Preprocessing to encode... (11/12)
+Preprocessing to encode... (12/12)
+Encoding...
+Parallel encoding... (0/12)
+Parallel encoding... (1/12)
+Parallel encoding... (2/12)
+Parallel encoding... (3/12)
+Parallel encoding... (4/12)
+Parallel encoding... (5/12)
+Parallel encoding... (6/12)
+Parallel encoding... (7/12)
+Parallel encoding... (8/12)
+Parallel encoding... (9/12)
+Parallel encoding... (10/12)
+Parallel encoding... (11/12)
+Parallel encoding... (12/12)
+Generating an AWB file... 
+Generating an AWB file... (CueSheet_Player.awbTmp)
+Completed making AWB for ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Public/SFX_WU/CueSheet_Player.awbTmp"
+Preparing to generate an ACF file (Public)
+Generating an ACF filePublic)
+Preparing to generate an ACB file (CueSheet_Player)
+Generating an ACB file (CueSheet_Player)
+There is no difference between the output destination file. File update canceled. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_Player.acb"
+Completed creating ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_Player.acb"
+Complete
+[4 / 6] Building [Public] CueSheet_UI
+Preprocessing to encode...
+Preprocessing to encode... (0/0)
+Preparing to generate an ACF file (Public)
+Generating an ACF filePublic)
+Preparing to generate an ACB file (CueSheet_UI)
+Generating an ACB file (CueSheet_UI)
+There is no difference between the output destination file. File update canceled. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_UI.acb"
+Completed creating ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_UI.acb"
+Complete
+[5 / 6] Building [Public] CueSheet_Ennemies
+Preprocessing to encode...
+Preprocessing to encode... (0/0)
+Preparing to generate an ACF file (Public)
+Generating an ACF filePublic)
+Preparing to generate an ACB file (CueSheet_Ennemies)
+Generating an ACB file (CueSheet_Ennemies)
+There is no difference between the output destination file. File update canceled. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_Ennemies.acb"
+Completed creating ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_Ennemies.acb"
+Complete
+[6 / 6] Building [Public] UI
+Preprocessing to encode...
+Preprocessing to encode... (0/5)
+Preprocessing to encode... (1/5)
+Preprocessing to encode... (2/5)
+Preprocessing to encode... (3/5)
+Preprocessing to encode... (4/5)
+Preprocessing to encode... (5/5)
+Encoding...
+Parallel encoding... (0/5)
+Parallel encoding... (1/5)
+Parallel encoding... (2/5)
+Parallel encoding... (3/5)
+Parallel encoding... (4/5)
+Parallel encoding... (5/5)
+Generating an AWB file... 
+Generating an AWB file... (UI.awbTmp)
+Completed making AWB for ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Public/SFX_WU/UI.awbTmp"
+Preparing to generate an ACF file (Public)
+Generating an ACF filePublic)
+Preparing to generate an ACB file (UI)
+Generating an ACB file (UI)
+There is no difference between the output destination file. File update canceled. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/UI.acb"
+Completed creating ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/UI.acb"
+Complete
+Complete
+Building ACF
+OK		"C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/GGJ_Game_Audio.acf"	"7264Byte"	"2026/02/01 00:48:19"
+[1 / 6] Building [Public] CueSheet_Level01_KidsRoom
+OK		"C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_Level01_KidsRoom.acb"	"4707968Byte"	"2026/02/01 01:08:13"
+[2 / 6] Building [Public] CueSheet_0
+NG		"C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/Music_WU/CueSheet_0.acb"	"0.0Byte"	" "
+[3 / 6] Building [Public] CueSheet_Player
+OK		"C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_Player.acb"	"77312Byte"	"2026/02/01 00:48:19"
+[4 / 6] Building [Public] CueSheet_UI
+OK		"C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_UI.acb"	"3680Byte"	"2026/02/01 00:48:19"
+[5 / 6] Building [Public] CueSheet_Ennemies
+OK		"C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_Ennemies.acb"	"3872Byte"	"2026/02/01 00:48:19"
+[6 / 6] Building [Public] UI
+OK		"C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/UI.acb"	"449984Byte"	"2026/02/01 00:48:19"
+A build error occurred.
+ACB ERROR COUNT = 1
+Build Time : 00:00:00.554
+

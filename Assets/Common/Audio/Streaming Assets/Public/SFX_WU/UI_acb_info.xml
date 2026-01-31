@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Orca XML File Format -->
+<OrcaTrees ObjectTypeExpression="Full" BinaryEncodingType="Base64" FileVersion="3" FileRevision="0">
+  <OrcaTree OrcaName="(no name)">
+    <Orca OrcaName="acb_Info" OrcaType="Orca2Object">
+      <Orca OrcaName="acb_Info_Root" OrcaType="Orca2Object">
+        <Orca OrcaName="UI" AwbHash="22593" LastOutputCueSheetSize="449984" OoUniqId="755fcb91-1c5c-4c32-be2c-560316e8d067" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+          <Orca OrcaName="UI_MENU_CONFIRM" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+            <Orca OrcaName="Track_UI_CONFIRM" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+              <Orca OrcaName="UI_CONFIRM.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/UI/UI_CONFIRM.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                <Orca OrcaName="UI_CONFIRM.wav" BitsPerSamples="32" Channels="2" LoopEnd="44000" LoopType="Loop" ReloopEnd="44000" ResamplingRate="48000" SampleFrames="44000" SamplingRate="48000" SourceFileSize="352184" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="BuildCueInfo" BuildCueStreamType="Memory" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBuildCueInfo"/>
+          </Orca>
+          <Orca OrcaName="UI_WIN_SCOREBOARD" CueID="2" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+            <Orca OrcaName="Track_UI_SCOREBOARD" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+              <Orca OrcaName="UI_SCOREBOARD.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/UI/UI_SCOREBOARD.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                <Orca OrcaName="UI_SCOREBOARD.wav" BitsPerSamples="32" Channels="2" ReloopEnd="201000" ResamplingRate="48000" SampleFrames="201000" SamplingRate="48000" SourceFileSize="1608148" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="BuildCueInfo" BuildCueStreamType="Memory" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBuildCueInfo"/>
+          </Orca>
+          <Orca OrcaName="UI_MENU_TOGGLE" CueID="3" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+            <Orca OrcaName="Track_UI_TOGGLE" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+              <Orca OrcaName="UI_TOGGLE.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/UI/UI_TOGGLE.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                <Orca OrcaName="UI_TOGGLE.wav" BitsPerSamples="24" Channels="2" LoopEnd="302875" LoopType="Loop" ReloopEnd="302875" ResamplingRate="48000" SampleFrames="302875" SamplingRate="48000" SourceFileSize="1817434" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="BuildCueInfo" BuildCueStreamType="Memory" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBuildCueInfo"/>
+          </Orca>
+          <Orca OrcaName="CHECKPOINT_FX" CueID="5" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SwitchVariable="/CriAtomCraftV2Root/GlobalSettings/SelectorFolder/CHECKPOINT" SynthType="SynthSwitch" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+            <Orca OrcaName="Track_WIN_UI" Height="94" ObjectColor="200, 40, 120, 200" SelectorLabel="/CriAtomCraftV2Root/GlobalSettings/SelectorFolder/CHECKPOINT/WIN" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+              <Orca OrcaName="WIN_UI.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/UI/WIN_UI.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                <Orca OrcaName="WIN_UI.wav" BitsPerSamples="32" Channels="1" LoopEnd="93750" LoopType="Loop" ReloopEnd="1533750" ResamplingRate="48000" SampleFrames="1533750" SamplingRate="48000" SourceFileSize="6135216" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="Track_LOSE_UI" Height="94" ObjectColor="200, 40, 120, 200" SelectorLabel="/CriAtomCraftV2Root/GlobalSettings/SelectorFolder/CHECKPOINT/LOSE" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+              <Orca OrcaName="LOOSE_UI.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/UI/LOOSE_UI.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                <Orca OrcaName="LOOSE_UI.wav" BitsPerSamples="32" Channels="1" LoopEnd="114125" LoopType="Loop" ReloopEnd="1554250" ResamplingRate="48000" SampleFrames="1554250" SamplingRate="48000" SourceFileSize="6217216" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="OnStopAction" StopActionTarget="/CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/VO_Player" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoStopAction"/>
+            <Orca OrcaName="BuildCueInfo" BuildCueStreamType="Memory" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBuildCueInfo"/>
+          </Orca>
+        </Orca>
+      </Orca>
+    </Orca>
+  </OrcaTree>
+</OrcaTrees>
+<!-- Copyright (c) CRI Middleware Co.,LTD. -->
+<!-- end of document -->

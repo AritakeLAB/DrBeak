@@ -33,7 +33,6 @@ public class GameDirector : MonoBehaviour
     public UIManager uiManager;
 
     private CriAtomSource atomSource;
-    [SerializeField] private string cueName = "Checkpoint_FX";
 
     void Start()
     {
@@ -112,21 +111,21 @@ public class GameDirector : MonoBehaviour
         if (accuracy < 50f)
         {
             isGameOver = true;
-            uiManager.ShowGameOver("Too different from background!");
-            //CriAtomEx.SetSwitch("CheckpointResult", "LOSE");
-            //atomSource.Play(cueName);
+            //uiManager.ShowGameOver("Too different from background!");
+            atomSource.player.SetSelectorLabel("CHECKPOINT", "LOSE");
+            atomSource.Play("CHECKPOINT_FX");
             yield break;
         }
         if (totalVisibility > 100f)
         {
             isGameOver = true;
-            uiManager.ShowGameOver("Cumulative visibility exceeded 100%!");
-            //CriAtomEx.SetSwitch("CheckpointResult", "LOSE");
-            //atomSource.Play(cueName);
+            //uiManager.ShowGameOver("Cumulative visibility exceeded 100%!");
+            atomSource.player.SetSelectorLabel("CHECKPOINT", "LOSE");
+            atomSource.Play("CHECKPOINT_FX");
             yield break;
         }
-        //CriAtomEx.SetSwitch("CheckpointResult", "WIN");
-        //atomSource.Play(cueName);
+        atomSource.player.SetSelectorLabel("CHECKPOINT", "WIN");
+        atomSource.Play("CHECKPOINT_FX");
         yield return new WaitForSeconds(1f);
     }
 }
