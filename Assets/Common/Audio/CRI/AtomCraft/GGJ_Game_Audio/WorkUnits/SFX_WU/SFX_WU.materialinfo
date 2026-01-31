@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Orca XML File Format -->
+<OrcaTrees ObjectTypeExpression="Full" BinaryEncodingType="Base64" FileVersion="3" FileRevision="0">
+  <OrcaTree OrcaName="(no name)">
+    <Orca OrcaName="SFX_WU_MaterialInfo" FormatVersion="Ver.1.07.01" MaterialRootPath="Materials" VersionInfoV3="Ver.3.56.01" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoMaterialInfoFile">
+      <Orca OrcaName="MaterialRootFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformFolder">
+        <Orca OrcaName="Foley" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformSubFolder"/>
+        <Orca OrcaName="Environment" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformSubFolder"/>
+        <Orca OrcaName="Creatures" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformSubFolder"/>
+        <Orca OrcaName="Humans" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformSubFolder">
+          <Orca OrcaName="Concrete_Stairs_ODY-0416-044.wav" Channels="2" EncodeFileSize="2325034" LocalFileLastSyncTime="2026/01/31 3:58:23" ReloopEnd="3489792" ResamplingRate="48000" SampleFrames="3489792" SamplingRate="48000" SourceFileMD5CacheString="db13dbe8" SourceFileSize="14239374" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+        </Orca>
+        <Orca OrcaName="UI" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformSubFolder"/>
+      </Orca>
+    </Orca>
+  </OrcaTree>
+</OrcaTrees>
+<!-- Copyright (c) CRI Middleware Co.,LTD. -->
+<!-- end of document -->

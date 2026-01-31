@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Orca XML File Format -->
+<OrcaTrees ObjectTypeExpression="Full" BinaryEncodingType="Base64" FileVersion="3" FileRevision="0">
+  <OrcaTree OrcaName="(no name)">
+    <Orca OrcaName="atmcUserFile" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserFile">
+      <Orca OrcaName="atmcGeneralViewInfo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup">
+        <Orca OrcaName="SFX_WU" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="SFX_WU" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="CueSheet_Player" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Player" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="CueSheet_UI" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_UI" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="CueSheet_Ennemies" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Ennemies" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="CueSheet_Level01_KidsRoom" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="CueSheet_Level02_Room_" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level02_Room_" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="CueSheet_Level03_Room_" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level03_Room_" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+      </Orca>
+      <Orca OrcaName="atmcTreeSortTypeMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
+      <Orca OrcaName="atmcTreeSortOrderMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
+      <Orca OrcaName="TreeScale" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
+    </Orca>
+  </OrcaTree>
+</OrcaTrees>
+<!-- Copyright (c) CRI Middleware Co.,LTD. -->
+<!-- end of document -->
