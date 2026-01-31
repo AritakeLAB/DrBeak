@@ -305,11 +305,11 @@ MonoBehaviour:
   checkpoints:
   - name: Testing1
     stopPoint: {fileID: 1595037537}
-    targetTexture: {fileID: 2800000, guid: f0ed3dfd077b23940a953de42e8de12f, type: 3}
+    targetTexture: {fileID: 2800000, guid: e59da3337f5dfbb4ea48cdf0de97168e, type: 3}
     humanCharacter: {fileID: 658712220}
   - name: Testing2
     stopPoint: {fileID: 76163620}
-    targetTexture: {fileID: 2800000, guid: f0ed3dfd077b23940a953de42e8de12f, type: 3}
+    targetTexture: {fileID: 2800000, guid: e59da3337f5dfbb4ea48cdf0de97168e, type: 3}
     humanCharacter: {fileID: 339473027}
   goalPoint: {fileID: 353316708}
   moveSpeed: 1
@@ -625,7 +625,8 @@ MonoBehaviour:
   brushCursor: {fileID: 2800000, guid: 1d1b227b64619664b86a6b4c7caf8ad1, type: 3}
   colorPickerCursor: {fileID: 0}
   paintColor: {r: 1, g: 0, b: 0, a: 1}
-  brushSize: 15
+  brushSize: 20
+  interpolateCount: 4
 --- !u!1 &339473027
 GameObject:
   m_ObjectHideFlags: 0
