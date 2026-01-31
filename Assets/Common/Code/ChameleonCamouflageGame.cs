@@ -67,9 +67,12 @@ public class ChameleonCamouflageGame : MonoBehaviour
         }
 
         // 3. Color Selection (Shortcut keys)
-        if (Keyboard.current.digit1Key.wasPressedThisFrame) paintColor = Color.red;
-        if (Keyboard.current.digit2Key.wasPressedThisFrame) paintColor = Color.green;
+        if (Keyboard.current.digit1Key.wasPressedThisFrame) paintColor = Color.yellow;
+        if (Keyboard.current.digit2Key.wasPressedThisFrame) paintColor = Color.red;
         if (Keyboard.current.digit3Key.wasPressedThisFrame) paintColor = Color.blue;
+        if (Keyboard.current.digit4Key.wasPressedThisFrame) paintColor = Color.green;
+        if (Keyboard.current.digit5Key.wasPressedThisFrame) paintColor = Color.purple;
+        if (Keyboard.current.digit6Key.wasPressedThisFrame) paintColor = Color.orange;
 
         // 4. Start judgment sequence with Space key
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
