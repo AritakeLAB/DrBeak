@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Linq; // Required for OrderBy
+using System.Linq;
+using Unity.VisualScripting; // Required for OrderBy
 
 
 // Extracted only the calculation logic from ChameleonCamouflageGame
@@ -17,6 +18,7 @@ public class ChameleonCamouflageCalc : MonoBehaviour
     [Header("Paint Settings")]
     public Color paintColor = Color.red;
     public int brushSize = 8;
+    public int interpolateCount = 4;
 
     private Texture2D[] writableTextures;
     private MeshRenderer meshRenderer;
@@ -24,6 +26,7 @@ public class ChameleonCamouflageCalc : MonoBehaviour
     private int frameCount = 0;
     private float animTimer = 0f;
     private bool canPaint = true;
+    private Vector2 lastPaintPoint;
 
     void Start()
     {
@@ -145,16 +148,47 @@ public class ChameleonCamouflageCalc : MonoBehaviour
 
     bool PaintAt(int centerX, int centerY)
     {
+        bool changed = PaintCircle(centerX, centerY);
+
+        if(lastPaintPoint != null && !Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            int startX = centerX;
+            int startY = centerY;
+            int dx = Mathf.FloorToInt((lastPaintPoint.x - startX)/interpolateCount);
+            int dy = Mathf.FloorToInt((lastPaintPoint.y - startY)/interpolateCount);
+
+            for(int i=0; i<interpolateCount; i++)
+            {
+                changed |= PaintCircle(startX + dx, startY + dy);
+
+                startX += dx;
+                startY += dy;
+            }
+            
+        }
+        lastPaintPoint = new Vector2(centerX, centerY);
+        
+        if (changed) {
+            for (int i=0; i < frameCount; i++)
+            {
+                writableTextures[i].Apply();
+            }
+            return true; 
+        }
+        return false;
+    }
+
+    bool PaintCircle(int x, int y)
+    {
         int width = writableTextures[0].width;
         int height = writableTextures[0].height;
         bool changed = false;
-
         for (int i = -brushSize; i <= brushSize; i++)
         {
             for (int j = -brushSize; j <= brushSize; j++)
             {
-                int px = centerX + i;
-                int py = centerY + j;
+                int px = x + i;
+                int py = y + j;
 
                 if (px < 0 || px >= width || py < 0 || py >= height) continue;
 
@@ -171,14 +205,7 @@ public class ChameleonCamouflageCalc : MonoBehaviour
                 }
             }
         }
-        if (changed) {
-            for (int i=0; i < frameCount; i++)
-            {
-                writableTextures[i].Apply();
-            }
-            return true; 
-        }
-        return false;
+        return changed;
     }
 
     public float CalculateAccuracy(Texture2D target)
