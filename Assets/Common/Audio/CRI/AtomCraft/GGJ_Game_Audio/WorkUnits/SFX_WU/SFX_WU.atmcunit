@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Orca XML File Format -->
+<OrcaTrees ObjectTypeExpression="Full" BinaryEncodingType="Base64" FileVersion="3" FileRevision="0">
+  <OrcaTree OrcaName="(no name)">
+    <Orca OrcaName="SFX_WU" FormatVersion="Ver.1.11.00" UsedMaterialFlag="True" VersionInfoV3="Ver.3.56.01" WorkUnitPath="WorkUnits/SFX_WU/SFX_WU.atmcunit" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWorkUnit">
+      <Orca OrcaName="References" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoReferenceFolder">
+        <Orca OrcaName="AISAC" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoReferenceAisacFolder"/>
+      </Orca>
+      <Orca OrcaName="CueSheetFolder" BusMap="/CriAtomCraftV2Root/GlobalSettings/BusMap/BusMapforCue/BusMap_Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheetFolder">
+        <Orca OrcaName="SFX_WU" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheetSubFolder">
+          <Orca OrcaName="CueSheet_Player" AwbHash="53732" OoUniqId="77898a19-89c7-46a3-b754-1698cdd1f96f" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+            <Orca OrcaName="Footsteps_Player" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/PLAYER SOUNDS/PLAYER_SOUNDS" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandomNoRepeat" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_Concrete_Stairs_ODY-0416-044" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="Concrete_Stairs_ODY-0416-044.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/Humans/Concrete_Stairs_ODY-0416-044.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="Breathing_Player" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/PLAYER SOUNDS/PLAYER_SOUNDS" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+            <Orca OrcaName="Color_Confirm" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/PLAYER SOUNDS/PLAYER_SOUNDS" CueID="2" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthSequential" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+          </Orca>
+          <Orca OrcaName="CueSheet_UI" AwbHash="40897" OoUniqId="7637b0a1-6333-452a-916f-e9ccf4deed1e" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+            <Orca OrcaName="Menu_Open" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/UI" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+          </Orca>
+          <Orca OrcaName="CueSheet_Ennemies" AwbHash="52340" OoUniqId="fd5ff014-3c24-4a84-a998-41a153393fad" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+            <Orca OrcaName="Human_Check" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/ENNEMY ALERT /ENNEMY ALERT" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="ComboSequential" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+            <Orca OrcaName="Human_Voice" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/ENNEMY ALERT /ENNEMY ALERT" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandomNoRepeat" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+          </Orca>
+          <Orca OrcaName="CueSheet_Level01_KidsRoom" AwbHash="29871" OoUniqId="e2290ddd-70d3-404b-b9fe-a6c620278cf4" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+            <Orca OrcaName="Amb_RoomTone" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+            <Orca OrcaName="Amb_Foley" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandom" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+          </Orca>
+          <Orca OrcaName="CueSheet_Level02_Room_" AwbHash="38692" OoUniqId="f923b3df-1a5b-4318-a26a-3165e9d91ea5" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+            <Orca OrcaName="Amb_RoomTone" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+            <Orca OrcaName="Amb_Foley" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandom" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+          </Orca>
+          <Orca OrcaName="CueSheet_Level03_Room_" AwbHash="30229" OoUniqId="2fae634d-0a1b-46ae-9996-8f62b057390d" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+            <Orca OrcaName="Amb_RoomTone" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+            <Orca OrcaName="Amb_Foley" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandom" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+          </Orca>
+        </Orca>
+      </Orca>
+    </Orca>
+  </OrcaTree>
+</OrcaTrees>
+<!-- Copyright (c) CRI Middleware Co.,LTD. -->
+<!-- end of document -->

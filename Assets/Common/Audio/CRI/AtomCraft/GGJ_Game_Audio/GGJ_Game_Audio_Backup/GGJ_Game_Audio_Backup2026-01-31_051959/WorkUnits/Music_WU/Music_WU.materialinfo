@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Orca XML File Format -->
+<OrcaTrees ObjectTypeExpression="Full" BinaryEncodingType="Base64" FileVersion="3" FileRevision="0">
+  <OrcaTree OrcaName="(no name)">
+    <Orca OrcaName="Music_WU_MaterialInfo" FormatVersion="Ver.1.07.01" MaterialRootPath="Materials" VersionInfoV3="Ver.3.56.01" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoMaterialInfoFile">
+      <Orca OrcaName="MaterialRootFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformFolder">
+        <Orca OrcaName="Music" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformSubFolder"/>
+      </Orca>
+    </Orca>
+  </OrcaTree>
+</OrcaTrees>
+<!-- Copyright (c) CRI Middleware Co.,LTD. -->
+<!-- end of document -->
