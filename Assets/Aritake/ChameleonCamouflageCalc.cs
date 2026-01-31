@@ -50,21 +50,62 @@ public class ChameleonCamouflageCalc : MonoBehaviour
         // 2. Paint Logic
         if (canPaint && Mouse.current != null && Mouse.current.leftButton.isPressed)
         {
-            HandlePaint();
+            if (!HandlePaint())
+            {
+                HandleColorPick();
+            }
         }
 
         // 3. Color Selection (Shortcut keys)
-        if (Keyboard.current.digit1Key.wasPressedThisFrame) paintColor = Color.yellow;
-        if (Keyboard.current.digit2Key.wasPressedThisFrame) paintColor = Color.red;
-        if (Keyboard.current.digit3Key.wasPressedThisFrame) paintColor = Color.blue;
-        if (Keyboard.current.digit4Key.wasPressedThisFrame) paintColor = Color.green;
-        if (Keyboard.current.digit5Key.wasPressedThisFrame) paintColor = Color.purple;
-        if (Keyboard.current.digit6Key.wasPressedThisFrame) paintColor = Color.orange;
+        // if (Keyboard.current.digit1Key.wasPressedThisFrame) paintColor = Color.yellow;
+        // if (Keyboard.current.digit2Key.wasPressedThisFrame) paintColor = Color.red;
+        // if (Keyboard.current.digit3Key.wasPressedThisFrame) paintColor = Color.blue;
+        // if (Keyboard.current.digit4Key.wasPressedThisFrame) paintColor = Color.green;
+        // if (Keyboard.current.digit5Key.wasPressedThisFrame) paintColor = Color.purple;
+        // if (Keyboard.current.digit6Key.wasPressedThisFrame) paintColor = Color.orange;
     }
 
     public void SetPaintingEnabled(bool enabled) => canPaint = enabled;
 
-    void HandlePaint()
+    bool HandleColorPick()
+    {
+        // Use Raycast even in 2D orthographic mode
+        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        float maxDistance = 100f;
+        // Returns all hits along the ray
+        RaycastHit[] hits;
+        hits = Physics.RaycastAll(ray, maxDistance);
+        foreach (RaycastHit hit in hits)
+        {
+            Renderer renderer = hit.collider.GetComponent<Renderer>();
+            MeshCollider meshCollider = hit.collider as MeshCollider;
+
+            if (renderer != null && renderer.sharedMaterial != null && renderer.sharedMaterial.mainTexture != null && meshCollider != null)
+            {
+                Texture2D tex = renderer.sharedMaterial.mainTexture as Texture2D;
+                Vector2 pixelUV = hit.textureCoord;
+
+                // Convert UV to pixel coordinates
+                int x = Mathf.FloorToInt(pixelUV.x * tex.width);
+                int y = Mathf.FloorToInt(pixelUV.y * tex.height);
+
+                // Get the color
+                Color pixelColor = tex.GetPixel(x, y);
+                if (pixelColor == Color.clear)
+                {
+                    continue;
+                }
+                paintColor = pixelColor;
+                Debug.Log("Color: " + pixelColor);
+                Debug.Log("Hit object: " + hit.transform.name);
+
+                return true;
+            }
+        }
+        return false;
+    }
+
+    bool HandlePaint()
     {
         // Use Raycast even in 2D orthographic mode
         Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
@@ -75,12 +116,14 @@ public class ChameleonCamouflageCalc : MonoBehaviour
                 Vector2 uv = hit.textureCoord;
                 int x = (int)(uv.x * writableTextures[0].width);
                 int y = (int)(uv.y * writableTextures[0].height);
-                PaintAt(x, y);
+                return PaintAt(x, y);
             }
+            return false;
         }
+        return false;
     }
 
-    void PaintAt(int centerX, int centerY)
+    bool PaintAt(int centerX, int centerY)
     {
         int width = writableTextures[0].width;
         int height = writableTextures[0].height;
@@ -108,7 +151,8 @@ public class ChameleonCamouflageCalc : MonoBehaviour
                 }
             }
         }
-        if (changed) { writableTextures[0].Apply(); writableTextures[1].Apply(); }
+        if (changed) { writableTextures[0].Apply(); writableTextures[1].Apply(); return true; }
+        return false;
     }
 
     public float CalculateAccuracy(Texture2D target)
