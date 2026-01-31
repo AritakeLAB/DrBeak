@@ -29,6 +29,8 @@ public class GameDirector : MonoBehaviour
 
     private Vector3 cameraOffset;
 
+    public UIManager uiManager;
+
     void Start()
     {
         // Keep the distance to the 2D orthographic camera
@@ -65,6 +67,7 @@ public class GameDirector : MonoBehaviour
         // 3. Move to the goal
         yield return StartCoroutine(MoveToPoint(goalPoint.position));
         Debug.Log($"<color=yellow>STAGE CLEAR!</color> Final Score (Visibility): {totalVisibility:F1}%");
+        uiManager.ShowResult(totalVisibility);
     }
 
     IEnumerator MoveToPoint(Vector3 targetPos)
@@ -101,11 +104,16 @@ public class GameDirector : MonoBehaviour
         Debug.Log($"Accuracy: {accuracy:F1}% | Visibility Added: {visibility:F1}% | Total: {totalVisibility:F1}%");
 
         // Condition checks
-        if (accuracy < 50f || totalVisibility > 100f)
+        if (accuracy < 50f)
         {
             isGameOver = true;
-            Debug.LogError("GAME OVER: You were spotted by the human!");
-            // Add game-over UI handling here
+            uiManager.ShowGameOver("Too different from background!");
+            yield break;
+        }
+        if (totalVisibility > 100f)
+        {
+            isGameOver = true;
+            uiManager.ShowGameOver("Cumulative visibility exceeded 100%!");
             yield break;
         }
 
