@@ -7,9 +7,9 @@ using System.Linq; // Required for OrderBy
 public class ChameleonCamouflageCalc : MonoBehaviour
 {
     [Header("Textures")]
-    public Texture2D[] frameTextures = new Texture2D[2];
+    public Texture2D[] frameTextures;
     public MeshRenderer overlayMeshRenderer;
-    public Texture2D[] overlayTextures = new Texture2D[2];
+    public Texture2D[] overlayTextures;
     public float animationSpeed = 0.5f;
     public Texture2D brushCursor;
     public Texture2D colorPickerCursor;
@@ -18,20 +18,24 @@ public class ChameleonCamouflageCalc : MonoBehaviour
     public Color paintColor = Color.red;
     public int brushSize = 8;
 
-    private Texture2D[] writableTextures = new Texture2D[2];
+    private Texture2D[] writableTextures;
     private MeshRenderer meshRenderer;
     private int currentFrame = 0;
+    private int frameCount = 0;
     private float animTimer = 0f;
     private bool canPaint = true;
 
     void Start()
     {
+        frameCount = frameTextures.Length;
+        writableTextures = new Texture2D[frameCount];
+
         Vector2 hotSpot = new Vector2(brushCursor.width / 2f, brushCursor.height / 2f);
         Cursor.SetCursor(brushCursor, hotSpot, CursorMode.ForceSoftware);
 
         meshRenderer = GetComponent<MeshRenderer>();
 
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < frameCount; i++)
         {
             writableTextures[i] = new Texture2D(frameTextures[i].width, frameTextures[i].height, TextureFormat.RGBA32, false);
             writableTextures[i].SetPixels(frameTextures[i].GetPixels());
@@ -49,7 +53,7 @@ public class ChameleonCamouflageCalc : MonoBehaviour
         if (animTimer >= animationSpeed)
         {
             animTimer = 0f;
-            currentFrame = (currentFrame + 1) % 2;
+            currentFrame = (currentFrame + 1) % frameCount;
             meshRenderer.material.mainTexture = writableTextures[currentFrame];
             if (overlayMeshRenderer) overlayMeshRenderer.material.mainTexture = overlayTextures[currentFrame];
         }
@@ -157,7 +161,7 @@ public class ChameleonCamouflageCalc : MonoBehaviour
                 // Circular brush check
                 if (Vector2.SqrMagnitude(new Vector2(i, j)) > brushSize * brushSize) continue;
 
-                for (int f = 0; f < 2; f++)
+                for (int f = 0; f < frameCount; f++)
                 {
                     if (frameTextures[f].GetPixel(px, py).a > 0.1f)
                     {
@@ -167,7 +171,13 @@ public class ChameleonCamouflageCalc : MonoBehaviour
                 }
             }
         }
-        if (changed) { writableTextures[0].Apply(); writableTextures[1].Apply(); return true; }
+        if (changed) {
+            for (int i=0; i < frameCount; i++)
+            {
+                writableTextures[i].Apply();
+            }
+            return true; 
+        }
         return false;
     }
 
