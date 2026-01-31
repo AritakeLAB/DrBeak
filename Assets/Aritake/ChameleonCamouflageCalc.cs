@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Linq; // Required for OrderBy
+
 
 // Extracted only the calculation logic from ChameleonCamouflageGame
 public class ChameleonCamouflageCalc : MonoBehaviour
@@ -9,6 +11,8 @@ public class ChameleonCamouflageCalc : MonoBehaviour
     public MeshRenderer overlayMeshRenderer;
     public Texture2D[] overlayTextures = new Texture2D[2];
     public float animationSpeed = 0.5f;
+    public Texture2D brushCursor;
+    public Texture2D colorPickerCursor;
 
     [Header("Paint Settings")]
     public Color paintColor = Color.red;
@@ -22,6 +26,9 @@ public class ChameleonCamouflageCalc : MonoBehaviour
 
     void Start()
     {
+        Vector2 hotSpot = new Vector2(brushCursor.width / 2f, brushCursor.height / 2f);
+        Cursor.SetCursor(brushCursor, hotSpot, CursorMode.ForceSoftware);
+
         meshRenderer = GetComponent<MeshRenderer>();
 
         for (int i = 0; i < 2; i++)
@@ -52,7 +59,10 @@ public class ChameleonCamouflageCalc : MonoBehaviour
         {
             if (!HandlePaint())
             {
-                HandleColorPick();
+                if(Mouse.current.leftButton.wasPressedThisFrame)
+                {
+                    HandleColorPick();
+                }
             }
         }
 
@@ -69,36 +79,42 @@ public class ChameleonCamouflageCalc : MonoBehaviour
 
     bool HandleColorPick()
     {
-        // Use Raycast even in 2D orthographic mode
         Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-        float maxDistance = 100f;
-        // Returns all hits along the ray
-        RaycastHit[] hits;
-        hits = Physics.RaycastAll(ray, maxDistance);
+        
+        // Sort hits by distance to ensure we hit the closest object first
+        RaycastHit[] hits = Physics.RaycastAll(ray, 100f)
+                                .OrderBy(h => h.distance)
+                                .ToArray();
+
         foreach (RaycastHit hit in hits)
         {
             Renderer renderer = hit.collider.GetComponent<Renderer>();
             MeshCollider meshCollider = hit.collider as MeshCollider;
 
-            if (renderer != null && renderer.sharedMaterial != null && renderer.sharedMaterial.mainTexture != null && meshCollider != null)
+            if (renderer != null && meshCollider != null)
             {
                 Texture2D tex = renderer.sharedMaterial.mainTexture as Texture2D;
+                if (tex == null) continue;
+
+                // 1. Get raw UV
                 Vector2 pixelUV = hit.textureCoord;
 
-                // Convert UV to pixel coordinates
+                // 2. Account for Tiling and Offset
+                Vector2 tiling = renderer.sharedMaterial.mainTextureScale;
+                Vector2 offset = renderer.sharedMaterial.mainTextureOffset;
+                pixelUV = new Vector2((pixelUV.x * tiling.x) + offset.x, (pixelUV.y * tiling.y) + offset.y);
+
+                // 3. Convert to Pixel Coordinates
                 int x = Mathf.FloorToInt(pixelUV.x * tex.width);
                 int y = Mathf.FloorToInt(pixelUV.y * tex.height);
 
-                // Get the color
+                // 4. Get Color
                 Color pixelColor = tex.GetPixel(x, y);
-                if (pixelColor == Color.clear)
-                {
-                    continue;
-                }
-                paintColor = pixelColor;
-                Debug.Log("Color: " + pixelColor);
-                Debug.Log("Hit object: " + hit.transform.name);
 
+                // Check alpha (transparency)
+                if (pixelColor.a < 0.1f) continue; 
+
+                paintColor = pixelColor;
                 return true;
             }
         }

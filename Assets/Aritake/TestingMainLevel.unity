@@ -620,6 +620,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: ae020db57cb3d9b48adcf8677ed6a740, type: 3}
   - {fileID: 2800000, guid: df35399d22308534fa0c1cdd99ba3f06, type: 3}
   animationSpeed: 0.5
+  brushCursor: {fileID: 2800000, guid: 1d1b227b64619664b86a6b4c7caf8ad1, type: 3}
+  colorPickerCursor: {fileID: 0}
   paintColor: {r: 1, g: 0, b: 0, a: 1}
   brushSize: 15
 --- !u!1 &339473027
@@ -1296,7 +1298,7 @@ Transform:
   m_GameObject: {fileID: 574787874}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44, y: -46.1, z: 50}
+  m_LocalPosition: {x: 44, y: -46.1, z: 33.7}
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
