@@ -265,7 +265,7 @@ Transform:
   m_GameObject: {fileID: 76163619}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 81, y: 0, z: 0}
+  m_LocalPosition: {x: 37.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -310,11 +310,11 @@ MonoBehaviour:
     paintingWidth: 256
   - name: Testing2
     stopPoint: {fileID: 76163620}
-    targetTexture: {fileID: 2800000, guid: 7af3f36c577722849beff3fcddb2ff7e, type: 3}
+    targetTexture: {fileID: 2800000, guid: f0ed3dfd077b23940a953de42e8de12f, type: 3}
     humanCharacter: {fileID: 339473027}
     paintingWidth: 256
   goalPoint: {fileID: 353316708}
-  moveSpeed: 2
+  moveSpeed: 1
   easeCurve:
     serializedVersion: 2
     m_Curve:
@@ -2744,7 +2744,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 209b87d1f098a1a4baf734a6c57d66db, type: 2}
+  - {fileID: 2100000, guid: 10357e6012cd22949899b8c896fa6381, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3202,7 +3202,7 @@ Transform:
   m_GameObject: {fileID: 1595037536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57, y: 0, z: 0}
+  m_LocalPosition: {x: 13.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
