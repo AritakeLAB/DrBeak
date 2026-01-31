@@ -10,7 +10,6 @@ public class GameDirector : MonoBehaviour
         public string name;
         public Transform stopPoint;      // Position where the chameleon stops
         public Texture2D targetTexture;  // Correct reference image at this checkpoint
-        public GameObject humanCharacter; // Human character who turns around
     }
 
     [Header("Stage Settings")]
@@ -91,12 +90,6 @@ public class GameDirector : MonoBehaviour
     {
         Debug.Log($"<color=cyan>Checkpoint: {cp.name} - Human is looking!</color>");
 
-        // Visual effect: the human turns to face the player
-        if (cp.humanCharacter)
-            cp.humanCharacter.transform.localScale =
-                new Vector3(-cp.humanCharacter.transform.localScale.x,
-                            cp.humanCharacter.transform.localScale.y,
-                            cp.humanCharacter.transform.localScale.z);
 
         yield return new WaitForSeconds(1.5f); // Dramatic pause before judgment
 
@@ -117,11 +110,5 @@ public class GameDirector : MonoBehaviour
         }
 
         yield return new WaitForSeconds(1f);
-        // Return the human to the original orientation
-        if (cp.humanCharacter)
-            cp.humanCharacter.transform.localScale =
-                new Vector3(-cp.humanCharacter.transform.localScale.x,
-                            cp.humanCharacter.transform.localScale.y,
-                            cp.humanCharacter.transform.localScale.z);
     }
 }
