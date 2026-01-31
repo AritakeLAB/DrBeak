@@ -6,6 +6,8 @@ public class ChameleonCamouflageGame : MonoBehaviour
 {
     [Header("Textures")]
     public Texture2D[] frameTextures = new Texture2D[2]; // Original chameleon source art
+    public MeshRenderer overlayMeshRenderer;
+    public Texture2D[] overlayTextures = new Texture2D[2]; // Original chameleon source art
     public Texture2D targetTexture; // Reference image to match (256x256)
     public float animationSpeed = 0.5f;
 
@@ -41,6 +43,7 @@ public class ChameleonCamouflageGame : MonoBehaviour
         }
 
         meshRenderer.material.mainTexture = writableTextures[0];
+        overlayMeshRenderer.material.mainTexture = overlayTextures[0];
     }
 
     void Update()
@@ -54,6 +57,7 @@ public class ChameleonCamouflageGame : MonoBehaviour
             animTimer = 0f;
             currentFrame = (currentFrame + 1) % 2;
             meshRenderer.material.mainTexture = writableTextures[currentFrame];
+            overlayMeshRenderer.material.mainTexture = overlayTextures[currentFrame];
         }
 
         // 2. Paint Logic (New Input System)
@@ -141,6 +145,7 @@ public class ChameleonCamouflageGame : MonoBehaviour
         // Freeze animation on the first frame
         currentFrame = 0;
         meshRenderer.material.mainTexture = writableTextures[0];
+        overlayMeshRenderer.material.mainTexture = overlayTextures[0];
 
         // Move objects to the center
         Vector3 startPosCam = transform.position;
