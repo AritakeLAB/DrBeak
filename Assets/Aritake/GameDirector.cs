@@ -124,7 +124,7 @@ public class GameDirector : MonoBehaviour
         if (accuracy < 50f)
         {
             isGameOver = true;
-            //uiManager.ShowGameOver("Too different from background!");
+            uiManager.ShowGameOver("Too different from background!");
             atomSource.player.SetSelectorLabel("CHECKPOINT", "LOSE");
             atomSource.Play("CHECKPOINT_FX");
             yield break;
@@ -132,7 +132,7 @@ public class GameDirector : MonoBehaviour
         if (totalVisibility > 100f)
         {
             isGameOver = true;
-            //uiManager.ShowGameOver("Cumulative visibility exceeded 100%!");
+            uiManager.ShowGameOver("Cumulative visibility exceeded 100%!");
             atomSource.player.SetSelectorLabel("CHECKPOINT", "LOSE");
             atomSource.Play("CHECKPOINT_FX");
             yield break;
