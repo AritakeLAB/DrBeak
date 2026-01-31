@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Linq;
 using Unity.VisualScripting; // Required for OrderBy
@@ -27,6 +27,13 @@ public class ChameleonCamouflageCalc : MonoBehaviour
     private float animTimer = 0f;
     private bool canPaint = true;
     private Vector2 lastPaintPoint;
+
+    public bool AccuracyDirty { get; private set; } = true;
+
+    public void ConsumeAccuracyDirty()
+    {
+        AccuracyDirty = false;
+    }
 
     void Start()
     {
@@ -81,7 +88,6 @@ public class ChameleonCamouflageCalc : MonoBehaviour
         // if (Keyboard.current.digit5Key.wasPressedThisFrame) paintColor = Color.purple;
         // if (Keyboard.current.digit6Key.wasPressedThisFrame) paintColor = Color.orange;
     }
-
     public void SetPaintingEnabled(bool enabled) => canPaint = enabled;
 
     bool HandleColorPick()
@@ -173,6 +179,7 @@ public class ChameleonCamouflageCalc : MonoBehaviour
             {
                 writableTextures[i].Apply();
             }
+            AccuracyDirty = true;
             return true; 
         }
         return false;
