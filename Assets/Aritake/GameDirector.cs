@@ -11,6 +11,10 @@ public class GameDirector : MonoBehaviour
         public string name;
         public Transform stopPoint;      // Position where the chameleon stops
         public Texture2D targetTexture;  // Correct reference image at this checkpoint
+        public GameObject humanCharacter; // Human character who turns around
+        
+        [Range(0, 100)]
+        public float targetAccuracy; // 本检查点目标分数（Accuracy%）
     }
 
     [Header("Stage Settings")]
@@ -31,6 +35,10 @@ public class GameDirector : MonoBehaviour
     private Vector3 cameraOffset;
 
     public UIManager uiManager;
+
+    public Texture2D CurrentTargetTexture { get; private set; }
+    public float CurrentTargetAccuracy { get; private set; } = 100f;
+    public bool IsInJudgmentPhase { get; private set; } = false;
 
     private CriAtomSource atomSource;
     [SerializeField] private string cueName = "Checkpoint_FX";
@@ -56,12 +64,17 @@ public class GameDirector : MonoBehaviour
         {
             Checkpoint cp = checkpoints[currentCheckpointIdx];
 
+            CurrentTargetTexture = cp.targetTexture;
+            CurrentTargetAccuracy = cp.targetAccuracy;
+            IsInJudgmentPhase = false;
+
             // 1. Movement phase (move to the next checkpoint�fs stopPoint)
             painter.SetPaintingEnabled(true); // Allow painting while moving (time-limit element)
             yield return StartCoroutine(MoveToPoint(cp.stopPoint.position));
 
             // 2. Arrival & judgment phase
             painter.SetPaintingEnabled(false);
+            IsInJudgmentPhase = true;
             yield return StartCoroutine(ProcessJudgment(cp));
 
             if (isGameOver) yield break;
