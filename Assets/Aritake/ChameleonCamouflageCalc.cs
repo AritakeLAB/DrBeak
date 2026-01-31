@@ -52,6 +52,14 @@ public class ChameleonCamouflageCalc : MonoBehaviour
         {
             HandlePaint();
         }
+
+        // 3. Color Selection (Shortcut keys)
+        if (Keyboard.current.digit1Key.wasPressedThisFrame) paintColor = Color.yellow;
+        if (Keyboard.current.digit2Key.wasPressedThisFrame) paintColor = Color.red;
+        if (Keyboard.current.digit3Key.wasPressedThisFrame) paintColor = Color.blue;
+        if (Keyboard.current.digit4Key.wasPressedThisFrame) paintColor = Color.green;
+        if (Keyboard.current.digit5Key.wasPressedThisFrame) paintColor = Color.purple;
+        if (Keyboard.current.digit6Key.wasPressedThisFrame) paintColor = Color.orange;
     }
 
     public void SetPaintingEnabled(bool enabled) => canPaint = enabled;
@@ -116,16 +124,22 @@ public class ChameleonCamouflageCalc : MonoBehaviour
 
         for (int i = 0; i < playerPixels.Length; i++)
         {
+            // Only compare pixels where the chameleon actually exists (based on mask)
             if (maskPixels[i].a > 0.1f)
             {
                 totalChameleonPixels++;
-                float rDiff = Mathf.Abs(playerPixels[i].r - targetPixels[i].r);
-                float gDiff = Mathf.Abs(playerPixels[i].g - targetPixels[i].g);
-                float bDiff = Mathf.Abs(playerPixels[i].b - targetPixels[i].b);
-                totalDiff += (rDiff + gDiff + bDiff) / 3f;
+
+                // Calculate color difference 
+                float diff = playerPixels[i] == targetPixels[i] ? 0.0f : 1.0f;
+
+                totalDiff += diff;
             }
         }
 
-        return totalChameleonPixels == 0 ? 0 : (1.0f - (totalDiff / totalChameleonPixels)) * 100f;
+        if (totalChameleonPixels == 0) return 0;
+
+        // Accuracy (%) = (1.0 - Average Error) * 100
+        float averageError = totalDiff / totalChameleonPixels;
+        return (1.0f - averageError) * 100f;
     }
 }
