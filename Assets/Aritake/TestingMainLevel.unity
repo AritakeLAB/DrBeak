@@ -305,14 +305,12 @@ MonoBehaviour:
   checkpoints:
   - name: Testing1
     stopPoint: {fileID: 1595037537}
-    targetTexture: {fileID: 2800000, guid: 7af3f36c577722849beff3fcddb2ff7e, type: 3}
+    targetTexture: {fileID: 2800000, guid: f0ed3dfd077b23940a953de42e8de12f, type: 3}
     humanCharacter: {fileID: 658712220}
-    paintingWidth: 256
   - name: Testing2
     stopPoint: {fileID: 76163620}
     targetTexture: {fileID: 2800000, guid: f0ed3dfd077b23940a953de42e8de12f, type: 3}
     humanCharacter: {fileID: 339473027}
-    paintingWidth: 256
   goalPoint: {fileID: 353316708}
   moveSpeed: 1
   easeCurve:
@@ -613,13 +611,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChameleonCamouflageCalc
   frameTextures:
-  - {fileID: 2800000, guid: 57058d41bc83fdb49969d7da1b887029, type: 3}
-  - {fileID: 2800000, guid: 6ff618ce44e610f4ca53a5f3b42722e5, type: 3}
+  - {fileID: 2800000, guid: 1ea3038fea103544e82e2bbece292f65, type: 3}
+  - {fileID: 2800000, guid: c9d7743177e3cfa45be9090f5e282d3d, type: 3}
+  - {fileID: 2800000, guid: 17918fe955e82fd478604d8b88b88cfb, type: 3}
+  - {fileID: 2800000, guid: 96b23869c14cf574c828f9a44856d2e4, type: 3}
   overlayMeshRenderer: {fileID: 441627616}
   overlayTextures:
-  - {fileID: 2800000, guid: ae020db57cb3d9b48adcf8677ed6a740, type: 3}
-  - {fileID: 2800000, guid: df35399d22308534fa0c1cdd99ba3f06, type: 3}
-  animationSpeed: 0.5
+  - {fileID: 2800000, guid: 1aad3d456f14a2b44ac53bfe3a273ab9, type: 3}
+  - {fileID: 2800000, guid: f80975246843b21499037c74bbaaef22, type: 3}
+  - {fileID: 2800000, guid: 8331e715d780a52428590e8c0ddd578d, type: 3}
+  - {fileID: 2800000, guid: 300ab945ee3587745b14380e3ff132dd, type: 3}
+  animationSpeed: 0.125
   brushCursor: {fileID: 2800000, guid: 1d1b227b64619664b86a6b4c7caf8ad1, type: 3}
   colorPickerCursor: {fileID: 0}
   paintColor: {r: 1, g: 0, b: 0, a: 1}
@@ -2744,7 +2746,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 10357e6012cd22949899b8c896fa6381, type: 2}
+  - {fileID: 2100000, guid: 209b87d1f098a1a4baf734a6c57d66db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

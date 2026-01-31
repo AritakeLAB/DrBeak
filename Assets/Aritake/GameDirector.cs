@@ -11,7 +11,6 @@ public class GameDirector : MonoBehaviour
         public Transform stopPoint;      // Position where the chameleon stops
         public Texture2D targetTexture;  // Correct reference image at this checkpoint
         public GameObject humanCharacter; // Human character who turns around
-        public float paintingWidth;      // Width of the paintable area (for guide display)
     }
 
     [Header("Stage Settings")]
@@ -21,7 +20,7 @@ public class GameDirector : MonoBehaviour
     public AnimationCurve easeCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
     [Header("Game State")]
-    public float totalVisibility = 0f; // Accumulated ÅgvisibilityÅh (100 - Accuracy)
+    public float totalVisibility = 0f; // Accumulated ÔøΩgvisibilityÔøΩh (100 - Accuracy)
     private int currentCheckpointIdx = 0;
     private bool isGameOver = false;
 
@@ -40,7 +39,7 @@ public class GameDirector : MonoBehaviour
 
     void LateUpdate()
     {
-        // Smoothly follow the chameleonÅfs X position with the camera
+        // Smoothly follow the chameleonÔøΩfs X position with the camera
         Vector3 targetCamPos = painter.transform.position + cameraOffset;
         cameraTransform.position = Vector3.Lerp(cameraTransform.position, targetCamPos, Time.deltaTime * 5f);
     }
@@ -51,7 +50,7 @@ public class GameDirector : MonoBehaviour
         {
             Checkpoint cp = checkpoints[currentCheckpointIdx];
 
-            // 1. Movement phase (move to the next checkpointÅfs stopPoint)
+            // 1. Movement phase (move to the next checkpointÔøΩfs stopPoint)
             painter.SetPaintingEnabled(true); // Allow painting while moving (time-limit element)
             yield return StartCoroutine(MoveToPoint(cp.stopPoint.position));
 
