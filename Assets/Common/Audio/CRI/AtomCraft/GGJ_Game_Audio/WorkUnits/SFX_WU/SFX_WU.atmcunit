@@ -8,33 +8,117 @@
       </Orca>
       <Orca OrcaName="CueSheetFolder" BusMap="/CriAtomCraftV2Root/GlobalSettings/BusMap/BusMapforCue/BusMap_Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheetFolder">
         <Orca OrcaName="SFX_WU" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheetSubFolder">
-          <Orca OrcaName="CueSheet_Player" AwbHash="53732" OoUniqId="77898a19-89c7-46a3-b754-1698cdd1f96f" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+          <Orca OrcaName="CueSheet_Player" AwbHash="53732" LastOutputCueSheetSize="77312" OoUniqId="77898a19-89c7-46a3-b754-1698cdd1f96f" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
             <Orca OrcaName="Footsteps_Player" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/PLAYER SOUNDS/PLAYER_SOUNDS" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandomNoRepeat" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
-              <Orca OrcaName="Track_Concrete_Stairs_ODY-0416-044" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
-                <Orca OrcaName="Concrete_Stairs_ODY-0416-044.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/Humans/Concrete_Stairs_ODY-0416-044.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              <Orca OrcaName="Track_FS_CAMELEON_ #2" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="FS_CAMELEON_ #2.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/FS_CAMELEON_ #2.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="Track_FS_CAMELEON_ #3" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="FS_CAMELEON_ #3.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/FS_CAMELEON_ #3.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="Track_FS_CAMELEON_ #4" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="FS_CAMELEON_ #4.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/FS_CAMELEON_ #4.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="Track_FS_CAMELEON_ #5" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="FS_CAMELEON_ #5.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/FS_CAMELEON_ #5.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="Track_FS_CAMELEON_ #6" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="FS_CAMELEON_ #6.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/FS_CAMELEON_ #6.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="Track_FS_CAMELEON_ #7" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="FS_CAMELEON_ #7.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/FS_CAMELEON_ #7.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="Track_FS_CAMELEON_ #8" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="FS_CAMELEON_ #8.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/FS_CAMELEON_ #8.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="Track_FS_CAMELEON_" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="FS_CAMELEON_.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/FS_CAMELEON_.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
               </Orca>
             </Orca>
-            <Orca OrcaName="Breathing_Player" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/PLAYER SOUNDS/PLAYER_SOUNDS" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+            <Orca OrcaName="VO_Player" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/PLAYER SOUNDS/PLAYER_SOUNDS" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandomNoRepeat" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_CAMELEON_SD #2" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="CAMELEON_SD #2.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/CAMELEON_SD #2.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="Track_CAMELEON_SD #3" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="CAMELEON_SD #3.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/CAMELEON_SD #3.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="Track_CAMELEON_SD #4" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="CAMELEON_SD #4.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/CAMELEON_SD #4.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="CAMELEON_SD #4.wav_TrimmingInfo" TrimmingEndPosition="452.347493367395" TrimmingStartPosition="106.155231098857" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                </Orca>
+              </Orca>
+              <Orca OrcaName="Track_CAMELEON_SD" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="CAMELEON_SD.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/CHARACTER/CAMELEON_SD.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+            </Orca>
             <Orca OrcaName="Color_Confirm" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/PLAYER SOUNDS/PLAYER_SOUNDS" CueID="2" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthSequential" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
           </Orca>
-          <Orca OrcaName="CueSheet_UI" AwbHash="40897" OoUniqId="7637b0a1-6333-452a-916f-e9ccf4deed1e" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+          <Orca OrcaName="CueSheet_UI" AwbHash="40897" LastOutputCueSheetSize="3680" OoUniqId="7637b0a1-6333-452a-916f-e9ccf4deed1e" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
             <Orca OrcaName="Menu_Open" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/UI" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
           </Orca>
-          <Orca OrcaName="CueSheet_Ennemies" AwbHash="52340" OoUniqId="fd5ff014-3c24-4a84-a998-41a153393fad" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+          <Orca OrcaName="CueSheet_Ennemies" AwbHash="52340" LastOutputCueSheetSize="3872" OoUniqId="fd5ff014-3c24-4a84-a998-41a153393fad" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
             <Orca OrcaName="Human_Check" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/ENNEMY ALERT /ENNEMY ALERT" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="ComboSequential" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
             <Orca OrcaName="Human_Voice" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/ENNEMY ALERT /ENNEMY ALERT" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandomNoRepeat" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
           </Orca>
-          <Orca OrcaName="CueSheet_Level01_KidsRoom" AwbHash="29871" OoUniqId="e2290ddd-70d3-404b-b9fe-a6c620278cf4" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
-            <Orca OrcaName="Amb_RoomTone" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
-            <Orca OrcaName="Amb_Foley" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandom" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+          <Orca OrcaName="CueSheet_Level01_KidsRoom" AwbHash="29871" LastOutputCueSheetSize="3842816" OoUniqId="e2290ddd-70d3-404b-b9fe-a6c620278cf4" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+            <Orca OrcaName="Amb_Wind" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" PlaybackMode="PlayList" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_Amb_Wind" Height="259" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="Amb_Wind.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/Environment/Amb_Wind.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="Amb_Wind.wav_TrimmingInfo" TrimmingEndPosition="39636.625" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                  <Orca OrcaName="Amb_Wind.wav_FadeInfo" FadeInCurveStrength="1.72" FadeInTime="104.432114987485" FadeOutTime="60.5248406989995" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformFade"/>
+                </Orca>
+              </Orca>
+              <Orca OrcaName="Track_AMB_GRASS_RUSTLE" Height="94" ObjectColor="200, 40, 120, 200" Volume="0.4166667" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="AMB_GRASS_RUSTLE.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/Environment/AMB_GRASS_RUSTLE.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="AMB_GRASS_RUSTLE.wav_TrimmingInfo" TrimmingEndPosition="39097.7485255803" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                  <Orca OrcaName="AMB_GRASS_RUSTLE.wav_FadeInfo" FadeOutTime="2498.87512090136" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformFade"/>
+                </Orca>
+              </Orca>
+              <Orca OrcaName="Amb_Foley" Height="94" ObjectColor="200, 40, 120, 200" Volume="0.4375" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="Amb_Foley" DelayTimeMS="6000" LinkCueSynth="/CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthLink"/>
+              </Orca>
+              <Orca OrcaName="Loop" EventEnableFlag="True" EventEndTime="35000" EventStartTime="250" InfinityLoopFlag="True" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoEventLoop"/>
+            </Orca>
+            <Orca OrcaName="Amb_Foley" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandomNoRepeat" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_Amb_CIGALES_02" Height="94" ObjectColor="200, 40, 120, 200" Volume="0.7291667" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="Amb_CIGALES_02.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/Environment/Amb_CIGALES_02.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="Amb_CIGALES_02.wav_FadeInfo" FadeInTime="1124.3742204201" FadeOutTime="4052.37753927165" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformFade"/>
+                  <Orca OrcaName="Amb_CIGALES_02.wav_TrimmingInfo" TrimmingEndPosition="20573.8986954797" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                </Orca>
+              </Orca>
+              <Orca OrcaName="Track_AMB_LEAVES_RUSTLE" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="AMB_LEAVES_RUSTLE.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/Environment/AMB_LEAVES_RUSTLE.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform">
+                  <Orca OrcaName="AMB_LEAVES_RUSTLE.wav_FadeInfo" FadeInTime="523.87359675618" FadeOutTime="4059.69894879049" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformFade"/>
+                  <Orca OrcaName="AMB_LEAVES_RUSTLE.wav_TrimmingInfo" TrimmingEndPosition="20667.8845256842" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveformTrimmer"/>
+                </Orca>
+              </Orca>
+            </Orca>
           </Orca>
-          <Orca OrcaName="CueSheet_Level02_Room_" AwbHash="38692" OoUniqId="f923b3df-1a5b-4318-a26a-3165e9d91ea5" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
-            <Orca OrcaName="Amb_RoomTone" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
-            <Orca OrcaName="Amb_Foley" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandom" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
-          </Orca>
-          <Orca OrcaName="CueSheet_Level03_Room_" AwbHash="30229" OoUniqId="2fae634d-0a1b-46ae-9996-8f62b057390d" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
-            <Orca OrcaName="Amb_RoomTone" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
-            <Orca OrcaName="Amb_Foley" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandom" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue"/>
+          <Orca OrcaName="UI" AwbHash="22593" LastOutputCueSheetSize="449984" OoUniqId="755fcb91-1c5c-4c32-be2c-560316e8d067" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+            <Orca OrcaName="UI_MENU_CONFIRM" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_UI_CONFIRM" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="UI_CONFIRM.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/UI/UI_CONFIRM.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="UI_WIN_SCOREBOARD" CueID="2" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_UI_SCOREBOARD" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="UI_SCOREBOARD.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/UI/UI_SCOREBOARD.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="UI_MENU_TOGGLE" CueID="3" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthPolyphonic" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_UI_TOGGLE" Height="94" ObjectColor="200, 40, 120, 200" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="UI_TOGGLE.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/UI/UI_TOGGLE.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+            </Orca>
+            <Orca OrcaName="CHECKPOINT_FX" CueID="5" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SwitchVariable="/CriAtomCraftV2Root/GlobalSettings/SelectorFolder/CHECKPOINT" SynthType="SynthSwitch" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+              <Orca OrcaName="Track_WIN_UI" Height="94" ObjectColor="200, 40, 120, 200" SelectorLabel="/CriAtomCraftV2Root/GlobalSettings/SelectorFolder/CHECKPOINT/WIN" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="WIN_UI.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/UI/WIN_UI.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="Track_LOSE_UI" Height="94" ObjectColor="200, 40, 120, 200" SelectorLabel="/CriAtomCraftV2Root/GlobalSettings/SelectorFolder/CHECKPOINT/LOSE" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthTrack">
+                <Orca OrcaName="LOOSE_UI.wav" LinkWaveform="/CriAtomCraftV2Root/WorkUnits/SFX_WU_MaterialInfo/MaterialRootFolder/UI/LOOSE_UI.wav" PanType="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthWaveform"/>
+              </Orca>
+              <Orca OrcaName="OnStopAction" StopActionTarget="/CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/VO_Player" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoStopAction"/>
+            </Orca>
           </Orca>
         </Orca>
       </Orca>

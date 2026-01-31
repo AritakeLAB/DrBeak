@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using CriWare;
 
 public class GameDirector : MonoBehaviour
 {
@@ -31,8 +32,12 @@ public class GameDirector : MonoBehaviour
 
     public UIManager uiManager;
 
+    private CriAtomSource atomSource;
+    [SerializeField] private string cueName = "Checkpoint_FX";
+
     void Start()
     {
+        atomSource = GetComponent<CriAtomSource>();
         // Keep the distance to the 2D orthographic camera
         cameraOffset = cameraTransform.position - painter.transform.position;
         StartCoroutine(MainGameLoop());
@@ -108,15 +113,20 @@ public class GameDirector : MonoBehaviour
         {
             isGameOver = true;
             uiManager.ShowGameOver("Too different from background!");
+            //CriAtomEx.SetSwitch("CheckpointResult", "LOSE");
+            //atomSource.Play(cueName);
             yield break;
         }
         if (totalVisibility > 100f)
         {
             isGameOver = true;
             uiManager.ShowGameOver("Cumulative visibility exceeded 100%!");
+            //CriAtomEx.SetSwitch("CheckpointResult", "LOSE");
+            //atomSource.Play(cueName);
             yield break;
         }
-
+        //CriAtomEx.SetSwitch("CheckpointResult", "WIN");
+        //atomSource.Play(cueName);
         yield return new WaitForSeconds(1f);
     }
 }
