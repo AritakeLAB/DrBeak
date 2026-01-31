@@ -334,8 +334,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 698054878}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &96859970
@@ -598,7 +597,7 @@ MonoBehaviour:
   painter: {fileID: 297653318}
   cameraTransform: {fileID: 1426735044}
   uiManager: {fileID: 156941897}
-  cueName: Checkpoint_FX
+  cueName: CHECKPOINT_FX
 --- !u!4 &163740684
 Transform:
   m_ObjectHideFlags: 0
@@ -2002,9 +2001,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1398364235}
-  m_Father: {fileID: 95417088}
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &698054879
 MonoBehaviour:
@@ -2037,8 +2035,8 @@ MonoBehaviour:
     - 0
     - 0
     - 0
-  _cueName: UI_MENU_CONFIRM
-  _cueSheet: UI
+  _cueName: Human_Voice
+  _cueSheet: CueSheet_Ennemies
 --- !u!1 &712644681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,7 +2204,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1211836266}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &773918046
 MonoBehaviour:
@@ -3129,9 +3127,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 773918045}
-  m_Father: {fileID: 1398364235}
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1211836267
 MonoBehaviour:
@@ -3618,9 +3615,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1211836266}
-  m_Father: {fileID: 698054878}
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1398364236
 MonoBehaviour:
@@ -5435,5 +5431,9 @@ SceneRoots:
   - {fileID: 494204061}
   - {fileID: 1550061345}
   - {fileID: 133554687}
+  - {fileID: 773918045}
+  - {fileID: 1211836266}
+  - {fileID: 1398364235}
+  - {fileID: 698054878}
   - {fileID: 95417088}
   - {fileID: 1497650683}

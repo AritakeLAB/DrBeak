@@ -1,48 +1,48 @@
-FS_CAMELEON_ #2.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/a98f11faea2c7224dce8b4ff5b18c782.hca
-FS_CAMELEON_ #3.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/3e5904d5d9dff497aecde76baa8f5fa8.hca
-FS_CAMELEON_ #4.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/6a10c4c77022622c2e70f1f76d28fd54.hca
-FS_CAMELEON_ #5.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/6c7c72895b8afe54aa674355968bcf5b.hca
-FS_CAMELEON_ #6.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/5b10f426ca0143c5c17c464f0eafdb53.hca
-FS_CAMELEON_ #7.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/54e9654c78855cc87d43123141236dfa.hca
-FS_CAMELEON_ #8.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/77fd6df77866c08401170420871c382d.hca
-FS_CAMELEON_.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/4945a5b8fcecfdbac293a1f7dc34fc5b.hca
+FS_CAMELEON_ #2.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/a98f11faea2c7224dce8b4ff5b18c782.hca
+FS_CAMELEON_ #3.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/3e5904d5d9dff497aecde76baa8f5fa8.hca
+FS_CAMELEON_ #4.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/6a10c4c77022622c2e70f1f76d28fd54.hca
+FS_CAMELEON_ #5.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/6c7c72895b8afe54aa674355968bcf5b.hca
+FS_CAMELEON_ #6.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/5b10f426ca0143c5c17c464f0eafdb53.hca
+FS_CAMELEON_ #7.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/54e9654c78855cc87d43123141236dfa.hca
+FS_CAMELEON_ #8.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/77fd6df77866c08401170420871c382d.hca
+FS_CAMELEON_.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/4945a5b8fcecfdbac293a1f7dc34fc5b.hca
 ========== Encoding : FS_CAMELEON_ #2.wav ==========
 waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player/Track_FS_CAMELEON_ #2/FS_CAMELEON_ #2.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #2.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/a98f11faea2c7224dce8b4ff5b18c782.hca"
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #2.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/a98f11faea2c7224dce8b4ff5b18c782.hca"
 Unhash : FS_CAMELEON_ #2_Enc_48000HCAHigh3_Public_626a37d6_94e39cec.hca
-========== Encoding : FS_CAMELEON_ #4.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player/Track_FS_CAMELEON_ #4/FS_CAMELEON_ #4.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #4.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/6a10c4c77022622c2e70f1f76d28fd54.hca"
-Unhash : FS_CAMELEON_ #4_Enc_48000HCAHigh3_Public_5b1f1c3d_94e39cec.hca
-========== Encoding : FS_CAMELEON_ #3.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player/Track_FS_CAMELEON_ #3/FS_CAMELEON_ #3.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #3.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/3e5904d5d9dff497aecde76baa8f5fa8.hca"
-Unhash : FS_CAMELEON_ #3_Enc_48000HCAHigh3_Public_7bee02e_94e39cec.hca
 ========== Encoding : FS_CAMELEON_ #5.wav ==========
 waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player/Track_FS_CAMELEON_ #5/FS_CAMELEON_ #5.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #5.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/6c7c72895b8afe54aa674355968bcf5b.hca"
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #5.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/6c7c72895b8afe54aa674355968bcf5b.hca"
 Unhash : FS_CAMELEON_ #5_Enc_48000HCAHigh3_Public_8d79d761_94e39cec.hca
+========== Encoding : FS_CAMELEON_ #3.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player/Track_FS_CAMELEON_ #3/FS_CAMELEON_ #3.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #3.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/3e5904d5d9dff497aecde76baa8f5fa8.hca"
+Unhash : FS_CAMELEON_ #3_Enc_48000HCAHigh3_Public_7bee02e_94e39cec.hca
+========== Encoding : FS_CAMELEON_ #6.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player/Track_FS_CAMELEON_ #6/FS_CAMELEON_ #6.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #6.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/5b10f426ca0143c5c17c464f0eafdb53.hca"
+Unhash : FS_CAMELEON_ #6_Enc_48000HCAHigh3_Public_aab247ec_94e39cec.hca
+========== Encoding : FS_CAMELEON_ #4.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player/Track_FS_CAMELEON_ #4/FS_CAMELEON_ #4.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #4.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/6a10c4c77022622c2e70f1f76d28fd54.hca"
+Unhash : FS_CAMELEON_ #4_Enc_48000HCAHigh3_Public_5b1f1c3d_94e39cec.hca
 ========== Encoding : FS_CAMELEON_ #7.wav ==========
 waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player/Track_FS_CAMELEON_ #7/FS_CAMELEON_ #7.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #7.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/54e9654c78855cc87d43123141236dfa.hca"
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #7.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/54e9654c78855cc87d43123141236dfa.hca"
 Unhash : FS_CAMELEON_ #7_Enc_48000HCAHigh3_Public_293b133f_94e39cec.hca
 ========== Encoding : FS_CAMELEON_ #8.wav ==========
 waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player/Track_FS_CAMELEON_ #8/FS_CAMELEON_ #8.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #8.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/77fd6df77866c08401170420871c382d.hca"
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #8.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/77fd6df77866c08401170420871c382d.hca"
 Unhash : FS_CAMELEON_ #8_Enc_48000HCAHigh3_Public_777372f9_94e39cec.hca
 ========== Encoding : FS_CAMELEON_.wav ==========
 waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player/Track_FS_CAMELEON_/FS_CAMELEON_.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/4945a5b8fcecfdbac293a1f7dc34fc5b.hca"
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/4945a5b8fcecfdbac293a1f7dc34fc5b.hca"
 Unhash : FS_CAMELEON__Enc_48000HCAHigh3_Public_3f27c4d9_94e39cec.hca
-========== Encoding : FS_CAMELEON_ #6.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player/Track_FS_CAMELEON_ #6/FS_CAMELEON_ #6.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/CHARACTER/FS_CAMELEON_ #6.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/5b10f426ca0143c5c17c464f0eafdb53.hca"
-Unhash : FS_CAMELEON_ #6_Enc_48000HCAHigh3_Public_aab247ec_94e39cec.hca
