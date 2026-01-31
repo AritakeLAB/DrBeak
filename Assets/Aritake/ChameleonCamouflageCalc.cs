@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Linq; // Required for OrderBy
+
 
 // Extracted only the calculation logic from ChameleonCamouflageGame
 public class ChameleonCamouflageCalc : MonoBehaviour
@@ -9,6 +11,8 @@ public class ChameleonCamouflageCalc : MonoBehaviour
     public MeshRenderer overlayMeshRenderer;
     public Texture2D[] overlayTextures = new Texture2D[2];
     public float animationSpeed = 0.5f;
+    public Texture2D brushCursor;
+    public Texture2D colorPickerCursor;
 
     [Header("Paint Settings")]
     public Color paintColor = Color.red;
@@ -22,6 +26,9 @@ public class ChameleonCamouflageCalc : MonoBehaviour
 
     void Start()
     {
+        Vector2 hotSpot = new Vector2(brushCursor.width / 2f, brushCursor.height / 2f);
+        Cursor.SetCursor(brushCursor, hotSpot, CursorMode.ForceSoftware);
+
         meshRenderer = GetComponent<MeshRenderer>();
 
         for (int i = 0; i < 2; i++)
@@ -50,21 +57,71 @@ public class ChameleonCamouflageCalc : MonoBehaviour
         // 2. Paint Logic
         if (canPaint && Mouse.current != null && Mouse.current.leftButton.isPressed)
         {
-            HandlePaint();
+            if (!HandlePaint())
+            {
+                if(Mouse.current.leftButton.wasPressedThisFrame)
+                {
+                    HandleColorPick();
+                }
+            }
         }
 
         // 3. Color Selection (Shortcut keys)
-        if (Keyboard.current.digit1Key.wasPressedThisFrame) paintColor = Color.yellow;
-        if (Keyboard.current.digit2Key.wasPressedThisFrame) paintColor = Color.red;
-        if (Keyboard.current.digit3Key.wasPressedThisFrame) paintColor = Color.blue;
-        if (Keyboard.current.digit4Key.wasPressedThisFrame) paintColor = Color.green;
-        if (Keyboard.current.digit5Key.wasPressedThisFrame) paintColor = Color.purple;
-        if (Keyboard.current.digit6Key.wasPressedThisFrame) paintColor = Color.orange;
+        // if (Keyboard.current.digit1Key.wasPressedThisFrame) paintColor = Color.yellow;
+        // if (Keyboard.current.digit2Key.wasPressedThisFrame) paintColor = Color.red;
+        // if (Keyboard.current.digit3Key.wasPressedThisFrame) paintColor = Color.blue;
+        // if (Keyboard.current.digit4Key.wasPressedThisFrame) paintColor = Color.green;
+        // if (Keyboard.current.digit5Key.wasPressedThisFrame) paintColor = Color.purple;
+        // if (Keyboard.current.digit6Key.wasPressedThisFrame) paintColor = Color.orange;
     }
 
     public void SetPaintingEnabled(bool enabled) => canPaint = enabled;
 
-    void HandlePaint()
+    bool HandleColorPick()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        
+        // Sort hits by distance to ensure we hit the closest object first
+        RaycastHit[] hits = Physics.RaycastAll(ray, 100f)
+                                .OrderBy(h => h.distance)
+                                .ToArray();
+
+        foreach (RaycastHit hit in hits)
+        {
+            Renderer renderer = hit.collider.GetComponent<Renderer>();
+            MeshCollider meshCollider = hit.collider as MeshCollider;
+
+            if (renderer != null && meshCollider != null)
+            {
+                Texture2D tex = renderer.sharedMaterial.mainTexture as Texture2D;
+                if (tex == null) continue;
+
+                // 1. Get raw UV
+                Vector2 pixelUV = hit.textureCoord;
+
+                // 2. Account for Tiling and Offset
+                Vector2 tiling = renderer.sharedMaterial.mainTextureScale;
+                Vector2 offset = renderer.sharedMaterial.mainTextureOffset;
+                pixelUV = new Vector2((pixelUV.x * tiling.x) + offset.x, (pixelUV.y * tiling.y) + offset.y);
+
+                // 3. Convert to Pixel Coordinates
+                int x = Mathf.FloorToInt(pixelUV.x * tex.width);
+                int y = Mathf.FloorToInt(pixelUV.y * tex.height);
+
+                // 4. Get Color
+                Color pixelColor = tex.GetPixel(x, y);
+
+                // Check alpha (transparency)
+                if (pixelColor.a < 0.1f) continue; 
+
+                paintColor = pixelColor;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    bool HandlePaint()
     {
         // Use Raycast even in 2D orthographic mode
         Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
@@ -75,12 +132,14 @@ public class ChameleonCamouflageCalc : MonoBehaviour
                 Vector2 uv = hit.textureCoord;
                 int x = (int)(uv.x * writableTextures[0].width);
                 int y = (int)(uv.y * writableTextures[0].height);
-                PaintAt(x, y);
+                return PaintAt(x, y);
             }
+            return false;
         }
+        return false;
     }
 
-    void PaintAt(int centerX, int centerY)
+    bool PaintAt(int centerX, int centerY)
     {
         int width = writableTextures[0].width;
         int height = writableTextures[0].height;
@@ -108,7 +167,8 @@ public class ChameleonCamouflageCalc : MonoBehaviour
                 }
             }
         }
-        if (changed) { writableTextures[0].Apply(); writableTextures[1].Apply(); }
+        if (changed) { writableTextures[0].Apply(); writableTextures[1].Apply(); return true; }
+        return false;
     }
 
     public float CalculateAccuracy(Texture2D target)
