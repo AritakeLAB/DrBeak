@@ -115,6 +115,9 @@ public class ChameleonCamouflageGame : MonoBehaviour
                 int px = centerX + i;
                 int py = centerY + j;
                 if (px < 0 || px >= width || py < 0 || py >= height) continue;
+                // Draw with circular brush (don't draw pixels that are further than radius from the brush center)
+                Vector2 radiusVector = new Vector2(px - centerX, py - centerY);
+                if (radiusVector.sqrMagnitude > brushSize * brushSize) continue;
 
                 for (int f = 0; f < 2; f++)
                 {
@@ -179,13 +182,9 @@ public class ChameleonCamouflageGame : MonoBehaviour
             {
                 totalChameleonPixels++;
 
-                // Calculate color difference (RGB distance)
-                float rDiff = Mathf.Abs(playerPixels[i].r - targetPixels[i].r);
-                float gDiff = Mathf.Abs(playerPixels[i].g - targetPixels[i].g);
-                float bDiff = Mathf.Abs(playerPixels[i].b - targetPixels[i].b);
+                // Calculate color difference 
+                float diff = playerPixels[i] == targetPixels[i] ? 0.0f : 1.0f;
 
-                // Average difference across 3 channels (0.0 to 1.0)
-                float diff = (rDiff + gDiff + bDiff) / 3f;
                 totalDiff += diff;
             }
         }
