@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using TMPro;
 using UnityEngine.InputSystem;
 using System.Collections;
 
@@ -26,6 +27,10 @@ public class ChameleonCamouflageGame : MonoBehaviour
 
     [Header("Timer")]
     public Timer timer;
+
+
+    public TextMeshPro tmpText;
+
 
     void Start()
     {
@@ -162,6 +167,7 @@ public class ChameleonCamouflageGame : MonoBehaviour
         // Execute accuracy check
         float accuracy = CalculateAccuracy();
         Debug.Log($"Accuracy Rate: {accuracy:F2}%");
+        tmpText.text = $"{accuracy:F2}%";
 
         // UI display logic can be added here
     }
