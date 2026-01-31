@@ -597,7 +597,6 @@ MonoBehaviour:
   painter: {fileID: 297653318}
   cameraTransform: {fileID: 1426735044}
   uiManager: {fileID: 156941897}
-  cueName: CHECKPOINT_FX
 --- !u!4 &163740684
 Transform:
   m_ObjectHideFlags: 0
@@ -4278,18 +4277,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91f529aa944b914449d62b8c40f188fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: CriMw.CriWare.Runtime::CriWare.CriAtom
-  acfFile: C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/GGJ_Game_Audio.acf
+  acfFile: Public/GGJ_Game_Audio.acf
   cueSheets:
   - name: CueSheet_Player
-    acbFile: C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_Player.acb
+    acbFile: Public/SFX_WU/CueSheet_Player.acb
     awbFile: 
     loaderStatus: 0
   - name: CueSheet_Level01_KidsRoom
-    acbFile: C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/CueSheet_Level01_KidsRoom.acb
+    acbFile: Public/SFX_WU/CueSheet_Level01_KidsRoom.acb
     awbFile: 
     loaderStatus: 0
   - name: UI
-    acbFile: C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/UI.acb
+    acbFile: Public/SFX_WU/UI.acb
     awbFile: 
     loaderStatus: 0
   dspBusSetting: 
