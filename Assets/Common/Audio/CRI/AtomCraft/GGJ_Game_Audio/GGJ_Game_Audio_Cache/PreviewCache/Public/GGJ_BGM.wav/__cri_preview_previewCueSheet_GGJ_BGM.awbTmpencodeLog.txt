@@ -1,0 +1,11 @@
+Track_wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/__cri_preview_WorkUnit___cri_preview_previewCueSheet_GGJ_BGM/97e0048f8d97dfa8bcf80b9bd26d43af.hca
+========== Encoding : Track_wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/__cri_preview_WorkUnit/CueSheetFolder/__cri_preview_previewCueSheet_GGJ_BGM/GGJ_BGM.wav/Track_wav/Track_wav
+materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/GGJ_BGM.wav
+unhash cacheName  : GGJ_BGM_Enc_48000HCAHigh_2ch3_Public_5e56998f_94e39cec.hca
+materialName      : GGJ_BGM.wav
+outputName        : 97e0048f8d97dfa8bcf80b9bd26d43af.hca
+Bitrate : 32 -> 24
+
+Start Encoding...
+Success.

@@ -7,11 +7,24 @@
         <Orca OrcaName="SFX_WU" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="SFX_WU" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="CueSheet_Player" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Player" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="VO_Player" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Player/VO_Player" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track_CAMELEON_SD #4" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Player/VO_Player/Track_CAMELEON_SD #4" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="CAMELEON_SD #4.wav" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Player/VO_Player/Track_CAMELEON_SD #4/CAMELEON_SD #4.wav" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="CueSheet_UI" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_UI" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="CueSheet_Ennemies" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Ennemies" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="CueSheet_Level01_KidsRoom" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
-        <Orca OrcaName="CueSheet_Level02_Room_" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level02_Room_" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
-        <Orca OrcaName="CueSheet_Level03_Room_" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level03_Room_" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track_Amb_Wind" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Wind/Track_Amb_Wind" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Amb_Wind.wav" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Wind/Track_Amb_Wind/Amb_Wind.wav" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track_AMB_GRASS_RUSTLE" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Wind/Track_AMB_GRASS_RUSTLE" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="AMB_GRASS_RUSTLE.wav" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Wind/Track_AMB_GRASS_RUSTLE/AMB_GRASS_RUSTLE.wav" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Amb_Foley" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Wind/Amb_Foley" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Amb_CIGALES_02.wav" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_Amb_CIGALES_02/Amb_CIGALES_02.wav" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track_AMB_LEAVES_RUSTLE" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_AMB_LEAVES_RUSTLE" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="AMB_LEAVES_RUSTLE.wav" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_AMB_LEAVES_RUSTLE/AMB_LEAVES_RUSTLE.wav" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="UI" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/UI" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="UI_MENU_TOGGLE" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/UI/UI_MENU_TOGGLE" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="CHECKPOINT_FX" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/UI/CHECKPOINT_FX" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track_LOSE_UI" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/UI/CHECKPOINT_FX/Track_LOSE_UI" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       </Orca>
       <Orca OrcaName="atmcTreeSortTypeMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
       <Orca OrcaName="atmcTreeSortOrderMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>

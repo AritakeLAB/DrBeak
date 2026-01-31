@@ -1,0 +1,6 @@
+Track_wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/__cri_preview_WorkUnit___cri_preview_previewCueSheet_CAMELEON_SD/53accf531d7e166d26d8e6a075a2c6cf.hca
+========== Encoding : Track_wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/__cri_preview_WorkUnit/CueSheetFolder/__cri_preview_previewCueSheet_CAMELEON_SD/CAMELEON_SD.wav/Track_wav/Track_wav
+materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Creatures/CAMELEON_SD.wav
+Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/__cri_preview_WorkUnit___cri_preview_previewCueSheet_CAMELEON_SD/53accf531d7e166d26d8e6a075a2c6cf.hca"
+Unhash : CAMELEON_SD_Enc_48000lp0-36125HCAHigh3_Public_d0c90e83_94e39cec.hca

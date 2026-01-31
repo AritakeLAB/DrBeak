@@ -4,6 +4,8 @@
   <OrcaTree OrcaName="(no name)">
     <Orca OrcaName="atmcUserFile" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserFile">
       <Orca OrcaName="atmcGeneralViewInfo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup">
+        <Orca OrcaName="MixerFolder" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="MixerFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Mixer_0" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="MixerFolder/Mixer_0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="Categories" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="Categories" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="Main" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="Categories/Main" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="MUSIC" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="Categories/Main/MUSIC" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
@@ -15,6 +17,9 @@
         <Orca OrcaName="REACT" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="REACT" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="GlobalAISACs" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="GlobalAISACs" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="PROXIMITY" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="GlobalAISACs/PROXIMITY" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="GameVariables" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="GameVariables" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="SelectorFolder" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="SelectorFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="CHECKPOINT" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="SelectorFolder/CHECKPOINT" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       </Orca>
       <Orca OrcaName="atmcTreeSortTypeMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
       <Orca OrcaName="atmcTreeSortOrderMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>

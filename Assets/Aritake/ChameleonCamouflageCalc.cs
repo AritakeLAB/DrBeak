@@ -219,31 +219,67 @@ public class ChameleonCamouflageCalc : MonoBehaviour
     {
         if (target == null) return 0;
 
+        // Get the chameleon-side pixel data and dimensions
         Color[] playerPixels = writableTextures[0].GetPixels();
-        Color[] targetPixels = target.GetPixels();
         Color[] maskPixels = frameTextures[0].GetPixels();
+        int chamWidth = writableTextures[0].width;
+        int chamHeight = writableTextures[0].height;
+
+        // Get the dimensions of the target image
+        int targetWidth = target.width;
+        int targetHeight = target.height;
 
         float totalChameleonPixels = 0;
         float totalDiff = 0;
 
-        for (int i = 0; i < playerPixels.Length; i++)
+        // Iterate using a 2D loop (to avoid index misalignment)
+        for (int y = 0; y < chamHeight; y++)
         {
-            // Only compare pixels where the chameleon actually exists (based on mask)
-            if (maskPixels[i].a > 0.1f)
+            for (int x = 0; x < chamWidth; x++)
             {
-                totalChameleonPixels++;
+                int index = y * chamWidth + x;
 
-                // Calculate color difference 
-                float diff = playerPixels[i] == targetPixels[i] ? 0.0f : 1.0f;
+                // 1. Check whether this pixel belongs to the chameleon body (mask check)
+                if (maskPixels[index].a > 0.1f)
+                {
+                    // 2. Compute UV coordinates (0.0–1.0)
+                    float u = (float)x / chamWidth;
+                    float v = (float)y / chamHeight;
 
-                totalDiff += diff;
+                    // 3. Convert to pixel coordinates on the target image
+                    int targetX = Mathf.Clamp((int)(u * targetWidth), 0, targetWidth - 1);
+                    int targetY = Mathf.Clamp((int)(v * targetHeight), 0, targetHeight - 1);
+
+                    // 4. Get the target pixel color
+                    Color targetPixel = target.GetPixel(targetX, targetY);
+
+                    // Exclude transparent areas of the target from scoring
+                    if (targetPixel.a < 0.1f) continue;
+
+                    totalChameleonPixels++;
+
+                    // 5. Color comparison
+                    // Strict exact-match comparison (current requirement)
+                    float diff = (playerPixels[index] == targetPixel) ? 0.0f : 1.0f;
+
+                    // If you want to evaluate based on color similarity instead:
+                    /*
+                    float rDiff = Mathf.Abs(playerPixels[index].r - targetPixel.r);
+                    float gDiff = Mathf.Abs(playerPixels[index].g - targetPixel.g);
+                    float bDiff = Mathf.Abs(playerPixels[index].b - targetPixel.b);
+                    float diff = (rDiff + gDiff + bDiff) / 3f;
+                    */
+
+                    totalDiff += diff;
+                }
             }
         }
 
         if (totalChameleonPixels == 0) return 0;
 
-        // Accuracy (%) = (1.0 - Average Error) * 100
+        // Calculate match accuracy (%)
         float averageError = totalDiff / totalChameleonPixels;
         return (1.0f - averageError) * 100f;
     }
+
 }

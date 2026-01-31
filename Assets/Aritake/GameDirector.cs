@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using CriWare;
 
 public class GameDirector : MonoBehaviour
 {
@@ -39,9 +40,12 @@ public class GameDirector : MonoBehaviour
     public float CurrentTargetAccuracy { get; private set; } = 100f;
     public bool IsInJudgmentPhase { get; private set; } = false;
 
+    private CriAtomSource atomSource;
+    [SerializeField] private string cueName = "Checkpoint_FX";
 
     void Start()
     {
+        atomSource = GetComponent<CriAtomSource>();
         // Keep the distance to the 2D orthographic camera
         cameraOffset = cameraTransform.position - painter.transform.position;
         StartCoroutine(MainGameLoop());
@@ -107,12 +111,6 @@ public class GameDirector : MonoBehaviour
     {
         Debug.Log($"<color=cyan>Checkpoint: {cp.name} - Human is looking!</color>");
 
-        // Visual effect: the human turns to face the player
-        if (cp.humanCharacter)
-            cp.humanCharacter.transform.localScale =
-                new Vector3(-cp.humanCharacter.transform.localScale.x,
-                            cp.humanCharacter.transform.localScale.y,
-                            cp.humanCharacter.transform.localScale.z);
 
         yield return new WaitForSeconds(1.5f); // Dramatic pause before judgment
 
@@ -128,21 +126,20 @@ public class GameDirector : MonoBehaviour
         {
             isGameOver = true;
             uiManager.ShowGameOver("Too different from background!");
+            //CriAtomEx.SetSwitch("CheckpointResult", "LOSE");
+            //atomSource.Play(cueName);
             yield break;
         }
         if (totalVisibility > 100f)
         {
             isGameOver = true;
             uiManager.ShowGameOver("Cumulative visibility exceeded 100%!");
+            //CriAtomEx.SetSwitch("CheckpointResult", "LOSE");
+            //atomSource.Play(cueName);
             yield break;
         }
-
+        //CriAtomEx.SetSwitch("CheckpointResult", "WIN");
+        //atomSource.Play(cueName);
         yield return new WaitForSeconds(1f);
-        // Return the human to the original orientation
-        if (cp.humanCharacter)
-            cp.humanCharacter.transform.localScale =
-                new Vector3(-cp.humanCharacter.transform.localScale.x,
-                            cp.humanCharacter.transform.localScale.y,
-                            cp.humanCharacter.transform.localScale.z);
     }
 }
