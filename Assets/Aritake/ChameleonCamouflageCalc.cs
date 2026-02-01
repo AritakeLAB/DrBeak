@@ -17,7 +17,7 @@ public class ChameleonCamouflageCalc : MonoBehaviour
     public Texture2D brushTipCursor;
 
     [Header("Paint Settings")]
-    public Color paintColor = Color.clear;
+    public Color paintColor = Color.white;
     public int brushSize = 8;
     public int interpolateCount = 4;
 
