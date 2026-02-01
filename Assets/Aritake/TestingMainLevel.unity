@@ -1329,7 +1329,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 300ab945ee3587745b14380e3ff132dd, type: 3}
   baseAnimationSpeed: 5
   brushCursor: {fileID: 2800000, guid: 1d1b227b64619664b86a6b4c7caf8ad1, type: 3}
-  colorPickerCursor: {fileID: 0}
+  brushTipCursor: {fileID: 2800000, guid: d6b7ce122fa56464bbd4b1204307e0ee, type: 3}
   paintColor: {r: 0, g: 0, b: 0, a: 0}
   brushSize: 20
   interpolateCount: 4
