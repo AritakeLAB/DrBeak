@@ -5,8 +5,8 @@
  *  ACB  Ver.        : Ver.1.46.0
  *  File Path        : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU
  *  File Name        : CueSheet_Ennemies.h
- *  File Size        : 3872 bytes
- *  Date Time        : 2026/02/01 03:02:17
+ *  File Size        : 215904 bytes
+ *  Date Time        : 2026/02/01 12:18:32
  *  Target           : Public
  *  Cues             : 2
  *  CueSheet Comment : 
@@ -18,7 +18,7 @@
 /* AISAC Control List (AISAC Control ID) */
 
 /* Cue List (Cue ID) */
-#define CRI_CUESHEET_ENNEMIES_HUMAN_CHECK          ( 0) /*  */
+#define CRI_CUESHEET_ENNEMIES_HUMAN_READ_BOOK      ( 0) /*  */
 #define CRI_CUESHEET_ENNEMIES_HUMAN_VOICE          ( 1) /*  */
 
 /* Block List (Block Index) */
