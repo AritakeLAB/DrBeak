@@ -756,6 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
   transition: {fileID: 1890912376}
+  tutorialManager: {fileID: 0}
   menuPanel: {fileID: 96859970}
   levelSelectPanel: {fileID: 96859970}
   gameOverPanel: {fileID: 780916454}
