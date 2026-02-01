@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Orca XML File Format -->
+<OrcaTrees ObjectTypeExpression="Full" BinaryEncodingType="Base64" FileVersion="3" FileRevision="0">
+  <OrcaTree OrcaName="(no name)">
+    <Orca OrcaName="Music_WU_MaterialInfo" FormatVersion="Ver.1.07.01" MaterialRootPath="Materials" VersionInfoV3="Ver.3.56.01" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoMaterialInfoFile">
+      <Orca OrcaName="MaterialRootFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformFolder">
+        <Orca OrcaName="Music" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveformSubFolder">
+          <Orca OrcaName="GGJ_BGM.wav" BitsPerSamples="32" Channels="2" EncodeFileSize="2028364" LocalFileLastSyncTime="2026/01/31 18:59:04" ReloopEnd="3044571" ResamplingRate="48000" SampleFrames="3044571" SamplingRate="48000" SourceFileMD5CacheString="5e56998f" SourceFileSize="24356716" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoWaveform"/>
+        </Orca>
+      </Orca>
+    </Orca>
+  </OrcaTree>
+</OrcaTrees>
+<!-- Copyright (c) CRI Middleware Co.,LTD. -->
+<!-- end of document -->

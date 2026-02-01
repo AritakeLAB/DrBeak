@@ -4,7 +4,6 @@
   <OrcaTree OrcaName="(no name)">
     <Orca OrcaName="atmcUserFile" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserFile">
       <Orca OrcaName="atmcGeneralViewInfo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup">
-        <Orca OrcaName="SFX_WU" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="SFX_WU" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="CueSheet_Player" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Player" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="Footsteps_Player" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/CueSheet_Player/Footsteps_Player" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
@@ -28,7 +27,9 @@
         <Orca OrcaName="UI_MENU_TOGGLE" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/UI/UI_MENU_TOGGLE" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="CHECKPOINT_FX" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/UI/CHECKPOINT_FX" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="Track_WIN_UI" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/UI/CHECKPOINT_FX/Track_WIN_UI" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="WIN_UI.wav" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/UI/CHECKPOINT_FX/Track_WIN_UI/WIN_UI.wav" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="Track_LOSE_UI" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/UI/CHECKPOINT_FX/Track_LOSE_UI" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="LOOSE_UI.wav" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/SFX_WU/UI/CHECKPOINT_FX/Track_LOSE_UI/LOOSE_UI.wav" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       </Orca>
       <Orca OrcaName="atmcTreeSortTypeMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
       <Orca OrcaName="atmcTreeSortOrderMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
