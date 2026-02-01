@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+// 新しいInput Systemを使うための宣言を追加
+using UnityEngine.InputSystem;
 
 public class EscAction : MonoBehaviour
 {
@@ -8,16 +10,15 @@ public class EscAction : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // キーボードが存在し、かつEscキーが「このフレームで押された」か判定
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             if (actionType == ActionType.JumpToScene1)
             {
-                // インデックス1のシーンへ（通常はMenuやTitle）
                 SceneManager.LoadScene(1);
             }
             else if (actionType == ActionType.QuitGame)
             {
-                // ゲームを終了（ビルド後のみ有効。エディタ上では無視される）
                 Debug.Log("Quit Game");
                 Application.Quit();
             }

@@ -1,6 +1,0 @@
-LEVEL_BOOK_READ.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Ennemies/5e018a57ed075988281a291fa27a0424.hca
-========== Encoding : LEVEL_BOOK_READ.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Ennemies/Human_Read_Book/Track_LEVEL_BOOK_READ/LEVEL_BOOK_READ.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Human NPC/LEVEL_BOOK_READ.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Ennemies/5e018a57ed075988281a291fa27a0424.hca"
-Unhash : LEVEL_BOOK_READ_Enc_48000HCAHigh3_Public_1616210f_94e39cec.hca
