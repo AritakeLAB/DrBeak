@@ -1,0 +1,14 @@
+UI_SCOREBOARD.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/06500263d2bd2961e97461ceabcc4655.hca
+========== Encoding : UI_SCOREBOARD.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/UI_WIN_SCOREBOARD/Track_UI_SCOREBOARD/UI_SCOREBOARD.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/UI_SCOREBOARD.wav
+unhash cacheName  : UI_SCOREBOARD_Enc_48000HCAHigh_2ch3Trimmer(0.000000-3230.051596)Fade([0.000000,2,1.000000][1631.147725,1,1.000000])_Public_5e6ba2d9_94e39cec.hca
+materialName      : UI_SCOREBOARD.wav
+outputName        : 06500263d2bd2961e97461ceabcc4655.hca
+Trimming : [0-3230.05](msec), [0-155042](sample)
+FadeIn  : 0 msec, strength 1, type 2
+FadeOut : 1631.15 msec, strength 1, type 1
+Bitrate : 32 -> 24
+
+Start Encoding...
+Success.

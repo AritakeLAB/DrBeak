@@ -1,0 +1,6 @@
+GAMEPLAY_PICKUP_COLOR_2.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/3a6fe53e1721f374846483f211bab2c7.hca
+========== Encoding : GAMEPLAY_PICKUP_COLOR_2.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Player/Color_Steal/Track_GAMEPLAY_PICKUP_COLOR/GAMEPLAY_PICKUP_COLOR_2.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/GAMEPLAY/GAMEPLAY_PICKUP_COLOR_2.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Player/3a6fe53e1721f374846483f211bab2c7.hca"
+Unhash : GAMEPLAY_PICKUP_COLOR_2_Enc_44100HCAHigh_2ch3_Public_4f14c654_94e39cec.hca

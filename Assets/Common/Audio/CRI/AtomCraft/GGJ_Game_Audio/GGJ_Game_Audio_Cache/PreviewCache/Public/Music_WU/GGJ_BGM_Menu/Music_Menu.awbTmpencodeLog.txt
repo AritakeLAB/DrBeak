@@ -1,0 +1,6 @@
+GGJ_BGM_Menu.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Menu/acfee167fee6cdde507274ef739acf13.hca
+========== Encoding : GGJ_BGM_Menu.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Menu/GGJ_BGM_Menu/Track_GGJ_BGM_Menu/GGJ_BGM_Menu.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/GGJ_BGM_Menu.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Menu/acfee167fee6cdde507274ef739acf13.hca"
+Unhash : GGJ_BGM_Menu_Enc_48000HCAHigh_2ch3_Public_c751983f_94e39cec.hca
