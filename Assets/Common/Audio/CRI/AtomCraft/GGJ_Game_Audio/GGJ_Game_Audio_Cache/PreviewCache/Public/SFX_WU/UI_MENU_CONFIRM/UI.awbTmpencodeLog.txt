@@ -1,0 +1,6 @@
+UI_CONFIRM.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/03230788c61686e907a6321d8ae38e88.hca
+========== Encoding : UI_CONFIRM.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/UI_MENU_CONFIRM/Track_UI_CONFIRM/UI_CONFIRM.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/UI_CONFIRM.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/03230788c61686e907a6321d8ae38e88.hca"
+Unhash : UI_CONFIRM_Enc_48000lp0-44000HCAHigh_2ch3_Public_58e60b43_94e39cec.hca

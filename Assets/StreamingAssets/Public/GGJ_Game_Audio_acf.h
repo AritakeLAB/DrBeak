@@ -4,11 +4,11 @@
  *  Tool Ver.          : Ver.3.56.01
  *  ACF  Ver.          : Ver.1.38.0
  *  File Name          : GGJ_Game_Audio_acf.h
- *  File Size          : 7264 bytes
+ *  File Size          : 7392 bytes
  *  Target             : Public
  *  Categories         : 6
  *  AISAC Controls     : 16
- *  Global AISACs      : 1
+ *  Global AISACs      : 2
  *  Voice Limit Groups : 1
  *  DSP BUS Settings   : 1
  *  DSP BUS Settings Snapshot  : 0
@@ -23,7 +23,7 @@
 #define CRI_GGJ_GAME_AUDIO_ACF_NUM_CATEGORIES_PER_PLAYBACK (4)
 #define CRI_GGJ_GAME_AUDIO_ACF_CATEGORYNUM (6)
 #define CRI_GGJ_GAME_AUDIO_ACF_AISACCONTROLNUM (16)
-#define CRI_GGJ_GAME_AUDIO_ACF_GLOBALAISACNUM (1)
+#define CRI_GGJ_GAME_AUDIO_ACF_GLOBALAISACNUM (2)
 #define CRI_GGJ_GAME_AUDIO_ACF_VOICELIMITGROUPNUM (1)
 #define CRI_GGJ_GAME_AUDIO_ACF_DSPSETTINGNUM (1)
 #define CRI_GGJ_GAME_AUDIO_ACF_DSPSETTINGSNAPSHOTNUM (0)
@@ -61,6 +61,7 @@
 
 /* Global AISAC List (Global AISAC Name) */
 #define CRI_GGJ_GAME_AUDIO_ACF_GLOBALAISAC_PROXIMITY            "PROXIMITY" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_GLOBALAISAC_DISTANCE_            "DISTANCE " /*  */
 
 /* Voice Limit Group (Voice Limit Group Index) */
 #define CRI_GGJ_GAME_AUDIO_ACF_VOICELIMITGROUP_VOICELIMITGROUP_0    ( 0) /*  */
