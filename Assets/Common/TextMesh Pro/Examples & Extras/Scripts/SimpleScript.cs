@@ -1,32 +1,58 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
-using CriWare;
+using System.Collections;
 
-[RequireComponent(typeof(Button))]
-public class CriUIButtonSound : MonoBehaviour
+
+namespace TMPro.Examples
 {
-    [Header("CRI")]
-    [SerializeField] private CriAtomSource atomSource;
-    [SerializeField] private string cueName = "UI_MENU_CONFIRM";
 
-    private Button button;
-
-    void Awake()
+    public class SimpleScript : MonoBehaviour
     {
-        button = GetComponent<Button>();
 
-        if (atomSource == null)
-            atomSource = GetComponent<CriAtomSource>();
+        private TextMeshPro m_textMeshPro;
+        //private TMP_FontAsset m_FontAsset;
 
-        button.onClick.AddListener(PlayClick);
+        private const string label = "The <#0050FF>count is: </color>{0:2}";
+        private float m_frame;
+
+
+        void Start()
+        {
+            // Add new TextMesh Pro Component
+            m_textMeshPro = gameObject.AddComponent<TextMeshPro>();
+
+            m_textMeshPro.autoSizeTextContainer = true;
+
+            // Load the Font Asset to be used.
+            //m_FontAsset = Resources.Load("Fonts & Materials/LiberationSans SDF", typeof(TMP_FontAsset)) as TMP_FontAsset;
+            //m_textMeshPro.font = m_FontAsset;
+
+            // Assign Material to TextMesh Pro Component
+            //m_textMeshPro.fontSharedMaterial = Resources.Load("Fonts & Materials/LiberationSans SDF - Bevel", typeof(Material)) as Material;
+            //m_textMeshPro.fontSharedMaterial.EnableKeyword("BEVEL_ON");
+
+            // Set various font settings.
+            m_textMeshPro.fontSize = 48;
+
+            m_textMeshPro.alignment = TextAlignmentOptions.Center;
+
+            //m_textMeshPro.anchorDampening = true; // Has been deprecated but under consideration for re-implementation.
+            //m_textMeshPro.enableAutoSizing = true;
+
+            //m_textMeshPro.characterSpacing = 0.2f;
+            //m_textMeshPro.wordSpacing = 0.1f;
+
+            //m_textMeshPro.enableCulling = true;
+            m_textMeshPro.textWrappingMode = TextWrappingModes.NoWrap;
+
+            //textMeshPro.fontColor = new Color32(255, 255, 255, 255);
+        }
+
+
+        void Update()
+        {
+            m_textMeshPro.SetText(label, m_frame % 1000);
+            m_frame += 1 * Time.deltaTime;
+        }
+
     }
-
-    void PlayClick()
-    {
-        if (atomSource == null) return;
-
-        atomSource.cueName = cueName;
-        atomSource.Play();
-    }
-}
 }
