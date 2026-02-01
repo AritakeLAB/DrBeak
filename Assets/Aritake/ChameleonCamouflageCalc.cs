@@ -7,6 +7,8 @@ using CriWare;
 public class ChameleonCamouflageCalc : MonoBehaviour
 {
     public CriAtomSource footstepSource;
+    public CriAtomSource brushSource;
+    public CriAtomSource colorPickSource;
 
     [Header("Textures")]
     public Texture2D[] frameTextures;
@@ -191,6 +193,7 @@ public class ChameleonCamouflageCalc : MonoBehaviour
 
                 paintColor = pixelColor;
                 SetCustomCursor(paintColor);
+                colorPickSource.Play();
                 return true;
             }
         }
@@ -207,6 +210,11 @@ public class ChameleonCamouflageCalc : MonoBehaviour
                 Vector2 uv = hit.textureCoord;
                 int x = (int)(uv.x * writableTextures[0].width);
                 int y = (int)(uv.y * writableTextures[0].height);
+
+                if (brushSource.status != CriAtomSource.Status.Playing)
+                {
+                    brushSource.Play();
+                }
                 return PaintAt(x, y);
             }
         }
