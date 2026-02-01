@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
 
     [Header("Managers")]
     public SceneTransitionManager transition;
+    public TutorialManager tutorialManager;
 
     [Header("UI Panels")]
     public GameObject menuPanel;
@@ -16,6 +17,7 @@ public class UIManager : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject resultPanel;
     public GameObject hudPanel; // ゲーム中のスコア表示など
+
 
     [Header("Text References")]
     public TextMeshProUGUI resultScoreText;
@@ -121,5 +123,10 @@ public class UIManager : MonoBehaviour
         if (rankText.StartsWith("A")) return Color.green;
         if (rankText.StartsWith("B")) return Color.yellow;
         return Color.red;
+    }
+
+    public void OpenTutorial()
+    {
+        tutorialManager.StartTutorial();
     }
 }
