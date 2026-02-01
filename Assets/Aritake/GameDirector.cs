@@ -1,7 +1,8 @@
-using UnityEngine;
+using CriWare;
 using System.Collections;
 using System.Collections.Generic;
-using CriWare;
+using UnityEngine;
+using UnityEngine.UIElements.Experimental;
 
 public class GameDirector : MonoBehaviour
 {
@@ -9,31 +10,33 @@ public class GameDirector : MonoBehaviour
     public struct Checkpoint
     {
         public string name;
-        public Transform stopPoint;      // カメレオンが止まる位置
-        public Texture2D targetTexture;  // このチェックポイントの正解画像
-        public GameObject humanCharacter; // 振り返る人間
+        public Transform stopPoint;      // Position where the chameleon stops
+        public Texture2D targetTexture;  // Correct reference image for this checkpoint
 
         [Range(0, 100)]
-        public float targetAccuracy; // チェックポイントの目標スコア
+        public float targetAccuracy;     // Target score for this checkpoint
     }
 
     [Header("Stage Settings")]
     public List<Checkpoint> checkpoints;
-    public Transform goalPoint; // 画面外（右側遠く）に配置してください
+    public Transform goalPoint; // Place this far off-screen (to the right)
     public float moveSpeed = 2f;
-    public float escapeSpeedMultiplier = 1.5f; // 脱出時は少し速く走る
+    public float escapeSpeedMultiplier = 1.5f; // Run slightly faster during escape
     public AnimationCurve easeCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
     [Header("Game State")]
     public float totalVisibility = 0f;
     private int currentCheckpointIdx = 0;
     private bool isGameOver = false;
-    private bool isFollowingCamera = true; // カメラ追従フラグ
+    private bool isFollowingCamera = true; // Camera follow flag
 
     [Header("References")]
     public ChameleonCamouflageCalc painter;
     public Transform cameraTransform;
     public UIManager uiManager;
+
+    [Header("Shared Scene Objects")]
+    public GirlController girl; // Assign the single Girl instance placed in the scene via Inspector
 
     private Vector3 cameraOffset;
     private CriAtomSource atomSource;
@@ -46,7 +49,7 @@ public class GameDirector : MonoBehaviour
     {
         atomSource = GetComponent<CriAtomSource>();
 
-        // カメラとカメレオンの初期オフセットを保持
+        // Store the initial offset between the camera and the chameleon
         cameraOffset = cameraTransform.position - painter.transform.position;
 
         StartCoroutine(MainGameLoop());
@@ -54,7 +57,7 @@ public class GameDirector : MonoBehaviour
 
     void LateUpdate()
     {
-        // フラグがONの時だけカメラが追従する
+        // The camera follows only when the flag is enabled
         if (isFollowingCamera)
         {
             Vector3 targetCamPos = painter.transform.position + cameraOffset;
@@ -64,7 +67,7 @@ public class GameDirector : MonoBehaviour
 
     IEnumerator MainGameLoop()
     {
-        // 1. 各チェックポイントを巡るループ
+        // 1. Loop through all checkpoints
         while (currentCheckpointIdx < checkpoints.Count)
         {
             Checkpoint cp = checkpoints[currentCheckpointIdx];
@@ -73,14 +76,16 @@ public class GameDirector : MonoBehaviour
             CurrentTargetAccuracy = cp.targetAccuracy;
             IsInJudgmentPhase = false;
 
-            // 移動：アニメーションをONにして進む
+            // Movement: enable animation and move forward
             painter.SetAnimating(true);
             painter.SetPaintingEnabled(true);
+            girl.SetState(GirlController.GirlState.Idle);
             yield return StartCoroutine(MoveToPoint(cp.stopPoint.position, moveSpeed));
 
-            // 到着：アニメーションを1コマ目で止めて判定へ
+            // Arrival: stop animation on the first frame and enter judgment phase
             painter.SetAnimating(false);
             painter.SetPaintingEnabled(false);
+            girl.SetState(GirlController.GirlState.LookUp);
             IsInJudgmentPhase = true;
             yield return StartCoroutine(ProcessJudgment(cp));
 
@@ -89,26 +94,33 @@ public class GameDirector : MonoBehaviour
             currentCheckpointIdx++;
         }
 
-        // 2. 脱出シーケンス（最後のチェックポイント通過後）
+        // 2. Escape sequence (after passing the final checkpoint)
         Debug.Log("<color=lime>Escape Sequence Started!</color>");
 
-        // カメラの追従を止める
+        // Stop camera following
         isFollowingCamera = false;
 
-        // ペイント禁止、アニメーションON（全力疾走）
+        // Disable painting, enable animation (full sprint)
         painter.SetPaintingEnabled(false);
         painter.SetAnimating(true);
+        girl.SetState(GirlController.GirlState.Idle);
 
-        // ゴール地点（画面外）へ向かって移動
-        // 脱出なので速度を少し上げ、イーズなしの直線移動にすると「逃げ切る」感じが出ます
+        // Move toward the goal point (off-screen)
+        // Since this is an escape, increasing speed and using linear movement
+        // enhances the feeling of “getting away”
+        easeCurve = new AnimationCurve(
+            new Keyframe(1f, 1f, 2f, 0f),
+            new Keyframe(0f, 0f, 0f, 0f)
+        );
+
         yield return StartCoroutine(MoveToPoint(goalPoint.position, moveSpeed * escapeSpeedMultiplier));
 
-        // 3. リザルト表示
+        // 3. Show result
         Debug.Log($"<color=yellow>STAGE CLEAR!</color> Final Score (Visibility): {totalVisibility:F1}%");
         uiManager.ShowResult(totalVisibility);
     }
 
-    // 移動用コルーチン（速度指定を可能に変更）
+    // Movement coroutine (updated to allow speed specification)
     IEnumerator MoveToPoint(Vector3 targetPos, float speed)
     {
         Vector3 startPos = painter.transform.position;
@@ -131,7 +143,7 @@ public class GameDirector : MonoBehaviour
     {
         Debug.Log($"<color=cyan>Checkpoint: {cp.name} - Human is looking!</color>");
 
-        yield return new WaitForSeconds(1.5f); // 判定前のタメ
+        yield return new WaitForSeconds(1.5f); // Dramatic pause before judgment
 
         float accuracy = painter.CalculateAccuracy(cp.targetTexture);
         float visibility = 100f - accuracy;
@@ -142,7 +154,9 @@ public class GameDirector : MonoBehaviour
         if (accuracy < 50f || totalVisibility > 100f)
         {
             isGameOver = true;
-            string reason = accuracy < 50f ? "Too different from background!" : "Cumulative visibility exceeded 100%!";
+            string reason = accuracy < 50f
+                ? "Too different from background!"
+                : "Cumulative visibility exceeded 100!";
             uiManager.ShowGameOver(reason);
 
             if (atomSource != null)

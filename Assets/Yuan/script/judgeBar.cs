@@ -41,11 +41,9 @@ public class judgeBar : MonoBehaviour
         // Update target marker position (could change per checkpoint)
         UpdateTargetMarker();
 
-        // Only refresh if the player has actually painted anything
-        if (!painter.AccuracyDirty) return;
-
+        // Refresh
         _timer += Time.deltaTime;
-        if (_timer < minRefreshInterval) return;
+        if (!painter.AccuracyDirty && _timer < minRefreshInterval) return;
         _timer = 0f;
 
         ForceUpdateAccuracy();
