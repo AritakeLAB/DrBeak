@@ -1,0 +1,102 @@
+Mus_Level_High_BASS.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/62a2ab75200356e699b2df927c127147.hca
+Mus_Level_High_Drums.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/21a8cba4cf273666fb26b9e8055d7bc5.hca
+Mus_Level_High_Mallets.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/cb65056c119c61640c6350eb8122705c.hca
+Mus_Level_High_Melody.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/425435a22f141f749b18ce4b1d62d735.hca
+Mus_Level_High_PAD.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/9eaeb975496eb45bfee9d742aeaf9157.hca
+Mus_Level_High_Strings.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/3d9de370155300aa2a516d9304d083bc.hca
+Mus_Level_Low_Bass.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/5f9acfb314f206b3fb943d3084421c53.hca
+Mus_Level_Low_Drums.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/cd634b03ed7d77791c31b43c037ad1df.hca
+Mus_Level_Low_Mallets.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/fcc81dabfc6977f8d15fd8b819abc9ea.hca
+Mus_Level_Low_Melo.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/88f9d45a02f2942c152de0ec1a4e9de8.hca
+Mus_Level_Low_Pad.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/1cdd9b4caa8c173a0686f8ce262d2a10.hca
+Mus_Level_Low_Strings.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/c76998dbc89c85473a736f9fad959884.hca
+Mus_Level_Medium_Bass.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/35d97fe0b55169b07a6dd4aac4dfa746.hca
+Mus_Level_Medium_Drums.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/96cd8898834e6c8370fb0eeb5db21f2e.hca
+Mus_Level_Medium_Mallets.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/73eeee89fea4cea2a39f39cba036a74c.hca
+Mus_Level_Medium_Melo.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/77f8458574a68e49dcecd2eca8112aee.hca
+Mus_Level_Medium_Strings.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/25c1bee40bb74beb9e8d8cf4d49af60b.hca
+========== Encoding : Mus_Level_High_BASS.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Bass/Mus_Level_High_BASS.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_High_BASS.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/62a2ab75200356e699b2df927c127147.hca"
+Unhash : Mus_Level_High_BASS_Enc_48000HCAHigh_2ch3_Public_e628136f_94e39cec.hca
+========== Encoding : Mus_Level_High_Melody.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Melo/Mus_Level_High_Melody.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_High_Melody.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/425435a22f141f749b18ce4b1d62d735.hca"
+Unhash : Mus_Level_High_Melody_Enc_48000HCAHigh_2ch3_Public_2d24ac0_94e39cec.hca
+========== Encoding : Mus_Level_Medium_Drums.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Drums/Mus_Level_Medium_Drums.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_Medium_Drums.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/96cd8898834e6c8370fb0eeb5db21f2e.hca"
+Unhash : Mus_Level_Medium_Drums_Enc_48000HCAHigh_2ch3_Public_beb76af1_94e39cec.hca
+========== Encoding : Mus_Level_Low_Pad.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Pad/Mus_Level_Low_Pad.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_Low_Pad.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/1cdd9b4caa8c173a0686f8ce262d2a10.hca"
+Unhash : Mus_Level_Low_Pad_Enc_48000HCAHigh_2ch3Trimmer(0.000000-21476.943715)_Public_8890a743_94e39cec.hca
+========== Encoding : Mus_Level_Medium_Mallets.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Mallets/Mus_Level_Medium_Mallets.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_Medium_Mallets.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/73eeee89fea4cea2a39f39cba036a74c.hca"
+Unhash : Mus_Level_Medium_Mallets_Enc_48000HCAHigh_2ch3_Public_7d8efaa8_94e39cec.hca
+========== Encoding : Mus_Level_Low_Bass.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Bass/Mus_Level_Low_Bass.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_Low_Bass.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/5f9acfb314f206b3fb943d3084421c53.hca"
+Unhash : Mus_Level_Low_Bass_Enc_48000HCAHigh_2ch3_Public_a31327d9_94e39cec.hca
+========== Encoding : Mus_Level_High_Drums.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Drums/Mus_Level_High_Drums.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_High_Drums.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/21a8cba4cf273666fb26b9e8055d7bc5.hca"
+Unhash : Mus_Level_High_Drums_Enc_48000HCAHigh_2ch3_Public_f47ffef9_94e39cec.hca
+========== Encoding : Mus_Level_Low_Strings.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Strings/Mus_Level_Low_Strings.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_Low_Strings.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/c76998dbc89c85473a736f9fad959884.hca"
+Unhash : Mus_Level_Low_Strings_Enc_48000HCAHigh_2ch3_Public_f8f5f8be_94e39cec.hca
+========== Encoding : Mus_Level_Low_Mallets.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Mallets/Mus_Level_Low_Mallets.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_Low_Mallets.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/fcc81dabfc6977f8d15fd8b819abc9ea.hca"
+Unhash : Mus_Level_Low_Mallets_Enc_48000HCAHigh_2ch3Trimmer(0.000000-21483.913703)_Public_8fce2f1_94e39cec.hca
+========== Encoding : Mus_Level_High_PAD.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Pad/Mus_Level_High_PAD.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_High_PAD.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/9eaeb975496eb45bfee9d742aeaf9157.hca"
+Unhash : Mus_Level_High_PAD_Enc_48000HCAHigh_2ch3_Public_babd8a0a_94e39cec.hca
+========== Encoding : Mus_Level_Medium_Bass.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Bass/Mus_Level_Medium_Bass.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_Medium_Bass.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/35d97fe0b55169b07a6dd4aac4dfa746.hca"
+Unhash : Mus_Level_Medium_Bass_Enc_48000HCAHigh_2ch3_Public_5de4a044_94e39cec.hca
+========== Encoding : Mus_Level_Low_Drums.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Drums/Mus_Level_Low_Drums.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_Low_Drums.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/cd634b03ed7d77791c31b43c037ad1df.hca"
+Unhash : Mus_Level_Low_Drums_Enc_48000HCAHigh_2ch3_Public_c2584018_94e39cec.hca
+========== Encoding : Mus_Level_High_Mallets.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Mallets/Mus_Level_High_Mallets.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_High_Mallets.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/cb65056c119c61640c6350eb8122705c.hca"
+Unhash : Mus_Level_High_Mallets_Enc_48000HCAHigh_2ch3_Public_f7456b34_94e39cec.hca
+========== Encoding : Mus_Level_High_Strings.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Strings/Mus_Level_High_Strings.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_High_Strings.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/3d9de370155300aa2a516d9304d083bc.hca"
+Unhash : Mus_Level_High_Strings_Enc_48000HCAHigh_2ch3_Public_3ed5ff06_94e39cec.hca
+========== Encoding : Mus_Level_Low_Melo.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Melo/Mus_Level_Low_Melo.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_Low_Melo.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/88f9d45a02f2942c152de0ec1a4e9de8.hca"
+Unhash : Mus_Level_Low_Melo_Enc_48000HCAHigh_2ch3_Public_91e4e9a4_94e39cec.hca
+========== Encoding : Mus_Level_Medium_Strings.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Strings/Mus_Level_Medium_Strings.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_Medium_Strings.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/25c1bee40bb74beb9e8d8cf4d49af60b.hca"
+Unhash : Mus_Level_Medium_Strings_Enc_48000HCAHigh_2ch3_Public_7dcfcea4_94e39cec.hca
+========== Encoding : Mus_Level_Medium_Melo.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Music_Level/Track_Mus_Level_Low_Melo/Mus_Level_Medium_Melo.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_Medium_Melo.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/77f8458574a68e49dcecd2eca8112aee.hca"
+Unhash : Mus_Level_Medium_Melo_Enc_48000HCAHigh_2ch3_Public_c89199a8_94e39cec.hca
