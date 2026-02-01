@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Orca XML File Format -->
+<OrcaTrees ObjectTypeExpression="Full" BinaryEncodingType="Base64" FileVersion="3" FileRevision="0">
+  <OrcaTree OrcaName="(no name)">
+    <Orca OrcaName="acb_Info" OrcaType="Orca2Object">
+      <Orca OrcaName="acb_Info_Root" OrcaType="Orca2Object">
+        <Orca OrcaName="CueSheet_Ennemies" AwbHash="52340" LastOutputCueSheetSize="3872" OoUniqId="fd5ff014-3c24-4a84-a998-41a153393fad" StartCueId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSheet">
+          <Orca OrcaName="Human_Book" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/ENNEMY ALERT /ENNEMY ALERT" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" CueID="0" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="ComboSequential" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+            <Orca OrcaName="BuildCueInfo" BuildCueStreamType="None" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBuildCueInfo"/>
+          </Orca>
+          <Orca OrcaName="Human_Voice" Category0="/CriAtomCraftV2Root/GlobalSettings/Categories/ENNEMY ALERT /ENNEMY ALERT" Category1="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" CueID="1" EnablePos3dInteriorDistance="False" EnablePos3dSourceRadius="False" Pos3dDistanceMax="500" Pos3dDistanceMin="1" SynthType="SynthRandomNoRepeat" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCueSynthCue">
+            <Orca OrcaName="BuildCueInfo" BuildCueStreamType="None" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBuildCueInfo"/>
+          </Orca>
+        </Orca>
+      </Orca>
+    </Orca>
+  </OrcaTree>
+</OrcaTrees>
+<!-- Copyright (c) CRI Middleware Co.,LTD. -->
+<!-- end of document -->

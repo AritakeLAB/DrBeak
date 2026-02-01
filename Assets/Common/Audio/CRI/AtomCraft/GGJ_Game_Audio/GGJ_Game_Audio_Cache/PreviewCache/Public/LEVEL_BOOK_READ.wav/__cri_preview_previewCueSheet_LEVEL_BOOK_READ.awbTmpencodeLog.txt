@@ -1,0 +1,11 @@
+Track_wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/__cri_preview_WorkUnit___cri_preview_previewCueSheet_LEVEL_BOOK_READ/5e018a57ed075988281a291fa27a0424.hca
+========== Encoding : Track_wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/__cri_preview_WorkUnit/CueSheetFolder/__cri_preview_previewCueSheet_LEVEL_BOOK_READ/LEVEL_BOOK_READ.wav/Track_wav/Track_wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Human NPC/LEVEL_BOOK_READ.wav
+unhash cacheName  : LEVEL_BOOK_READ_Enc_48000HCAHigh3_Public_1616210f_94e39cec.hca
+materialName      : LEVEL_BOOK_READ.wav
+outputName        : 5e018a57ed075988281a291fa27a0424.hca
+Bitrate : 32 -> 24
+
+Start Encoding...
+Success.

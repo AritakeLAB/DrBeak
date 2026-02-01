@@ -4,8 +4,21 @@
   <OrcaTree OrcaName="(no name)">
     <Orca OrcaName="atmcUserFile" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserFile">
       <Orca OrcaName="atmcGeneralViewInfo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup">
+        <Orca OrcaName="Music_WU" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="References" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="References" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
-        <Orca OrcaName="CueSheetFolder" ExpandMulti="&quot;dockWorkUnitTree&quot;=False" orcaPath="CueSheetFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Music_WU" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Music_Level_1" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Music_Level_1" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1/Music_Level_1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1/Music_Level_1/Track" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track_Mus_Level_Low_Drums" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1/Music_Level_1/Track_Mus_Level_Low_Drums" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track_Mus_Level_Low_Bass" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1/Music_Level_1/Track_Mus_Level_Low_Bass" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track_Mus_Level_Low_Strings" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1/Music_Level_1/Track_Mus_Level_Low_Strings" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track_Mus_Level_Low_Melo" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1/Music_Level_1/Track_Mus_Level_Low_Melo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Mus_Level_Low_Melo.wav" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1/Music_Level_1/Track_Mus_Level_Low_Melo/Mus_Level_Low_Melo.wav" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track_Mus_Level_Low_Mallets" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1/Music_Level_1/Track_Mus_Level_Low_Mallets" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Mus_Level_Low_Mallets.wav" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1/Music_Level_1/Track_Mus_Level_Low_Mallets/Mus_Level_Low_Mallets.wav" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Track_Mus_Level_Low_Pad" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1/Music_Level_1/Track_Mus_Level_Low_Pad" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Mus_Level_Low_Pad.wav" ExpandMulti="&quot;dockWorkUnitTree&quot;=True" orcaPath="CueSheetFolder/Music_WU/Music_Level_1/Music_Level_1/Track_Mus_Level_Low_Pad/Mus_Level_Low_Pad.wav" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       </Orca>
       <Orca OrcaName="atmcTreeSortTypeMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
       <Orca OrcaName="atmcTreeSortOrderMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
