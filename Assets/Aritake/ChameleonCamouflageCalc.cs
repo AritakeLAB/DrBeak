@@ -10,10 +10,10 @@ public class ChameleonCamouflageCalc : MonoBehaviour
     public Texture2D[] overlayTextures;
     public float baseAnimationSpeed = 5.0f; // Base multiplier for movement-based animation
     public Texture2D brushCursor;
-    public Texture2D colorPickerCursor;
+    public Texture2D brushTipCursor;
 
     [Header("Paint Settings")]
-    public Color paintColor = Color.red;
+    public Color paintColor = Color.clear;
     public int brushSize = 8;
     public int interpolateCount = 4;
 
@@ -38,8 +38,9 @@ public class ChameleonCamouflageCalc : MonoBehaviour
         lastPosition = transform.position;
 
         // Set custom cursor
-        Vector2 hotSpot = new Vector2(brushCursor.width / 2f, brushCursor.height / 2f);
-        Cursor.SetCursor(brushCursor, hotSpot, CursorMode.ForceSoftware);
+        // Vector2 hotSpot = new Vector2(brushCursor.width / 2f, brushCursor.height / 2f);
+        // Cursor.SetCursor(brushCursor, hotSpot, CursorMode.ForceSoftware);
+        
 
         meshRenderer = GetComponent<MeshRenderer>();
 
@@ -52,6 +53,46 @@ public class ChameleonCamouflageCalc : MonoBehaviour
         }
 
         RefreshTextures();
+    }
+
+    public void SetCustomCursor(Color newColor)
+    {
+        int width = brushCursor.width;
+        int height = brushCursor.height;
+
+        // 1. Create a new texture to hold the combined result
+        Texture2D combinedTexture = new Texture2D(width, height, TextureFormat.RGBA32, false);
+
+        // 2. Get the pixel arrays
+        Color[] brushPixels = brushCursor.GetPixels();
+        Color[] tipPixels = brushTipCursor.GetPixels();
+        Color[] resultPixels = new Color[brushPixels.Length];
+
+        for (int i = 0; i < brushPixels.Length; i++)
+        {
+            Color brushCol = brushPixels[i];
+            
+            Color tintedTip = tipPixels[i];
+            // Tint the tip: Multiply the white tip pixel by our target color
+            if (tipPixels[i].a > 0.0f)
+            {
+               tintedTip = newColor * 1.3f;
+            }
+            
+        
+            // 3. Simple Alpha Blending
+            // If the brush pixel is transparent, show the tinted tip. 
+            // If not, show the brush.
+            resultPixels[i] = Color.Lerp(tintedTip, brushCol, brushCol.a);
+        }
+
+        // 4. Apply pixels to the new texture
+        combinedTexture.SetPixels(resultPixels);
+        combinedTexture.Apply();
+
+        // 5. Set the cursor
+        Vector2 hotSpot = new Vector2(width / 2f, height / 2f);
+        Cursor.SetCursor(combinedTexture, hotSpot, CursorMode.ForceSoftware);
     }
 
     void Update()
@@ -137,6 +178,7 @@ public class ChameleonCamouflageCalc : MonoBehaviour
                 if (pixelColor.a < 0.1f) continue;
 
                 paintColor = pixelColor;
+                SetCustomCursor(paintColor);
                 return true;
             }
         }
