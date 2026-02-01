@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Aritake/Init.unity
+    guid: 93ad10f1e2949cd429132772066270be
+  - enabled: 1
     path: Assets/Aritake/TitleScreen.unity
     guid: 7cdc11e0f5e06794b946cc5858eb9b34
   - enabled: 1

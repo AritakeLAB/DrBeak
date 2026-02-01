@@ -94,7 +94,7 @@ public class UIManager : MonoBehaviour
     private IEnumerator BackToTitleRoutine()
     {
         yield return transition.FadeOutRoutine();
-        SceneManager.LoadScene(0); // タイトルシーン
+        SceneManager.LoadScene(1); // タイトルシーン
     }
 
     private void HideAll()
