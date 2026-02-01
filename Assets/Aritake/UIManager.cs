@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     [Header("Managers")]
     public SceneTransitionManager transition;
     public TutorialManager tutorialManager;
+    public StoryManager storyManager;
 
     [Header("UI Panels")]
     public GameObject menuPanel;
@@ -66,7 +67,7 @@ public class UIManager : MonoBehaviour
     public void ShowResult(float finalVisibility)
     {
         StartCoroutine(EndGameRoutine(resultPanel, () => {
-            resultScoreText.text = $"Visibility: {finalVisibility:F1}%";
+            resultScoreText.text = $"{100f - finalVisibility:F1}% Camouflage";
             resultRankText.text = GetRank(finalVisibility);
             resultRankText.color = GetRankColor(resultRankText.text);
         }));
@@ -117,10 +118,10 @@ public class UIManager : MonoBehaviour
 
     private string GetRank(float visibility)
     {
-        if (visibility < 10) return "S: Perfect Mimicry";
-        if (visibility < 30) return "A: Professional Stealth";
-        if (visibility < 60) return "B: Mediocre Camouflage";
-        if (visibility < 90) return "C: Barely Hidden";
+        if (visibility < 30) return "S: Perfect Mimicry";
+        if (visibility < 50) return "A: Professional Stealth";
+        if (visibility < 70) return "B: Mediocre Camouflage";
+        if (visibility < 80) return "C: Barely Hidden";
         return "F: Total Exposure";
     }
 
@@ -135,5 +136,10 @@ public class UIManager : MonoBehaviour
     public void OpenTutorial()
     {
         tutorialManager.StartTutorial();
+    }
+
+    public void OpenStory()
+    {
+        storyManager.StartStory();
     }
 }
