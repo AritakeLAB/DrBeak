@@ -3,40 +3,45 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-
 public class judgeBar : MonoBehaviour
 {
-    [Header("Refs")]
+    [Header("References")]
     public GameDirector director;
     public ChameleonCamouflageCalc painter;
 
-    [Header("UI")]
-    public Slider accuracySlider;          // 0..1
-    public RectTransform barRect;          // 进度条背景（用来算宽度）
-    public RectTransform targetMarker;     // 目标点
-    [Header("Refresh")]
-    public float minRefreshInterval = 0.15f;  // 节流：避免疯狂算像素
+    [Header("UI Elements")]
+    public Slider accuracySlider;          // Value range: 0..1
+    public Image fillImage;                // The image component of the slider's Fill area
+    public RectTransform barRect;          // Slider background (used to calculate width)
+    public RectTransform targetMarker;     // UI element indicating the required threshold
+
+    [Header("Color Settings")]
+    public Color safeColor = Color.green;
+    public Color warningColor = Color.yellow;
+    public Color dangerColor = Color.red;
+
+    [Header("Refresh Settings")]
+    public float minRefreshInterval = 0.15f;  // Throttling: prevents excessive pixel calculations
     private float _timer = 0f;
 
     void Start()
     {
-        // 初始化（如果你slider范围不是0..1，这里保证一下）
+        // Initialize slider range
         accuracySlider.minValue = 0f;
         accuracySlider.maxValue = 1f;
 
-        UpdateTargetMarker();   // 先摆好目标点
-        ForceUpdateAccuracy();  // 初始算一次
+        UpdateTargetMarker();   // Position the target marker initially
+        ForceUpdateAccuracy();  // Initial calculation
     }
 
     void Update()
     {
         if (director == null || painter == null) return;
 
-        // 目标点可能会随关卡变：如果你想每帧都更新也行，但一般不需要
-        // 这里做一个轻量更新（也可以改成事件驱动）
+        // Update target marker position (could change per checkpoint)
         UpdateTargetMarker();
 
-        // 只有“玩家确实画过”才考虑刷新
+        // Only refresh if the player has actually painted anything
         if (!painter.AccuracyDirty) return;
 
         _timer += Time.deltaTime;
@@ -50,9 +55,36 @@ public class judgeBar : MonoBehaviour
     void ForceUpdateAccuracy()
     {
         Texture2D target = director.CurrentTargetTexture;
-        float accuracy = painter.CalculateAccuracy(target); // 0..100
+        float accuracy = painter.CalculateAccuracy(target); // Returns 0..100
 
+        // Update slider value
         accuracySlider.value = Mathf.Clamp01(accuracy / 100f);
+
+        // Update bar color based on survival conditions
+        UpdateBarColor(accuracy);
+    }
+
+    void UpdateBarColor(float accuracy)
+    {
+        if (fillImage == null) return;
+
+        float potentialVisibility = 100f - accuracy;
+
+        // 1. Red: Accuracy is too low (below 50%) to pass the checkpoint
+        if (accuracy < 50f)
+        {
+            fillImage.color = dangerColor;
+        }
+        // 2. Yellow: Accuracy is over 50%, but cumulative visibility will exceed 100%
+        else if (director.totalVisibility + potentialVisibility >= 100f)
+        {
+            fillImage.color = warningColor;
+        }
+        // 3. Green: Safe state
+        else
+        {
+            fillImage.color = safeColor;
+        }
     }
 
     void UpdateTargetMarker()
@@ -62,11 +94,10 @@ public class judgeBar : MonoBehaviour
         float targetAcc = Mathf.Clamp(director.CurrentTargetAccuracy, 0f, 100f);
         float t = targetAcc / 100f;
 
-        // 把目标点放到 barRect 的局部坐标里
+        // Calculate horizontal position relative to barRect width
         float width = barRect.rect.width;
 
-        // barRect pivot 通常在中间/左边都可能，这里用 anchoredPosition 直接算最稳：
-        // 假设 barRect 的 anchor/pivot 是默认居中，那我们把marker放到 [-width/2, +width/2]
+        // Assumes barRect pivot/anchor is centered. Map [0..1] to [-width/2, +width/2]
         float x = Mathf.Lerp(-width * 0.5f, width * 0.5f, t);
 
         Vector2 pos = targetMarker.anchoredPosition;
@@ -76,12 +107,11 @@ public class judgeBar : MonoBehaviour
 
     public void SetCheckpointTarget(Texture2D targetTex, float targetAcc)
     {
-
-        // 目标点立刻更新
+        // Update marker position immediately for the new checkpoint
         UpdateTargetMarker();
 
-        // 如果希望进入下一段路时进度条也立刻刷新一次（可选）
+        // Refresh accuracy calculation for the new target
         ForceUpdateAccuracy();
-        painter.ConsumeAccuracyDirty(); // 避免下一帧又重复刷新
+        painter.ConsumeAccuracyDirty(); // Prevent redundant refresh in the next frame
     }
 }
