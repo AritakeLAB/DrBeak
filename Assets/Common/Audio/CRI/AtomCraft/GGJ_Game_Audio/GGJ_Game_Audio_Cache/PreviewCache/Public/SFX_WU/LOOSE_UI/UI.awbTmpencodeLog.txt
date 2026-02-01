@@ -1,6 +1,0 @@
-LOOSE_UI.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/88b4182f0f6c1c9227ad0ea07cf66b40.hca
-========== Encoding : LOOSE_UI.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/LOOSE_UI/Track_LOOSE_UI/LOOSE_UI.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/LOOSE_UI.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/88b4182f0f6c1c9227ad0ea07cf66b40.hca"
-Unhash : LOOSE_UI_Enc_48000lp0-114125HCAHigh3_Public_9b24d109_94e39cec.hca

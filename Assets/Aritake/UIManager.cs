@@ -100,6 +100,7 @@ public class UIManager : MonoBehaviour
     private IEnumerator BackToTitleRoutine()
     {
         yield return transition.FadeOutRoutine();
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         SceneManager.LoadScene(1); // �^�C�g���V�[��
     }
 

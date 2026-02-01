@@ -1,6 +1,0 @@
-UI_TOGGLE.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/f9be88056f51853ff19e8fe2baf2c026.hca
-========== Encoding : UI_TOGGLE.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/UI_TOGGLE/Track_UI_TOGGLE/UI_TOGGLE.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/UI_TOGGLE.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/f9be88056f51853ff19e8fe2baf2c026.hca"
-Unhash : UI_TOGGLE_Enc_48000lp0-302875HCAHigh_2ch3_Public_baa4323_94e39cec.hca
