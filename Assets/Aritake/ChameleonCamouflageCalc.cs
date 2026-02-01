@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Linq;
+using CriWare;
+
 
 public class ChameleonCamouflageCalc : MonoBehaviour
 {
+    public CriAtomSource footstepSource;
+
     [Header("Textures")]
     public Texture2D[] frameTextures;
     public MeshRenderer overlayMeshRenderer;
@@ -27,12 +31,17 @@ public class ChameleonCamouflageCalc : MonoBehaviour
     private Vector2 lastPaintPoint;
     private Vector3 lastPosition;
 
+    private CriAtomSource atomSource;
+
     public bool AccuracyDirty { get; private set; } = true;
 
     public void ConsumeAccuracyDirty() => AccuracyDirty = false;
 
     void Start()
     {
+        atomSource = GetComponent<CriAtomSource>();
+
+
         frameCount = frameTextures.Length;
         writableTextures = new Texture2D[frameCount];
         lastPosition = transform.position;
@@ -100,6 +109,7 @@ public class ChameleonCamouflageCalc : MonoBehaviour
         // 1. Dynamic Animation Logic
         if (isAnimating)
         {
+                    
             // Calculate actual movement speed based on position delta (detects Easing curve acceleration)
             float distanceMoved = (transform.position - lastPosition).magnitude;
 
@@ -111,6 +121,8 @@ public class ChameleonCamouflageCalc : MonoBehaviour
                 animTimer = 0f;
                 currentFrame = (currentFrame + 1) % frameCount;
                 RefreshTextures();
+                if (currentFrame % 2 == 0)
+                    footstepSource.Play();
             }
         }
         else
