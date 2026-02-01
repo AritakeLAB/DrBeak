@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections;
+using CriWare;
 
 public class UIManager : MonoBehaviour
 {
@@ -16,7 +17,8 @@ public class UIManager : MonoBehaviour
     public GameObject levelSelectPanel;
     public GameObject gameOverPanel;
     public GameObject resultPanel;
-    public GameObject hudPanel; // ƒQ[ƒ€’†‚ÌƒXƒRƒA•\¦‚È‚Ç
+    public GameObject hudPanel; // ï¿½Qï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ÌƒXï¿½Rï¿½Aï¿½\ï¿½ï¿½ï¿½È‚ï¿½
+    public CriAtomSource clickSource;
 
 
     [Header("Text References")]
@@ -31,8 +33,12 @@ public class UIManager : MonoBehaviour
         ShowMenuImmediate();
     }
 
-    // --- ‰æ–ÊØ‚è‘Ö‚¦ƒƒ\ƒbƒh ---
+    // --- ï¿½ï¿½ÊØ‚ï¿½Ö‚ï¿½ï¿½ï¿½ï¿½\ï¿½bï¿½h ---
 
+    public void ClickSound()
+    {
+        clickSource.Play();
+    }
     public void ShowMenuImmediate()
     {
         HideAll();
@@ -66,7 +72,7 @@ public class UIManager : MonoBehaviour
         }));
     }
 
-    // --- ƒ‹[ƒ`ƒ“ˆ— ---
+    // --- ï¿½ï¿½ï¿½[ï¿½`ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ---
 
     private IEnumerator StartGameRoutine(string levelName)
     {
@@ -76,7 +82,7 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator EndGameRoutine(GameObject targetPanel, System.Action onPanelReady)
     {
-        yield return new WaitForSecondsRealtime(1.0f); // ”»’èŒã‚Ì—]‰C
+        yield return new WaitForSecondsRealtime(1.0f); // ï¿½ï¿½ï¿½ï¿½ï¿½Ì—]ï¿½C
         yield return transition.FadeOutRoutine();
 
         HideAll();
@@ -95,7 +101,7 @@ public class UIManager : MonoBehaviour
     {
         yield return transition.FadeOutRoutine();
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-        SceneManager.LoadScene(1); // ƒ^ƒCƒgƒ‹ƒV[ƒ“
+        SceneManager.LoadScene(1); // ï¿½^ï¿½Cï¿½gï¿½ï¿½ï¿½Vï¿½[ï¿½ï¿½
     }
 
     private void HideAll()
@@ -107,7 +113,7 @@ public class UIManager : MonoBehaviour
         if (hudPanel) hudPanel.SetActive(false);
     }
 
-    // --- ‰‰o—p•â•ƒƒ\ƒbƒh ---
+    // --- ï¿½ï¿½ï¿½oï¿½pï¿½â•ï¿½ï¿½ï¿½\ï¿½bï¿½h ---
 
     private string GetRank(float visibility)
     {
