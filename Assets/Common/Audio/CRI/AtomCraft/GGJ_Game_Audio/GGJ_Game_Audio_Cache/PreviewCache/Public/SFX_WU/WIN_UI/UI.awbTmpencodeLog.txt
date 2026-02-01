@@ -1,6 +1,0 @@
-WIN_UI.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/3bb2a3589c2988f23dca6fe14bdd5bdc.hca
-========== Encoding : WIN_UI.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/WIN_UI/Track_WIN_UI/WIN_UI.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/WIN_UI.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/3bb2a3589c2988f23dca6fe14bdd5bdc.hca"
-Unhash : WIN_UI_Enc_48000lp0-93750HCAHigh3_Public_81f3d947_94e39cec.hca

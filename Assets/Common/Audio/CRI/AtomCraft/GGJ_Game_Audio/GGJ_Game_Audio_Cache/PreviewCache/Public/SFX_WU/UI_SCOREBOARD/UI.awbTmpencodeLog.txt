@@ -1,6 +1,0 @@
-UI_SCOREBOARD.wav => C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/c4765d2da33f89ac87dea7e46b8e3900.hca
-========== Encoding : UI_SCOREBOARD.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/UI_SCOREBOARD/Track_UI_SCOREBOARD/UI_SCOREBOARD.wav
-materialPath      : C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/UI_SCOREBOARD.wav
-Use cache. "C:/Gaming/Game Dev/TOKYO_UNIVERSITY_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/c4765d2da33f89ac87dea7e46b8e3900.hca"
-Unhash : UI_SCOREBOARD_Enc_48000HCAHigh_2ch3_Public_5e6ba2d9_94e39cec.hca

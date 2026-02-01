@@ -1,6 +1,0 @@
-Track_wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/__cri_preview_WorkUnit___cri_preview_previewCueSheet_Mus_Level_High_Drums/21a8cba4cf273666fb26b9e8055d7bc5.hca
-========== Encoding : Track_wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/__cri_preview_WorkUnit/CueSheetFolder/__cri_preview_previewCueSheet_Mus_Level_High_Drums/Mus_Level_High_Drums.wav/Track_wav/Track_wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Mus_Level_High_Drums.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/__cri_preview_WorkUnit___cri_preview_previewCueSheet_Mus_Level_High_Drums/21a8cba4cf273666fb26b9e8055d7bc5.hca"
-Unhash : Mus_Level_High_Drums_Enc_48000HCAHigh_2ch3_Public_f47ffef9_94e39cec.hca
