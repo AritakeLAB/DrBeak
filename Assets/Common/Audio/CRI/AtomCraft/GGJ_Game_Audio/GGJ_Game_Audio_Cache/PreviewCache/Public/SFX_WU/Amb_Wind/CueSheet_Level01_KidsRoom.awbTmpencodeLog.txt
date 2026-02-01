@@ -3,16 +3,21 @@ AMB_LEAVES_RUSTLE.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI
 AMB_ROOM_TONE.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/c32dd4c029260d64e330fa26dbb2ed15.hca
 Amb_CIGALES_02.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/2f3cc7f33175cdd4e2faf2342aa78fbd.hca
 Amb_Wind.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/2239ab245b5aca0001abc1d3f70af22b.hca
-========== Encoding : AMB_LEAVES_RUSTLE.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_AMB_LEAVES_RUSTLE/AMB_LEAVES_RUSTLE.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/AMB_LEAVES_RUSTLE.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/6cf42c3fbe6c7046cb8ac3b38327b164.hca"
-Unhash : AMB_LEAVES_RUSTLE_Enc_48000HCAHigh_2ch3Trimmer(0.000000-20667.884526)Fade([523.873597,2,1.000000][4059.698949,1,1.000000])_Public_160bc505_94e39cec.hca
 ========== Encoding : AMB_GRASS_RUSTLE.wav ==========
 waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Wind/Track_AMB_GRASS_RUSTLE/AMB_GRASS_RUSTLE.wav
 materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/AMB_GRASS_RUSTLE.wav
 Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/ab6c68397a700b71c2530f476d441de4.hca"
 Unhash : AMB_GRASS_RUSTLE_Enc_48000HCAHigh_2ch3Trimmer(0.000000-39097.748526)Fade([0.000000,2,1.000000][2498.875121,1,1.000000])_Public_f9992732_94e39cec.hca
+========== Encoding : AMB_LEAVES_RUSTLE.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_AMB_LEAVES_RUSTLE/AMB_LEAVES_RUSTLE.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/AMB_LEAVES_RUSTLE.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/6cf42c3fbe6c7046cb8ac3b38327b164.hca"
+Unhash : AMB_LEAVES_RUSTLE_Enc_48000HCAHigh_2ch3Trimmer(0.000000-20667.884526)Fade([523.873597,2,1.000000][4059.698949,1,1.000000])_Public_160bc505_94e39cec.hca
+========== Encoding : AMB_ROOM_TONE.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Wind/Track_AMB_ROOM_TONE/AMB_ROOM_TONE.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/AMB_ROOM_TONE.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/c32dd4c029260d64e330fa26dbb2ed15.hca"
+Unhash : AMB_ROOM_TONE_Enc_48000HCAHigh_2ch3_Public_b1e692da_94e39cec.hca
 ========== Encoding : Amb_CIGALES_02.wav ==========
 waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_Amb_CIGALES_02/Amb_CIGALES_02.wav
 materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/Amb_CIGALES_02.wav
@@ -23,8 +28,3 @@ waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/C
 materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/Amb_Wind.wav
 Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/2239ab245b5aca0001abc1d3f70af22b.hca"
 Unhash : Amb_Wind_Enc_48000HCAHigh_2ch3Fade([104.432115,2,1.720000][60.524841,1,1.000000])_Public_9067d656_94e39cec.hca
-========== Encoding : AMB_ROOM_TONE.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Wind/Track_AMB_ROOM_TONE/AMB_ROOM_TONE.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/AMB_ROOM_TONE.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/c32dd4c029260d64e330fa26dbb2ed15.hca"
-Unhash : AMB_ROOM_TONE_Enc_48000HCAHigh_2ch3_Public_b1e692da_94e39cec.hca
