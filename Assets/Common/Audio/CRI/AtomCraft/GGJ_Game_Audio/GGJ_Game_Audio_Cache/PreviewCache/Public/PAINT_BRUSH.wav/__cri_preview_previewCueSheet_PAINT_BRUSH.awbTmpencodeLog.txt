@@ -1,0 +1,6 @@
+Track_wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/__cri_preview_WorkUnit___cri_preview_previewCueSheet_PAINT_BRUSH/a9f0f1f2c926092f130f055ce5fca335.hca
+========== Encoding : Track_wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/__cri_preview_WorkUnit/CueSheetFolder/__cri_preview_previewCueSheet_PAINT_BRUSH/PAINT_BRUSH.wav/Track_wav/Track_wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/GAMEPLAY/PAINT_BRUSH.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/__cri_preview_WorkUnit___cri_preview_previewCueSheet_PAINT_BRUSH/a9f0f1f2c926092f130f055ce5fca335.hca"
+Unhash : PAINT_BRUSH_Enc_48000lp0-40500HCAHigh3_Public_340c75ba_94e39cec.hca
