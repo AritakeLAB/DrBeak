@@ -1,25 +1,27 @@
 using UnityEngine;
-using System.Collections;
 
 public class GirlController : MonoBehaviour
 {
     public enum GirlState { Idle, LookUp }
 
-    [Header("Animation Frames")]
-    public Sprite[] idleFrames;   // Girl_Idle の30枚をドラッグ&ドロップ
-    public Sprite[] lookUpFrames; // Girl_Look_Up の30枚をドラッグ&ドロップ
+    [Header("Animation Textures")]
+    public Texture2D[] idleTextures;   // Girl_Idle (30枚)
+    public Texture2D[] lookUpTextures; // Girl_Look_Up (30枚)
 
     [Header("Settings")]
-    public float fps = 8f; // 1秒間に30枚再生
+    public float fps = 30f;
 
-    private SpriteRenderer spriteRenderer;
+    private MeshRenderer meshRenderer;
+    private Material targetMaterial;
     private GirlState currentState = GirlState.Idle;
     private int frameIndex;
     private float timer;
 
     void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        meshRenderer = GetComponent<MeshRenderer>();
+        // マテリアルのインスタンスを取得 (元のAssetを書き換えないように)
+        targetMaterial = meshRenderer.material;
     }
 
     void Update()
@@ -36,22 +38,25 @@ public class GirlController : MonoBehaviour
 
     void UpdateAnimation()
     {
-        Sprite[] currentArray = (currentState == GirlState.Idle) ? idleFrames : lookUpFrames;
+        Texture2D[] currentArray = (currentState == GirlState.Idle) ? idleTextures : lookUpTextures;
 
         if (currentArray == null || currentArray.Length == 0) return;
 
-        // 次のフレームへ（ループ再生）
+        // 次のフレームのテクスチャをセット
         frameIndex = (frameIndex + 1) % currentArray.Length;
-        spriteRenderer.sprite = currentArray[frameIndex];
+        targetMaterial.mainTexture = currentArray[frameIndex];
     }
 
-    // 外部（GameDirector）から状態を切り替えるメソッド
+    // GameDirectorから呼ぶ状態切り替え
     public void SetState(GirlState newState)
     {
         if (currentState == newState) return;
 
         currentState = newState;
-        frameIndex = 0; // 切り替え時に最初のフレームに戻す
+        frameIndex = 0;
         timer = 0;
+
+        // 切り替え時に1枚目を即座に反映
+        UpdateAnimation();
     }
 }
