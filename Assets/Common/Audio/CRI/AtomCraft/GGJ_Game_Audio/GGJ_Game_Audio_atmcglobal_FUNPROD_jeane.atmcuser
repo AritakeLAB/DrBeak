@@ -6,6 +6,15 @@
       <Orca OrcaName="atmcGeneralViewInfo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup">
         <Orca OrcaName="MixerFolder" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="MixerFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="Mixer_0" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="MixerFolder/Mixer_0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="FX_ON" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="MixerFolder/Mixer_0/FX_ON" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="MasterWet" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="MixerFolder/Mixer_0/FX_ON/MasterWet" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Rever_Bus" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="MixerFolder/Mixer_0/FX_ON/Rever_Bus" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Mixer_Dry" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="MixerFolder/Mixer_0/Mixer_Dry" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Rever_Bus" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="MixerFolder/Mixer_0/Mixer_Dry/Rever_Bus" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="MasterWet" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="MixerFolder/Mixer_0/MasterWet" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Rever_Bus" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="MixerFolder/Mixer_0/Rever_Bus" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="BusMap" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="BusMap" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="BusMapforCue" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="BusMap/BusMapforCue" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="Categories" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="Categories" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="Main" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="Categories/Main" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="MUSIC" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="Categories/Main/MUSIC" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
@@ -19,7 +28,7 @@
         <Orca OrcaName="PROXIMITY" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="GlobalAISACs/PROXIMITY" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="GameVariables" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="GameVariables" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
         <Orca OrcaName="SelectorFolder" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="SelectorFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
-        <Orca OrcaName="CHECKPOINT" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="SelectorFolder/CHECKPOINT" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="MUSIC_SWITCH" ExpandMulti="&quot;dockProjectTree&quot;=True" orcaPath="SelectorFolder/MUSIC_SWITCH" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       </Orca>
       <Orca OrcaName="atmcTreeSortTypeMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>
       <Orca OrcaName="atmcTreeSortOrderMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup"/>

@@ -4,17 +4,17 @@
  *  Tool Ver.          : Ver.3.56.01
  *  ACF  Ver.          : Ver.1.38.0
  *  File Name          : GGJ_Game_Audio_acf.h
- *  File Size          : 7808 bytes
+ *  File Size          : 9440 bytes
  *  Target             : Public
  *  Categories         : 6
  *  AISAC Controls     : 16
  *  Global AISACs      : 1
  *  Voice Limit Groups : 1
  *  DSP BUS Settings   : 1
- *  DSP BUS Settings Snapshot  : 0
- *  DSP BUS Name       : 2
+ *  DSP BUS Settings Snapshot  : 2
+ *  DSP BUS Name       : 3
  *  Game Variables     : 1
- *  Selectors          : 1
+ *  Selectors          : 2
  *  REACTs             : 3
  *  Output Ports  : 0
  *  Project Comment    : 
@@ -26,10 +26,10 @@
 #define CRI_GGJ_GAME_AUDIO_ACF_GLOBALAISACNUM (1)
 #define CRI_GGJ_GAME_AUDIO_ACF_VOICELIMITGROUPNUM (1)
 #define CRI_GGJ_GAME_AUDIO_ACF_DSPSETTINGNUM (1)
-#define CRI_GGJ_GAME_AUDIO_ACF_DSPSETTINGSNAPSHOTNUM (0)
-#define CRI_GGJ_GAME_AUDIO_ACF_DSPBUSNAMENUM (2)
+#define CRI_GGJ_GAME_AUDIO_ACF_DSPSETTINGSNAPSHOTNUM (2)
+#define CRI_GGJ_GAME_AUDIO_ACF_DSPBUSNAMENUM (3)
 #define CRI_GGJ_GAME_AUDIO_ACF_GAMEVARIABLENUM (1)
-#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORNUM (1)
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORNUM (2)
 #define CRI_GGJ_GAME_AUDIO_ACF_REACTNUM (3)
 #define CRI_GGJ_GAME_AUDIO_ACF_OUTPUTPORTNUM (0)
 
@@ -66,11 +66,16 @@
 #define CRI_GGJ_GAME_AUDIO_ACF_VOICELIMITGROUP_VOICELIMITGROUP_0    ( 0) /*  */
 
 /* DspSetting List (DspSetting Name) */
-#define CRI_GGJ_GAME_AUDIO_ACF_DSPSETTING_MIXER_0              "Mixer_0" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_DSPSETTING_MIXER_0              "Mixer_0" /*   */
+
+/* DspSettingSnapshot List (DspSettingSnapshot Name) */
+#define CRI_GGJ_GAME_AUDIO_ACF_DSPSETTINGSNAPSHOT_MIXER_0_FX_ON                "FX_ON" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_DSPSETTINGSNAPSHOT_MIXER_0_MIXER_DRY            "Mixer_Dry" /*  */
 
 /* DspBusName List (DspBus Name) */
 #define CRI_GGJ_GAME_AUDIO_ACF_DSPBUSNAME_MASTEROUT            "MasterOut" /*  */
-#define CRI_GGJ_GAME_AUDIO_ACF_DSPBUSNAME_OBAOUT               "OBAOut" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_DSPBUSNAME_MASTERWET            "MasterWet" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_DSPBUSNAME_REVER_BUS            "Rever_Bus" /*  */
 
 /* Game Variable (Game Variable Name) */
 #define CRI_GGJ_GAME_AUDIO_ACF_GAMEVARIABLE_DEFAULT              "Default " /*  */
@@ -79,4 +84,8 @@
 #define CRI_GGJ_GAME_AUDIO_ACF_SELECTOR_CHECKPOINT           "CHECKPOINT" /*  */
 #define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_CHECKPOINT_WIN                  "WIN" /*  */
 #define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_CHECKPOINT_LOSE                 "LOSE" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTOR_MUSIC_SWITCH         "MUSIC_SWITCH" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKA             "ToBlockA" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKB             "ToBlockB" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKC             "ToBlockC" /*  */
 

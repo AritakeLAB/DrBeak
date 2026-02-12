@@ -1,0 +1,6 @@
+Track_wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/__cri_preview_WorkUnit___cri_preview_previewCueSheet_AMB_ROOM_TONE/c32dd4c029260d64e330fa26dbb2ed15.hca
+========== Encoding : Track_wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/__cri_preview_WorkUnit/CueSheetFolder/__cri_preview_previewCueSheet_AMB_ROOM_TONE/AMB_ROOM_TONE.wav/Track_wav/Track_wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/AMB_ROOM_TONE.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/__cri_preview_WorkUnit___cri_preview_previewCueSheet_AMB_ROOM_TONE/c32dd4c029260d64e330fa26dbb2ed15.hca"
+Unhash : AMB_ROOM_TONE_Enc_48000HCAHigh_2ch3_Public_b1e692da_94e39cec.hca

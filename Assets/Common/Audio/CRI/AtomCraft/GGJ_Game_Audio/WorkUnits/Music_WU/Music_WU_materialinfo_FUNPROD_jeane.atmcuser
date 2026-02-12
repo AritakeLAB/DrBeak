@@ -5,6 +5,7 @@
     <Orca OrcaName="atmcUserFile" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserFile">
       <Orca OrcaName="atmcGeneralViewInfo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup">
         <Orca OrcaName="Music" ExpandMulti="&quot;dockMaterialTree&quot;=True" orcaPath="MaterialRootFolder/Music" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
+        <Orca OrcaName="Transitions" ExpandMulti="&quot;dockMaterialTree&quot;=True" orcaPath="MaterialRootFolder/Music/Transitions" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
       </Orca>
       <Orca OrcaName="atmcTreeSortTypeMulti" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrcaGroup">
         <Orca OrcaName="Music_WU_MaterialInfo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAtmcUserOrca"/>
