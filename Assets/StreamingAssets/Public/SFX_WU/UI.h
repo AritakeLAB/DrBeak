@@ -3,14 +3,14 @@
  *  Project          : GGJ_Game_Audio
  *  Tool Ver.        : Ver.3.56.01
  *  ACB  Ver.        : Ver.1.46.0
- *  File Path        : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU
+ *  File Path        : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/StreamingAssets/Public/SFX_WU
  *  File Name        : UI.h
- *  File Size        : 371488 bytes
- *  Date Time        : 2026/02/01 14:19:07
+ *  File Size        : 497312 bytes
+ *  Date Time        : 2026/02/16 11:33:49
  *  Target           : Public
  *  Cues             : 4
  *  CueSheet Comment : 
- *  Stream Awb Path  : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/Streaming Assets/Public/SFX_WU/UI.awb
+ *  Stream Awb Path  : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/StreamingAssets/Public/SFX_WU/UI.awb
  *===========================================================================*/
 
 #define CRI_UI_CUENUM (4)

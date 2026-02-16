@@ -14,80 +14,57 @@
       <Orca OrcaName="VoicePoolFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoVoicePoolFolder"/>
       <Orca OrcaName="MixerFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspSettingFolder">
         <Orca OrcaName="Mixer_0" Comment=" " OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspSetting">
-          <Orca OrcaName="FX_ON" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspSettingSnapshot">
-            <Orca OrcaName="MasterWet" BusConfigType="busConfig_STEREO" FallbackMasterBus="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/MasterOut" Volume="0.7716535" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusMaster"/>
-            <Orca OrcaName="Rever_Bus" BusConfigType="busConfig_STEREO" Volume="0.6456693" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBus">
-              <Orca OrcaName="Chorus" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspFxChorus"/>
-              <Orca OrcaName="Reverb" ConfigMode="Stereo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspFxReverb"/>
-              <Orca OrcaName="Distortion" Bypass="On" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspFxDistortion"/>
-              <Orca OrcaName="Send0" BusSend="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/FX_ON/MasterWet" BusSendLevel="1" BusSendType="PostPan" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusLink"/>
-            </Orca>
-          </Orca>
+          <Orca OrcaName="FX_ON" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspSettingSnapshot"/>
           <Orca OrcaName="Mixer_Dry" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspSettingSnapshot">
             <Orca OrcaName="MasterOut" BusConfigType="busConfig_STEREO" Volume="0.8790323" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusMaster"/>
-            <Orca OrcaName="Rever_Bus" BusConfigType="busConfig_STEREO" Volume="0.6456693" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBus">
+            <Orca OrcaName="Reverb_Bus" BusConfigType="busConfig_STEREO" Volume="0.6456693" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBus">
               <Orca OrcaName="Chorus" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspFxChorus"/>
               <Orca OrcaName="Reverb" ConfigMode="Stereo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspFxReverb"/>
               <Orca OrcaName="Distortion" Bypass="On" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspFxDistortion"/>
-              <Orca OrcaName="Send0" BusSend="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/FX_ON/MasterWet" BusSendLevel="1" BusSendType="PostPan" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusLink"/>
+              <Orca OrcaName="Send0" BusSend="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/Effects_Bus" BusSendLevel="1" BusSendType="PostPan" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusLink"/>
             </Orca>
           </Orca>
-          <Orca OrcaName="MasterOut" AppliedSnapshot="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/Mixer_Dry" BusConfigType="busConfig_STEREO" Volume="0.8790323" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusMaster"/>
-          <Orca OrcaName="MasterWet" AppliedSnapshot="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/FX_ON" BusConfigType="busConfig_STEREO" FallbackMasterBus="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/MasterOut" Volume="0.9370079" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusMaster"/>
-          <Orca OrcaName="Rever_Bus" AppliedSnapshot="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/FX_ON" BusConfigType="busConfig_STEREO" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBus">
+          <Orca OrcaName="MasterOut" BusConfigType="busConfig_STEREO" Volume="0.8790323" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusMaster"/>
+          <Orca OrcaName="MasterWet" BusConfigType="busConfig_STEREO" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusMaster"/>
+          <Orca OrcaName="Effects_Bus" BusConfigType="busConfig_STEREO" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBus">
+            <Orca OrcaName="Send0" BusSend="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/Mixer_Dry/MasterOut" BusSendLevel="1" BusSendType="PostPan" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusLink"/>
+          </Orca>
+          <Orca OrcaName="Reverb_Bus" BusConfigType="busConfig_STEREO" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBus">
             <Orca OrcaName="Chorus" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspFxChorus"/>
             <Orca OrcaName="Reverb" ConfigMode="Stereo" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspFxReverb"/>
             <Orca OrcaName="Distortion" Bypass="On" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspFxDistortion"/>
-            <Orca OrcaName="Send0" BusSend="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/FX_ON/MasterWet" BusSendLevel="1" BusSendType="PostPan" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusLink"/>
+            <Orca OrcaName="Send0" BusSend="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/Effects_Bus" BusSendLevel="1" BusSendType="PostPan" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusLink"/>
+          </Orca>
+          <Orca OrcaName="Sfx_Bus" BusConfigType="busConfig_STEREO" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBus">
+            <Orca OrcaName="Send0" BusSend="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/Mixer_Dry/MasterOut" BusSendLevel="1" BusSendType="PostPan" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusLink"/>
+          </Orca>
+          <Orca OrcaName="Music_Bus" BusConfigType="busConfig_STEREO" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBus">
+            <Orca OrcaName="Send0" BusSend="/CriAtomCraftV2Root/GlobalSettings/MixerFolder/Mixer_0/Mixer_Dry/MasterOut" BusSendLevel="1" BusSendType="PostPan" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspBusLink"/>
+            <Orca OrcaName="Bandpass" BandPassHi="1" BandPassLow="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoDspFxBandpass"/>
           </Orca>
         </Orca>
       </Orca>
       <Orca OrcaName="BusMap" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBusMapRootFolder">
         <Orca OrcaName="BusMapforCue" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBusMapFolder">
-          <Orca OrcaName="BusMap_Default" DspBusName1="Rever_Bus" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBusMap"/>
+          <Orca OrcaName="BusMap_Default" DspBusName0="" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBusMap"/>
         </Orca>
-        <Orca OrcaName="BusMapForAisacAndAutomation" DspBusName1="Rever_Bus" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBusMapAisacGraph"/>
+        <Orca OrcaName="BusMapForAisacAndAutomation" DspBusName1="Reverb_Bus" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBusMapAisacGraph"/>
       </Orca>
       <Orca OrcaName="Categories" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategoryFolder">
-        <Orca OrcaName="Main" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategoryGroup">
+        <Orca OrcaName="SE" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategoryGroup">
           <Orca OrcaName="Gameplay" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategory"/>
           <Orca OrcaName="UI" CategoryId="5" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategory"/>
-          <Orca OrcaName="MUSIC" CategoryId="2" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategory">
-            <Orca OrcaName="Linkproximity" LinkAisac="/CriAtomCraftV2Root/GlobalSettings/GlobalAISACs/PROXIMITY" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacLink"/>
-            <Orca OrcaName="MENU_MUSIC" AisacControl="/CriAtomCraftV2Root/GlobalSettings/AISAC-Controls/AisacControl_01" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisac">
-              <Orca OrcaName="Volume" ControlDestinationType="Volume" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacGraph">
-                <Orca OrcaName="Point" ControlValue="0" DestinationValue="1.0034" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
-                <Orca OrcaName="Point_0" ControlValue="1" DestinationValue="0.5666" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
-              </Orca>
-              <Orca OrcaName="BandPassHi" ControlDestinationType="BandPassHi" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacGraph">
-                <Orca OrcaName="Point" ControlValue="0" DestinationValue="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
-                <Orca OrcaName="Point_0" ControlValue="1" DestinationValue="0.51" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
-              </Orca>
-            </Orca>
-          </Orca>
         </Orca>
-        <Orca OrcaName="PLAYER SOUNDS" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategoryGroup">
-          <Orca OrcaName="PLAYER_SOUNDS" CategoryId="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategory">
-            <Orca OrcaName="Linkproximity" LinkAisac="/CriAtomCraftV2Root/GlobalSettings/GlobalAISACs/PROXIMITY" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacLink"/>
-          </Orca>
-        </Orca>
-        <Orca OrcaName="DUCKED" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategoryGroup">
-          <Orca OrcaName="DUCKED" CategoryId="4" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategory"/>
-        </Orca>
-        <Orca OrcaName="ENNEMY ALERT " OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategoryGroup">
-          <Orca OrcaName="ENNEMY ALERT" CategoryId="3" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategory"/>
+        <Orca OrcaName="Music" DefaultCategory="/CriAtomCraftV2Root/GlobalSettings/Categories/Music/Music_Group" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategoryGroup">
+          <Orca OrcaName="Music_Group" CategoryId="6" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoCategory"/>
         </Orca>
       </Orca>
-      <Orca OrcaName="REACT" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoReactFolder">
-        <Orca OrcaName="DUCKING ALERT" DecrementCurveType="SCurve" DecrementTime="295" DestCategory="/CriAtomCraftV2Root/GlobalSettings/Categories/DUCKED/DUCKED" IncrementTime="930" Level="0.516129" SourceCategory="/CriAtomCraftV2Root/GlobalSettings/Categories/ENNEMY ALERT /ENNEMY ALERT" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoReact"/>
-        <Orca OrcaName="DUCKING MENU" DecrementCurveType="SCurve" DecrementTime="233" DestCategory="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/Gameplay" IncrementTime="1075" Level="0" SourceCategory="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/UI" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoReact"/>
-        <Orca OrcaName="DUCKING MENU MUSIC" DecrementAisacModKey="1" DestCategory="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/MUSIC" ReactType="Trigger" SourceCategory="/CriAtomCraftV2Root/GlobalSettings/Categories/Main/UI" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoReact"/>
-      </Orca>
+      <Orca OrcaName="REACT" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoReactFolder"/>
       <Orca OrcaName="VoiceLimitGroups" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoVoiceLimitGroupFolder">
         <Orca OrcaName="VoiceLimitGroup_0" VoiceLimitNum="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoVoiceLimitGroup"/>
       </Orca>
       <Orca OrcaName="AISAC-Controls" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacControlFolder">
-        <Orca OrcaName="AisacControl_00" ControlId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacControl"/>
+        <Orca OrcaName="Checkpoint_Lowcut_Filter_Transition" ControlId="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacControl"/>
         <Orca OrcaName="AisacControl_01" ControlId="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacControl"/>
         <Orca OrcaName="AisacControl_02" ControlId="2" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacControl"/>
         <Orca OrcaName="AisacControl_03" ControlId="3" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacControl"/>
@@ -105,20 +82,24 @@
         <Orca OrcaName="AisacControl_15" ControlId="15" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacControl"/>
       </Orca>
       <Orca OrcaName="GlobalAISACs" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoGlobalAisacFolder">
-        <Orca OrcaName="PROXIMITY" AisacControl="/CriAtomCraftV2Root/GlobalSettings/AISAC-Controls/AisacControl_00" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisac">
-          <Orca OrcaName="Volume" ControlDestinationType="Volume" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacGraph">
-            <Orca OrcaName="Point" ControlValue="0" DestinationValue="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
-            <Orca OrcaName="Point_1" ControlValue="0.52" DestinationValue="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
-            <Orca OrcaName="Point_0" ControlValue="1" DestinationValue="2" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+        <Orca OrcaName="Reverb_Send" AisacControl="/CriAtomCraftV2Root/GlobalSettings/AISAC-Controls/Checkpoint_Lowcut_Filter_Transition" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisac">
+          <Orca OrcaName="BusMap_Local" DspBusName0="Reverb_Bus" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoBusMap"/>
+          <Orca OrcaName="BusSend0" ControlDestinationType="BusSend0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacGraph">
+            <Orca OrcaName="Point" ControlValue="0" DestinationValue="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+            <Orca OrcaName="Point_0" ControlValue="1" DestinationValue="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
           </Orca>
+        </Orca>
+        <Orca OrcaName="LowPass_Control" AisacControl="/CriAtomCraftV2Root/GlobalSettings/AISAC-Controls/Checkpoint_Lowcut_Filter_Transition" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisac">
           <Orca OrcaName="BandPassHi" ControlDestinationType="BandPassHi" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacGraph">
             <Orca OrcaName="Point" ControlValue="0" DestinationValue="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
-            <Orca OrcaName="Point_0" ControlValue="1" DestinationValue="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+            <Orca OrcaName="Point_1" ControlValue="0.999" DestinationValue="0" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
+            <Orca OrcaName="Point_0" ControlValue="1" DestinationValue="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoAisacPoint"/>
           </Orca>
         </Orca>
       </Orca>
       <Orca OrcaName="GameVariables" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoGameVariableFolder">
         <Orca OrcaName="Default" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoGameVariable"/>
+        <Orca OrcaName="Checkpoint_Music_Transition" VariableId="1" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoGameVariable"/>
       </Orca>
       <Orca OrcaName="SelectorFolder" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoSelectorFolder">
         <Orca OrcaName="CHECKPOINT" DefaultSelectorLabel="/CriAtomCraftV2Root/GlobalSettings/SelectorFolder/CHECKPOINT/WIN" OrcaType="CriMw.CriAtomCraft.AcCore.AcOoSelector">
