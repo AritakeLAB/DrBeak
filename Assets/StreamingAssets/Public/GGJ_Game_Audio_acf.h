@@ -4,7 +4,7 @@
  *  Tool Ver.          : Ver.3.56.01
  *  ACF  Ver.          : Ver.1.38.0
  *  File Name          : GGJ_Game_Audio_acf.h
- *  File Size          : 8160 bytes
+ *  File Size          : 8224 bytes
  *  Target             : Public
  *  Categories         : 3
  *  AISAC Controls     : 16
@@ -90,4 +90,7 @@
 #define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKA             "ToBlockA" /*  */
 #define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKB             "ToBlockB" /*  */
 #define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKC             "ToBlockC" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKD             "ToBlockD" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKWIN           "ToBlockWin" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKLOSE          "ToBlockLose" /*  */
 

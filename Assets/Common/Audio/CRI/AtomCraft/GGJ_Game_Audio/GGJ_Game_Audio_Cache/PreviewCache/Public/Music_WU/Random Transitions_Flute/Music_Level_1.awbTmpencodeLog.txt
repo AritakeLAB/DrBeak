@@ -1,54 +1,60 @@
-Mus_Level1_Transition_Darbouka#2.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/6ec0d81d3ded68398a2798371ffc269c.hca
-Mus_Level1_Transition_Darbouka#2.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/5d4247dbda21cbfc630e3e9104ad3cc0.hca
-Mus_Level1_Transition_Darbouka.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/640c1d33cbfffa56355084400b38786a.hca
-Mus_Level1_Transition_LowToMid_Cymbal_Sweep (consolidated) - Part_1.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/81ef2cdc2fff878ad25a736d6169ab4b.hca
-Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/6bbd2d79b17fd90b292bd9e158ffc494.hca
-Mus_Level1_Transition_LowToMid_Flute (consolidated) - Part_2.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/7bbc684f1408d43e46e33d61353415d2.hca
-Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/72e8624daaad4d0ace51ba17729c20e3.hca
-Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/35c22664e4cd8f9f5d59a00e68bad8d1.hca
-Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/fc797c38e4821b75181c9587b67a54cb.hca
-========== Encoding : Mus_Level1_Transition_Darbouka.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random Transitions_Percs/Track_Mus_Level1_Transition_Darbouka/Mus_Level1_Transition_Darbouka.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Mus_Level1_Transition_Darbouka.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/640c1d33cbfffa56355084400b38786a.hca"
-Unhash : Mus_Level1_Transition_Darbouka_Enc_48000HCAHigh_2ch3Trimmer(0.000000-4285.884326)Fade([0.000000,2,1.000000][804.395956,1,1.000000])_Public_10dc65cb_94e39cec.hca
+Mus_Level1_Transition_Darbouka#2.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/8afbf8d786807ed92ce02d381594c221.hca
+Mus_Level1_Transition_Darbouka#2.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/ecdc96ab88cfbda3c701b281c205694e.hca
+Mus_Level1_Transition_Darbouka.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/07612b35acc7081ea11f40a4ade99a14.hca
+Mus_Level1_Transition_LowToMid_Cymbal_Sweep (consolidated) - Part_1.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/2500495758192a11ede38b00a853ae87.hca
+Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/769988ba827161b1ab4f8397b6260308.hca
+Mus_Level1_Transition_LowToMid_Flute (consolidated) - Part_2.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/17cd5aafebff3cbbf7b00d62d1f8dfbb.hca
+Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/594f7a492426644c009a2aeeecfa9c5d.hca
+Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/bb3c79aecf427970a782ca7a40b4ca08.hca
+Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/f742e2c58ffe97f6c9634e288d326bfb.hca
+Mus_Level1_Transition_MidToHigh_Shaker_Sprinkle.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/c3e832251aa32c669f32fb58dd5e31d1.hca
 ========== Encoding : Mus_Level1_Transition_Darbouka#2.wav ==========
 waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random Transitions_Percs/Track_Mus_Level1_Transition_Darbouka#2/Mus_Level1_Transition_Darbouka#2.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Mus_Level1_Transition_Darbouka#2.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/6ec0d81d3ded68398a2798371ffc269c.hca"
-Unhash : Mus_Level1_Transition_Darbouka#2_Enc_48000HCAHigh_2ch3Trimmer(0.000000-4320.676320)Fade([0.000000,2,1.000000][1036.727115,1,1.000000])_Public_9c72cb3b_94e39cec.hca
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Trans_BlockAtoB/Mus_Level1_Transition_Darbouka#2.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/8afbf8d786807ed92ce02d381594c221.hca"
+Unhash : Mus_Level1_Transition_Darbouka#2_Enc_48000HCAHigh_2ch3Fade([0.000000,2,1.000000][1036.727115,1,1.000000])_Public_56c88c7d_94e39cec.hca
+========== Encoding : Mus_Level1_Transition_Darbouka.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random Transitions_Percs/Track_Mus_Level1_Transition_Darbouka/Mus_Level1_Transition_Darbouka.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Trans_BlockAtoB/Mus_Level1_Transition_Darbouka.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/07612b35acc7081ea11f40a4ade99a14.hca"
+Unhash : Mus_Level1_Transition_Darbouka_Enc_48000HCAHigh_2ch3Fade([0.000000,2,1.000000][804.395956,1,1.000000])_Public_5c1131d9_94e39cec.hca
 ========== Encoding : Mus_Level1_Transition_LowToMid_Cymbal_Sweep (consolidated) - Part_1.wav ==========
 waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random_ Transitions_Cymbals/Track_Mus_Level1_Transition_LowToMid_Cymbal_Sweep (consolidated) - Part_1/Mus_Level1_Transition_LowToMid_Cymbal_Sweep (consolidated) - Part_1.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Mus_Level1_Transition_LowToMid_Cymbal_Sweep (consolidated) - Part_1.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/81ef2cdc2fff878ad25a736d6169ab4b.hca"
-Unhash : Mus_Level1_Transition_LowToMid_Cymbal_Sweep (consolidated) - Part_1_Enc_48000HCAHigh_2ch3Trimmer(0.000000-6005.036321)Fade([0.000000,2,1.000000][2095.950717,1,1.000000])_Public_4734c604_94e39cec.hca
-========== Encoding : Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random_ Transitions_Cymbals/Track_Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1/Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/6bbd2d79b17fd90b292bd9e158ffc494.hca"
-Unhash : Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1_Enc_48000HCAHigh_2ch3Trimmer(0.000000-5998.794065)Fade([0.000000,2,1.000000][2543.645381,1,1.000000])_Public_4d3232dc_94e39cec.hca
-========== Encoding : Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random Transitions_Flute/Track_Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1/Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/72e8624daaad4d0ace51ba17729c20e3.hca"
-Unhash : Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1_Enc_48000HCAHigh_2ch3Fade([0.000000,2,1.000000][353.463744,1,1.000000])_Public_d45f9e0f_94e39cec.hca
-========== Encoding : Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random Transitions_Flute/Track_Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1/Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/35c22664e4cd8f9f5d59a00e68bad8d1.hca"
-Unhash : Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1_Enc_48000HCAHigh_2ch3Fade([0.000000,2,1.000000][175.088013,1,1.000000])_Public_4215df61_94e39cec.hca
-========== Encoding : Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1.wav ==========
-waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random_ Transitions_Cymbals/Track_Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1/Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/fc797c38e4821b75181c9587b67a54cb.hca"
-Unhash : Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1_Enc_48000HCAHigh_2ch3Trimmer(0.000000-4105.732107)Fade([0.000000,2,1.000000][1382.690248,1,1.000000])_Public_d40c60b9_94e39cec.hca
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Trans_BlockAtoB/Mus_Level1_Transition_LowToMid_Cymbal_Sweep (consolidated) - Part_1.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/2500495758192a11ede38b00a853ae87.hca"
+Unhash : Mus_Level1_Transition_LowToMid_Cymbal_Sweep (consolidated) - Part_1_Enc_48000HCAHigh(0_48000)_2ch3Fade([0.000000,2,1.000000][2095.950717,1,1.000000])_Public_4734c604_94e39cec.hca
 ========== Encoding : Mus_Level1_Transition_LowToMid_Flute (consolidated) - Part_2.wav ==========
 waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random Transitions_Flute/Track_Mus_Level1_Transition_LowToMid_Flute (consolidated) - Part_2/Mus_Level1_Transition_LowToMid_Flute (consolidated) - Part_2.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Mus_Level1_Transition_LowToMid_Flute (consolidated) - Part_2.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/7bbc684f1408d43e46e33d61353415d2.hca"
-Unhash : Mus_Level1_Transition_LowToMid_Flute (consolidated) - Part_2_Enc_48000HCAHigh_2ch3Fade([0.000000,2,1.000000][317.788598,1,1.000000])_Public_94c421da_94e39cec.hca
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Trans_BlockAtoB/Mus_Level1_Transition_LowToMid_Flute (consolidated) - Part_2.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/17cd5aafebff3cbbf7b00d62d1f8dfbb.hca"
+Unhash : Mus_Level1_Transition_LowToMid_Flute (consolidated) - Part_2_Enc_48000HCAHigh_2ch3Fade([0.000000,2,1.000000][317.788598,1,1.000000])_Public_a903ea2b_94e39cec.hca
+========== Encoding : Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random_ Transitions_Cymbals/Track_Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1/Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Trans_BlockAtoB/Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/769988ba827161b1ab4f8397b6260308.hca"
+Unhash : Mus_Level1_Transition_LowToMid_Cymbal_Sweep_2 (consolidated) - Part_1_Enc_48000HCAHigh(0_48000)_2ch3Fade([0.000000,2,1.000000][2543.645381,1,1.000000])_Public_4d3232dc_94e39cec.hca
+========== Encoding : Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random Transitions_Flute/Track_Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1/Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Trans_BlockAtoB/Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/bb3c79aecf427970a782ca7a40b4ca08.hca"
+Unhash : Mus_Level1_Transition_LowToMid_Flute#3 (consolidated) - Part_1_Enc_48000HCAHigh_2ch3Fade([0.000000,2,1.000000][175.088013,1,1.000000])_Public_a25106ff_94e39cec.hca
+========== Encoding : Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random_ Transitions_Cymbals/Track_Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1/Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Trans_BlockAtoB/Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/f742e2c58ffe97f6c9634e288d326bfb.hca"
+Unhash : Mus_Level1_Transition_LowToMid_Shaker_Sweep (consolidated) - Part_1_Enc_48000HCAHigh(0_48000)_2ch3Fade([0.000000,2,1.000000][1382.690248,1,1.000000])_Public_d40c60b9_94e39cec.hca
+========== Encoding : Mus_Level1_Transition_MidToHigh_Shaker_Sprinkle.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random_ Transitions_Cymbals/Track/Mus_Level1_Transition_MidToHigh_Shaker_Sprinkle.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Trans_BlockAtoB/Mus_Level1_Transition_MidToHigh_Shaker_Sprinkle.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/c3e832251aa32c669f32fb58dd5e31d1.hca"
+Unhash : Mus_Level1_Transition_MidToHigh_Shaker_Sprinkle_Enc_48000HCAHigh_2ch3Trimmer(0.000000-1560.000000)_Public_50d200d9_94e39cec.hca
+========== Encoding : Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random Transitions_Flute/Track_Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1/Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Trans_BlockAtoB/Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/594f7a492426644c009a2aeeecfa9c5d.hca"
+Unhash : Mus_Level1_Transition_LowToMid_Flute#2 (consolidated) - Part_1_Enc_48000HCAHigh_2ch3Trimmer(0.000000-3428.562500)Fade([0.000000,2,1.000000][353.463744,1,1.000000])_Public_5ff2813c_94e39cec.hca
 ========== Encoding : Mus_Level1_Transition_Darbouka#2.wav ==========
 waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Level_1/Random Transitions_Percs/Track/Mus_Level1_Transition_Darbouka#2.wav
-materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Mus_Level1_Transition_Darbouka#2.wav
-Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/5d4247dbda21cbfc630e3e9104ad3cc0.hca"
-Unhash : Mus_Level1_Transition_Darbouka#2_Enc_48000HCAHigh_2ch3Trimmer(0.000000-889.154853)_Public_9c72cb3b_94e39cec.hca
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/Music_WU/Materials/Music/Transitions/Trans_BlockAtoB/Mus_Level1_Transition_Darbouka#2.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Music_WU_Music_WU_Music_Level_1/ecdc96ab88cfbda3c701b281c205694e.hca"
+Unhash : Mus_Level1_Transition_Darbouka#2_Enc_48000HCAHigh_2ch3Trimmer(0.000000-889.154853)_Public_56c88c7d_94e39cec.hca

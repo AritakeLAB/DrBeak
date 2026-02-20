@@ -862,6 +862,9 @@ MonoBehaviour:
   girl: {fileID: 234961853}
   musicSource: {fileID: 514043419}
   sfxSource: {fileID: 238373032}
+  progressionLabels:
+  - ToBlockB
+  - ToBlockC
 --- !u!4 &163740684
 Transform:
   m_ObjectHideFlags: 0

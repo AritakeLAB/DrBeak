@@ -5,8 +5,8 @@
  *  ACB  Ver.        : Ver.1.46.0
  *  File Path        : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/StreamingAssets/Public/Music_WU
  *  File Name        : Music_Level_1.h
- *  File Size        : 14059168 bytes
- *  Date Time        : 2026/02/16 11:33:49
+ *  File Size        : 17209632 bytes
+ *  Date Time        : 2026/02/20 20:00:02
  *  Target           : Public
  *  Cues             : 5
  *  CueSheet Comment : 
@@ -29,6 +29,9 @@
 #define CRI_MUSIC_LEVEL_1_BLOCK_MUSIC_LEVEL_1_BLOCK_MUS_A ( 0) /*  */
 #define CRI_MUSIC_LEVEL_1_BLOCK_MUSIC_LEVEL_1_BLOCK_MUS_B ( 1) /*  */
 #define CRI_MUSIC_LEVEL_1_BLOCK_MUSIC_LEVEL_1_BLOCK_MUS_C ( 2) /*  */
+#define CRI_MUSIC_LEVEL_1_BLOCK_MUSIC_LEVEL_1_BLOCK_MUS_D ( 3) /*  */
+#define CRI_MUSIC_LEVEL_1_BLOCK_MUSIC_LEVEL_1_BLOCK_MUS_WIN ( 4) /*  */
+#define CRI_MUSIC_LEVEL_1_BLOCK_MUSIC_LEVEL_1_BLOCK_MUS_LOSE ( 5) /*  */
 
 /* end of file */
 

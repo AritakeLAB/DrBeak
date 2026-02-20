@@ -39,9 +39,8 @@ public class GameDirector : MonoBehaviour
     public CriAtomSource musicSource;
     public CriAtomSource sfxSource;
 
-    [Header("Audio Settings")]
-    public string transitionAisacName = "Checkpoint_Lowcut_Filter_Transition";
-    public float transitionEffectDuration = 1.0f;
+    [Header("Music Progression (A to B to C to D only)")]
+    public List<string> progressionLabels;
 
     private Vector3 cameraOffset;
 
@@ -56,10 +55,6 @@ public class GameDirector : MonoBehaviour
         if (musicSource != null)
         {
             musicSource.Play("Music_Level_1");
-
-            // Ensure filter starts OFF
-            musicSource.SetAisacControl(transitionAisacName, 0.0f);
-
             Debug.Log("Music_Level_1 started");
         }
         else
@@ -152,15 +147,13 @@ public class GameDirector : MonoBehaviour
         float visibility = 100f - accuracy;
         totalVisibility += visibility;
 
-        if (accuracy < 50f || totalVisibility > 100f)
+        bool playerWon = !(accuracy < 50f || totalVisibility > 100f);
+
+        if (!playerWon)
         {
             isGameOver = true;
 
-            string reason = accuracy < 50f
-                ? "Too different from background!"
-                : "Cumulative visibility exceeded 100!";
-
-            uiManager.ShowGameOver(reason);
+            uiManager.ShowGameOver("You Lose");
 
             if (sfxSource != null)
             {
@@ -168,37 +161,46 @@ public class GameDirector : MonoBehaviour
                 sfxSource.Play("CHECKPOINT_FX");
             }
 
+            TriggerFinalMusic(false);
             yield break;
         }
 
-        // WIN SFX
         if (sfxSource != null)
         {
             sfxSource.player.SetSelectorLabel("CHECKPOINT", "WIN");
             sfxSource.Play("CHECKPOINT_FX");
         }
 
-        // ===== MUSIC TRANSITION EFFECT =====
-        if (musicSource != null)
+        bool isLastCheckpoint = (currentCheckpointIdx == checkpoints.Count - 1);
+
+        if (!isLastCheckpoint)
         {
-            // Turn filter ON
-            musicSource.SetAisacControl(transitionAisacName, 1.0f);
+            if (musicSource != null && currentCheckpointIdx < progressionLabels.Count)
+            {
+                string nextLabel = progressionLabels[currentCheckpointIdx];
 
-            // Trigger block switch
-            musicSource.player.SetSelectorLabel("MUSIC_SWITCH", "ToBlockB");
-            musicSource.Play("Music_Switch");
+                musicSource.player.SetSelectorLabel("MUSIC_SWITCH", nextLabel);
+                musicSource.Play("Music_Switch");
 
-            Debug.Log("Music_Switch triggered + Filter ON");
+                Debug.Log("Music progression: " + nextLabel);
+            }
         }
-
-        // Wait during transition
-        yield return new WaitForSeconds(transitionEffectDuration);
-
-        // Turn filter OFF
-        if (musicSource != null)
+        else
         {
-            musicSource.SetAisacControl(transitionAisacName, 0.0f);
-            Debug.Log("Filter OFF");
+            TriggerFinalMusic(true);
         }
+    }
+
+    void TriggerFinalMusic(bool playerWon)
+    {
+        if (musicSource == null)
+            return;
+
+        string finalLabel = playerWon ? "ToBlockWin" : "ToBlockLose";
+
+        musicSource.player.SetSelectorLabel("MUSIC_SWITCH", finalLabel);
+        musicSource.Play("Music_Switch");
+
+        Debug.Log("Final music triggered: " + finalLabel);
     }
 }
