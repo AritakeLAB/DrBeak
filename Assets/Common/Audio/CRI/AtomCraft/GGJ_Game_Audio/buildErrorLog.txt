@@ -447,3 +447,7 @@ Failed to create ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/StreamingAssets/Pu
 ======================== 2026-02-15_233611 ========================
 It contains the action track of the target unknown in the Cue "Transition_Flute" (CueSheet: "Music_Level_1").
 Failed to create ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/StreamingAssets/Public/Music_WU/Music_Level_1.acb"
+======================== 2026-02-24_122434 ========================
+An error occurred while making AWB for ACB. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/Public/Music_WU/Music_Menu.awbTmp"
+Not Found: Cue. "/CriAtomCraftV2Root/WorkUnits/Music_WU/CueSheetFolder/Music_WU/Music_Menu"
+Failed to create AWB file.

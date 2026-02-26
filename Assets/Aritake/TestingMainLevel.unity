@@ -421,7 +421,7 @@ MonoBehaviour:
   _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
+  _use3dPositioning: 0
   _freezeOrientation: 0
   _loop: 0
   _volume: 1
@@ -438,7 +438,7 @@ MonoBehaviour:
     - 0
     - 0
   _cueName: CHECKPOINT_FX
-  _cueSheet: UI
+  _cueSheet: CueSheet_Player
 --- !u!4 &95417088
 Transform:
   m_ObjectHideFlags: 0
@@ -447,12 +447,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95417086}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 742775060}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &96859970
 GameObject:
@@ -662,71 +662,6 @@ RectTransform:
   m_AnchoredPosition: {x: -2.4999847, y: 0}
   m_SizeDelta: {x: -4.999975, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &133554685
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 133554687}
-  - component: {fileID: 133554686}
-  m_Layer: 0
-  m_Name: Amb_Wind(CriAtomSource)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &133554686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133554685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: CriMw.CriWare.Runtime::CriWare.CriAtomSource
-  _playOnStart: 0
-  _regionOnStart: {fileID: 0}
-  _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
-  _freezeOrientation: 0
-  _loop: 0
-  _volume: 1
-  _pitch: 0
-  _androidUseLowLatencyVoicePool: 0
-  need_to_player_update_all: 1
-  _use3dRandomization: 0
-  _randomPositionListMaxLength: 0
-  randomize3dConfig:
-    followsOriginalSource: 0
-    calculationType: 0
-    calculationParameters:
-    - 0
-    - 0
-    - 0
-  _cueName: Amb_Wind
-  _cueSheet: CueSheet_Level01_KidsRoom
---- !u!4 &133554687
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133554685}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &156941896
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,7 +699,12 @@ MonoBehaviour:
   gameOverPanel: {fileID: 780916454}
   resultPanel: {fileID: 6099218}
   hudPanel: {fileID: 96859970}
-  clickSource: {fileID: 0}
+  menuOpenSource: {fileID: 1211836267}
+  menuConfirmSource: {fileID: 698054879}
+  leaderboardSource: {fileID: 1398364236}
+  menuMusicSource: {fileID: 0}
+  menuLowPassAisacName: Menu_Music_LowPass
+  filterFadeDuration: 1
   resultScoreText: {fileID: 1212925082}
   resultRankText: {fileID: 1668930808}
   gameOverReasonText: {fileID: 770634629}
@@ -793,9 +733,6 @@ GameObject:
   m_Component:
   - component: {fileID: 163740684}
   - component: {fileID: 163740683}
-  - component: {fileID: 163740685}
-  - component: {fileID: 163740686}
-  - component: {fileID: 163740687}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -861,10 +798,42 @@ MonoBehaviour:
   uiManager: {fileID: 156941897}
   girl: {fileID: 234961853}
   musicSource: {fileID: 514043419}
-  sfxSource: {fileID: 238373032}
+  ambientSource: {fileID: 1486968812}
+  sfxSource: {fileID: 95417087}
+  ambientCueName: Amb_Level01_Room
+  fadeInDuration: 0.6
+  fadeInCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   progressionLabels:
   - ToBlockB
   - ToBlockC
+  healthBarSource: {fileID: 224962270}
+  healthBarCueName: Health_Bar
+  healthSelectorName: HEALTH_BAR
+  healthBarAisacName: Health_Bar_Pitch
+  directionThreshold: 0.002
 --- !u!4 &163740684
 Transform:
   m_ObjectHideFlags: 0
@@ -880,13 +849,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &163740685
+--- !u!1 &224962269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224962271}
+  - component: {fileID: 224962270}
+  m_Layer: 0
+  m_Name: Health_Bar(CriAtomSource)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &224962270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163740682}
+  m_GameObject: {fileID: 224962269}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
@@ -899,7 +885,7 @@ MonoBehaviour:
   _freezeOrientation: 0
   _loop: 0
   _volume: 1
-  _pitch: 0
+  _pitch: -0
   _androidUseLowLatencyVoicePool: 0
   need_to_player_update_all: 1
   _use3dRandomization: 0
@@ -911,74 +897,23 @@ MonoBehaviour:
     - 0
     - 0
     - 0
-  _cueName: CHECKPOINT_FX
+  _cueName: Health_Bar
   _cueSheet: UI
---- !u!114 &163740686
-MonoBehaviour:
+--- !u!4 &224962271
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163740682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: CriMw.CriWare.Runtime::CriWare.CriAtomSource
-  _playOnStart: 1
-  _regionOnStart: {fileID: 0}
-  _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 0
-  _freezeOrientation: 0
-  _loop: 0
-  _volume: 1
-  _pitch: 0
-  _androidUseLowLatencyVoicePool: 0
-  need_to_player_update_all: 1
-  _use3dRandomization: 0
-  _randomPositionListMaxLength: 0
-  randomize3dConfig:
-    followsOriginalSource: 0
-    calculationType: 0
-    calculationParameters:
-    - 0
-    - 0
-    - 0
-  _cueName: Amb_Wind
-  _cueSheet: CueSheet_Level01_KidsRoom
---- !u!114 &163740687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163740682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: CriMw.CriWare.Runtime::CriWare.CriAtomSource
-  _playOnStart: 0
-  _regionOnStart: {fileID: 0}
-  _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 0
-  _freezeOrientation: 0
-  _loop: 0
-  _volume: 1
-  _pitch: 0
-  _androidUseLowLatencyVoicePool: 0
-  need_to_player_update_all: 1
-  _use3dRandomization: 0
-  _randomPositionListMaxLength: 0
-  randomize3dConfig:
-    followsOriginalSource: 0
-    calculationType: 0
-    calculationParameters:
-    - 0
-    - 0
-    - 0
-  _cueName: Music_Level_1
-  _cueSheet: Music_Level_1
+  m_GameObject: {fileID: 224962269}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 742775060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &234961847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,71 +1095,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &238373031
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 238373033}
-  - component: {fileID: 238373032}
-  m_Layer: 0
-  m_Name: CHECKPOINT_FX(CriAtomSource)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &238373032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238373031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: CriMw.CriWare.Runtime::CriWare.CriAtomSource
-  _playOnStart: 0
-  _regionOnStart: {fileID: 0}
-  _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
-  _freezeOrientation: 0
-  _loop: 0
-  _volume: 1
-  _pitch: 0
-  _androidUseLowLatencyVoicePool: 0
-  need_to_player_update_all: 1
-  _use3dRandomization: 0
-  _randomPositionListMaxLength: 0
-  randomize3dConfig:
-    followsOriginalSource: 0
-    calculationType: 0
-    calculationParameters:
-    - 0
-    - 0
-    - 0
-  _cueName: CHECKPOINT_FX
-  _cueSheet: UI
---- !u!4 &238373033
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238373031}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &262138417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2085,7 +1955,7 @@ MonoBehaviour:
   _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
+  _use3dPositioning: 0
   _freezeOrientation: 0
   _loop: 0
   _volume: 1
@@ -2111,12 +1981,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494204059}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 742775060}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &502075588
 GameObject:
@@ -2263,7 +2133,7 @@ MonoBehaviour:
   _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
+  _use3dPositioning: 0
   _freezeOrientation: 0
   _loop: 0
   _volume: 1
@@ -2294,7 +2164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 742775060}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &548272549
 GameObject:
@@ -2894,7 +2764,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 742775060}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &698054879
 MonoBehaviour:
@@ -2911,7 +2781,7 @@ MonoBehaviour:
   _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
+  _use3dPositioning: 0
   _freezeOrientation: 0
   _loop: 0
   _volume: 1
@@ -3141,6 +3011,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714992785}
   m_CullTransparentMesh: 1
+--- !u!1 &742775057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742775060}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &742775060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742775057}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 224962271}
+  - {fileID: 95417088}
+  - {fileID: 698054878}
+  - {fileID: 1398364235}
+  - {fileID: 1211836266}
+  - {fileID: 494204061}
+  - {fileID: 514043420}
+  - {fileID: 773918045}
+  - {fileID: 1486968811}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770634627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3308,7 +3218,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 742775060}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &773918046
 MonoBehaviour:
@@ -3325,7 +3235,7 @@ MonoBehaviour:
   _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
+  _use3dPositioning: 0
   _freezeOrientation: 0
   _loop: 0
   _volume: 1
@@ -3427,7 +3337,7 @@ MonoBehaviour:
   _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
+  _use3dPositioning: 0
   _freezeOrientation: 0
   _loop: 0
   _volume: 1
@@ -4577,7 +4487,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 742775060}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1211836267
 MonoBehaviour:
@@ -4594,7 +4504,7 @@ MonoBehaviour:
   _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
+  _use3dPositioning: 0
   _freezeOrientation: 0
   _loop: 0
   _volume: 1
@@ -5083,20 +4993,24 @@ MonoBehaviour:
     acbFile: Public/SFX_WU/CueSheet_Player.acb
     awbFile: 
     loaderStatus: 0
-  - name: CueSheet_Level01_KidsRoom
-    acbFile: Public/SFX_WU/CueSheet_Level01_KidsRoom.acb
+  - name: CueSheet_Amb_Lvl01
+    acbFile: Public/SFX_WU/CueSheet_Amb_Lvl01.acb
     awbFile: 
     loaderStatus: 0
-  - name: UI
+  - name: Public/SFX_WU/UI.acb
     acbFile: Public/SFX_WU/UI.acb
     awbFile: 
     loaderStatus: 0
-  - name: CueSheet_Ennemies
+  - name: CueSheet_AI
     acbFile: Public/SFX_WU/CueSheet_Ennemies.acb
     awbFile: 
     loaderStatus: 0
   - name: Music_Level_1
     acbFile: Public/Music_WU/Music_Level_1.acb
+    awbFile: 
+    loaderStatus: 0
+  - name: UI
+    acbFile: Public/SFX_WU/UI.acb
     awbFile: 
     loaderStatus: 0
   dspBusSetting: 
@@ -5934,7 +5848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 742775060}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1398364236
 MonoBehaviour:
@@ -5951,7 +5865,7 @@ MonoBehaviour:
   _playOnStart: 0
   _regionOnStart: {fileID: 0}
   _listenerOnStart: {fileID: 0}
-  _use3dPositioning: 1
+  _use3dPositioning: 0
   _freezeOrientation: 0
   _loop: 0
   _volume: 1
@@ -5967,7 +5881,7 @@ MonoBehaviour:
     - 0
     - 0
     - 0
-  _cueName: UI_WIN_SCOREBOARD
+  _cueName: UI_Win_Leaderboard
   _cueSheet: UI
 --- !u!1 &1426735041
 GameObject:
@@ -6248,6 +6162,71 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &1486968810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1486968811}
+  - component: {fileID: 1486968812}
+  m_Layer: 0
+  m_Name: Amb_Level01_Room(CriAtomSource)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1486968811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486968810}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 742775060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1486968812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486968810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: CriMw.CriWare.Runtime::CriWare.CriAtomSource
+  _playOnStart: 0
+  _regionOnStart: {fileID: 0}
+  _listenerOnStart: {fileID: 0}
+  _use3dPositioning: 0
+  _freezeOrientation: 0
+  _loop: 0
+  _volume: 1
+  _pitch: 0
+  _androidUseLowLatencyVoicePool: 0
+  need_to_player_update_all: 1
+  _use3dRandomization: 0
+  _randomPositionListMaxLength: 0
+  randomize3dConfig:
+    followsOriginalSource: 0
+    calculationType: 0
+    calculationParameters:
+    - 0
+    - 0
+    - 0
+  _cueName: Amb_Level01_Room
+  _cueSheet: CueSheet_Amb_Lvl01
 --- !u!1 &1497650681
 GameObject:
   m_ObjectHideFlags: 0
@@ -7782,6 +7761,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransitionManager
   fadeCanvasGroup: {fileID: 991399331}
   fadeDuration: 0.6
+  musicToFade: {fileID: 0}
+  ambienceToFade: {fileID: 1486968812}
 --- !u!4 &1890912377
 Transform:
   m_ObjectHideFlags: 0
@@ -8456,8 +8437,6 @@ SceneRoots:
   - {fileID: 76163620}
   - {fileID: 1658539618}
   - {fileID: 353316708}
-  - {fileID: 238373033}
-  - {fileID: 514043420}
   - {fileID: 163740684}
   - {fileID: 297653317}
   - {fileID: 1890912377}
@@ -8467,13 +8446,7 @@ SceneRoots:
   - {fileID: 1168759226}
   - {fileID: 469684050}
   - {fileID: 1503126168}
-  - {fileID: 494204061}
-  - {fileID: 133554687}
-  - {fileID: 773918045}
-  - {fileID: 1211836266}
-  - {fileID: 1398364235}
-  - {fileID: 698054878}
-  - {fileID: 95417088}
   - {fileID: 1497650683}
   - {fileID: 1281566703}
   - {fileID: 1870192318}
+  - {fileID: 742775060}

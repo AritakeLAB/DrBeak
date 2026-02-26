@@ -244,7 +244,7 @@ public class CriWareErrorHandler : CriMonoBehaviour{
 	private static void OutputDefaultLog(string errmsg)
 	{
 		if (errmsg.StartsWith("E")) {
-			Debug.LogError(logPrefix + " Error:" + errmsg);
+			Debug.LogError(logPrefix + " Error:" + errmsg);	
 		} else if (errmsg.StartsWith("W")) {
 			Debug.LogWarning(logPrefix + " Warning:" + errmsg);
 		} else {

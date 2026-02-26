@@ -5,8 +5,8 @@
  *  ACB  Ver.        : Ver.1.46.0
  *  File Path        : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/StreamingAssets/Public/SFX_WU
  *  File Name        : CueSheet_Level01_KidsRoom.h
- *  File Size        : 4708032 bytes
- *  Date Time        : 2026/02/19 16:35:06
+ *  File Size        : 2477344 bytes
+ *  Date Time        : 2026/02/24 19:40:53
  *  Target           : Public
  *  Cues             : 2
  *  CueSheet Comment : 
@@ -18,10 +18,11 @@
 /* AISAC Control List (AISAC Control ID) */
 
 /* Cue List (Cue ID) */
-#define CRI_CUESHEET_LEVEL01_KIDSROOM_AMB_WIND             ( 0) /*  */
+#define CRI_CUESHEET_LEVEL01_KIDSROOM_AMB_LEVEL01_ROOM     ( 0) /*  */
 #define CRI_CUESHEET_LEVEL01_KIDSROOM_AMB_FOLEY            ( 1) /*  */
 
 /* Block List (Block Index) */
+#define CRI_CUESHEET_LEVEL01_KIDSROOM_BLOCK_AMB_LEVEL01_ROOM_BLOCK_AMB_ROOM ( 0) /*  */
 
 /* end of file */
 

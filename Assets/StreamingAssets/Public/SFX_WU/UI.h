@@ -5,8 +5,8 @@
  *  ACB  Ver.        : Ver.1.46.0
  *  File Path        : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/StreamingAssets/Public/SFX_WU
  *  File Name        : UI.h
- *  File Size        : 497312 bytes
- *  Date Time        : 2026/02/19 16:35:06
+ *  File Size        : 308896 bytes
+ *  Date Time        : 2026/02/24 19:32:36
  *  Target           : Public
  *  Cues             : 4
  *  CueSheet Comment : 
@@ -16,12 +16,13 @@
 #define CRI_UI_CUENUM (4)
 
 /* AISAC Control List (AISAC Control ID) */
+#define CRI_UI_AISACCONTROL_HEALTH_BAR_PITCH     ( 1) /*  */
 
 /* Cue List (Cue ID) */
+#define CRI_UI_UI_WIN_LEADERBOARD   ( 2) /*  */
 #define CRI_UI_UI_MENU_CONFIRM      ( 1) /*  */
-#define CRI_UI_UI_WIN_SCOREBOARD    ( 2) /*  */
-#define CRI_UI_UI_MENU_TOGGLE       ( 3) /*  */
-#define CRI_UI_CHECKPOINT_FX        ( 5) /*  */
+#define CRI_UI_UI_MENU_OPEN         ( 3) /*  */
+#define CRI_UI_HEALTH_BAR           ( 7) /*  */
 
 /* Block List (Block Index) */
 

@@ -4,44 +4,48 @@
  *  Tool Ver.          : Ver.3.56.01
  *  ACF  Ver.          : Ver.1.38.0
  *  File Name          : GGJ_Game_Audio_acf.h
- *  File Size          : 8576 bytes
+ *  File Size          : 9792 bytes
+ *  Date Time          : 2026/02/26 20:13:25
  *  Target             : Public
- *  Categories         : 3
+ *  Categories         : 6
  *  AISAC Controls     : 16
- *  Global AISACs      : 2
+ *  Global AISACs      : 3
  *  Voice Limit Groups : 1
  *  DSP BUS Settings   : 1
  *  DSP BUS Settings Snapshot  : 2
  *  DSP BUS Name       : 6
  *  Game Variables     : 2
- *  Selectors          : 2
- *  REACTs             : 0
+ *  Selectors          : 3
+ *  REACTs             : 1
  *  Output Ports  : 0
  *  Project Comment    : 
  *===========================================================================*/
 
 #define CRI_GGJ_GAME_AUDIO_ACF_NUM_CATEGORIES_PER_PLAYBACK (4)
-#define CRI_GGJ_GAME_AUDIO_ACF_CATEGORYNUM (3)
+#define CRI_GGJ_GAME_AUDIO_ACF_CATEGORYNUM (6)
 #define CRI_GGJ_GAME_AUDIO_ACF_AISACCONTROLNUM (16)
-#define CRI_GGJ_GAME_AUDIO_ACF_GLOBALAISACNUM (2)
+#define CRI_GGJ_GAME_AUDIO_ACF_GLOBALAISACNUM (3)
 #define CRI_GGJ_GAME_AUDIO_ACF_VOICELIMITGROUPNUM (1)
 #define CRI_GGJ_GAME_AUDIO_ACF_DSPSETTINGNUM (1)
 #define CRI_GGJ_GAME_AUDIO_ACF_DSPSETTINGSNAPSHOTNUM (2)
 #define CRI_GGJ_GAME_AUDIO_ACF_DSPBUSNAMENUM (6)
 #define CRI_GGJ_GAME_AUDIO_ACF_GAMEVARIABLENUM (2)
-#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORNUM (2)
-#define CRI_GGJ_GAME_AUDIO_ACF_REACTNUM (0)
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORNUM (3)
+#define CRI_GGJ_GAME_AUDIO_ACF_REACTNUM (1)
 #define CRI_GGJ_GAME_AUDIO_ACF_OUTPUTPORTNUM (0)
 
 /* Category List (Category ID) */
-#define CRI_GGJ_GAME_AUDIO_ACF_CATEGORY_GAMEPLAY             ( 0) /*  */
-#define CRI_GGJ_GAME_AUDIO_ACF_CATEGORY_UI                   ( 5) /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_CATEGORY_SE_GAMEPLAY          ( 0) /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_CATEGORY_SE_UI                ( 5) /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_CATEGORY_SE_CHECKPOINT        ( 1) /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_CATEGORY_SE_VO                ( 2) /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_CATEGORY_SE_PAINT_MONO        ( 3) /*  */
 #define CRI_GGJ_GAME_AUDIO_ACF_CATEGORY_MUSIC_GROUP          ( 6) /*  */
 
 /* AISAC Control List (AISAC Control ID) */
 #define CRI_GGJ_GAME_AUDIO_ACF_AISACCONTROL_CHECKPOINT_LOWCUT_FILTER_TRANSITION ( 0) /*  */
-#define CRI_GGJ_GAME_AUDIO_ACF_AISACCONTROL_AISACCONTROL_01      ( 1) /*  */
-#define CRI_GGJ_GAME_AUDIO_ACF_AISACCONTROL_AISACCONTROL_02      ( 2) /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_AISACCONTROL_HEALTH_BAR_PITCH     ( 1) /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_AISACCONTROL_MENU_MUSIC_LOWPASS   ( 2) /*  */
 #define CRI_GGJ_GAME_AUDIO_ACF_AISACCONTROL_AISACCONTROL_03      ( 3) /*  */
 #define CRI_GGJ_GAME_AUDIO_ACF_AISACCONTROL_AISACCONTROL_04      ( 4) /*  */
 #define CRI_GGJ_GAME_AUDIO_ACF_AISACCONTROL_AISACCONTROL_05      ( 5) /*  */
@@ -59,6 +63,7 @@
 /* Global AISAC List (Global AISAC Name) */
 #define CRI_GGJ_GAME_AUDIO_ACF_GLOBALAISAC_REVERB_SEND          "Reverb_Send" /*  */
 #define CRI_GGJ_GAME_AUDIO_ACF_GLOBALAISAC_LOWPASS_CONTROL      "LowPass_Control" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_GLOBALAISAC_HEALTH_BAR_PITCH     "Health_Bar_Pitch" /*  */
 
 /* Voice Limit Group (Voice Limit Group Index) */
 #define CRI_GGJ_GAME_AUDIO_ACF_VOICELIMITGROUP_VOICELIMITGROUP_0    ( 0) /*  */
@@ -93,4 +98,7 @@
 #define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKD             "ToBlockD" /*  */
 #define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKWIN           "ToBlockWin" /*  */
 #define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_MUSIC_SWITCH_TOBLOCKLOSE          "ToBlockLose" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTOR_HEALTH_BAR           "HEALTH_BAR" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_HEALTH_BAR_UP                   "UP" /*  */
+#define CRI_GGJ_GAME_AUDIO_ACF_SELECTORLABEL_HEALTH_BAR_DOWN                 "DOWN" /*  */
 

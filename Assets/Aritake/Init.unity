@@ -267,7 +267,7 @@ MonoBehaviour:
     numberOfMaxEntries: 4
     useStreamerManager: 0
   dontInitializeOnAwake: 0
-  dontDestroyOnLoad: 0
+  dontDestroyOnLoad: 1
 --- !u!4 &442110826
 Transform:
   m_ObjectHideFlags: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
     awbFile: 
     loaderStatus: 0
   dspBusSetting: 
-  dontDestroyOnLoad: 0
+  dontDestroyOnLoad: 1
   dontRemoveExistsCueSheet: 0
 --- !u!4 &2053041637
 Transform:
@@ -408,6 +408,7 @@ GameObject:
   - component: {fileID: 2122695295}
   - component: {fileID: 2122695294}
   - component: {fileID: 2122695293}
+  - component: {fileID: 2122695297}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -533,12 +534,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2122695297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122695292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7d42e042e4c9c4db4bde98b863e167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: CriMw.CriWare.Runtime::CriWare.CriAtomListener
+  regionOnStart: {fileID: 0}
+  activateListenerOnEnable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2053041637}
+  - {fileID: 442110826}
+  - {fileID: 461849865}
   - {fileID: 2122695296}
   - {fileID: 80916795}
-  - {fileID: 2053041637}
-  - {fileID: 461849865}
-  - {fileID: 442110826}
