@@ -99,3 +99,8 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+# CRI AtomCraft cache (ignore ALL cache folders anywhere)
+**/GGJ_Game_Audio_Cache/
+**/WaveformPeakCache/
+**/*.peak
+**/*.peak.meta

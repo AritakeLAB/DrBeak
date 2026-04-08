@@ -1,0 +1,42 @@
+Health_Bar_Down.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/f644019f9e216d405152681fec04674e.hca
+Health_Bar_Up_V3.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/ff5b141719ba27b5dd92f8eb54c9d086.hca
+Health_Bar_Up.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/97b1aee27f1756b7a0978444de11e9a8.hca
+Health_Bar_Up_V2.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/87ec69598411d5d5f9244001be2829cf.hca
+UI_CONFIRM.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/79945c5091e42c20fd96369208ed1595.hca
+UI_SCOREBOARD.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/c4765d2da33f89ac87dea7e46b8e3900.hca
+UI_TOGGLE.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/c3245e52c1397ca038e295b07e56d4da.hca
+========== Encoding : Health_Bar_Down.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/Health_Bar/Track_Health_Bar_Down/Health_Bar_Down.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/Health_Bar_Down.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/f644019f9e216d405152681fec04674e.hca"
+Unhash : Health_Bar_Down_Enc_48000HCAHigh3Trimmer(414.658431-903.299401)Fade([116.094686,2,1.000000][409.744967,1,1.000000])_Public_8da44cec_94e39cec.hca
+========== Encoding : Health_Bar_Up_V3.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/Health_Bar/Track_Health_Bar_Up_V3/Health_Bar_Up_V3.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/Health_Bar_Down_V2.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/ff5b141719ba27b5dd92f8eb54c9d086.hca"
+Unhash : Health_Bar_Down_V2_Enc_48000HCAHigh3Trimmer(312.509145-1757.812500)_Public_a2deac91_94e39cec.hca
+========== Encoding : Health_Bar_Up.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/Health_Bar/Track_Health_Bar_Up/Health_Bar_Up.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/Health_Bar_Up.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/97b1aee27f1756b7a0978444de11e9a8.hca"
+Unhash : Health_Bar_Up_Enc_48000HCAHigh3Trimmer(488.234109-1075.202492)Fade([93.983185,2,1.000000][360.000000,1,1.000000])_Public_b9f462aa_94e39cec.hca
+========== Encoding : Health_Bar_Up_V2.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/Health_Bar/Track_Health_Bar_Up_V2/Health_Bar_Up_V2.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/Health_Bar_Up_V2.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/87ec69598411d5d5f9244001be2829cf.hca"
+Unhash : Health_Bar_Up_V2_Enc_48000HCAHigh3Trimmer(308.049431-1507.856078)_Public_a6f61c75_94e39cec.hca
+========== Encoding : UI_CONFIRM.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/UI_Menu_Confirm/Track_UI_CONFIRM/UI_CONFIRM.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/UI_CONFIRM.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/79945c5091e42c20fd96369208ed1595.hca"
+Unhash : UI_CONFIRM_Enc_48000HCAHigh_2ch3Fade([0.000000,2,1.000000][253.057089,1,1.000000])_Public_58e60b43_94e39cec.hca
+========== Encoding : UI_SCOREBOARD.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/UI_Win_Leaderboard/Track_UI_SCOREBOARD/UI_SCOREBOARD.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/UI_SCOREBOARD.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/c4765d2da33f89ac87dea7e46b8e3900.hca"
+Unhash : UI_SCOREBOARD_Enc_48000HCAHigh_2ch3_Public_5e6ba2d9_94e39cec.hca
+========== Encoding : UI_TOGGLE.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/UI/UI_Menu_Open/Track_UI_TOGGLE/UI_TOGGLE.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/UI/UI_TOGGLE.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_UI/c3245e52c1397ca038e295b07e56d4da.hca"
+Unhash : UI_TOGGLE_Enc_48000HCAHigh_2ch3_Public_e0e77c2f_94e39cec.hca

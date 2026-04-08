@@ -18,103 +18,223 @@ public class UIManager : MonoBehaviour
     public GameObject levelSelectPanel;
     public GameObject gameOverPanel;
     public GameObject resultPanel;
-    public GameObject hudPanel; // �Q�[�����̃X�R�A�\���Ȃ�
-    public CriAtomSource clickSource;
+    public GameObject hudPanel;
 
+    [Header("UI Audio Sources")]
+    public CriAtomSource menuOpenSource;
+    public CriAtomSource menuConfirmSource;
+    public CriAtomSource leaderboardSource;
+
+    [Header("Menu Music")]
+    public CriAtomSource menuMusicSource;
+    public string menuLowPassAisacName = "Menu_Music_LowPass";
+    public float filterFadeDuration = 1.0f;
 
     [Header("Text References")]
     public TextMeshProUGUI resultScoreText;
     public TextMeshProUGUI resultRankText;
     public TextMeshProUGUI gameOverReasonText;
 
+    private bool isTransitioning = false;
+    private float currentFilterValue = 0f;
+
+    //  Prevent double UI sound trigger
+    private float lastUISoundTime = 0f;
+    private float uiSoundCooldown = 0.1f;
+
     private void Awake()
     {
-        Time.timeScale = 1;
         Instance = this;
+        Time.timeScale = 1f;
+
         ShowMenuImmediate();
+        StartCoroutine(InitializeMenuMusic());
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
-    // --- ��ʐ؂�ւ����\�b�h ---
-
-    public void ClickSound()
+    private IEnumerator InitializeMenuMusic()
     {
-        clickSource.Play();
+        yield return null;
+
+        if (menuMusicSource == null)
+            yield break;
+
+        menuMusicSource.Play();
+        yield return null;
+
+        if (menuMusicSource.player != null)
+        {
+            currentFilterValue = 0f;
+            menuMusicSource.player.SetAisacControl(menuLowPassAisacName, 0f);
+        }
     }
+
+    // =================================================
+    // SAFE UI SOUND (ANTI DOUBLE TRIGGER)
+    // =================================================
+
+    private void PlayUI(CriAtomSource source)
+    {
+        if (source == null) return;
+
+        if (Time.unscaledTime - lastUISoundTime < uiSoundCooldown)
+            return;
+
+        lastUISoundTime = Time.unscaledTime;
+
+        source.Stop();
+        source.Play();
+    }
+
+    // =================================================
+    // PANEL CONTROL
+    // =================================================
+
     public void ShowMenuImmediate()
     {
         HideAll();
-        menuPanel.SetActive(true);
+        if (menuPanel != null) menuPanel.SetActive(true);
     }
 
     public void OpenLevelSelect()
     {
-        menuPanel.SetActive(false);
-        levelSelectPanel.SetActive(true);
+        if (isTransitioning) return;
+
+        PlayUI(menuOpenSource);
+
+        if (menuPanel != null) menuPanel.SetActive(false);
+        if (levelSelectPanel != null) levelSelectPanel.SetActive(true);
+
+        // Smooth lowpass fade when entering level select
+        StartCoroutine(FilterFade(1f));
     }
+
+    // =================================================
+    // START GAME FLOW
+    // =================================================
 
     public void OnLevelSelected(string levelName)
     {
+        if (isTransitioning) return;
+
+        isTransitioning = true;
+
+        PlayUI(menuConfirmSource);
+
         StartCoroutine(StartGameRoutine(levelName));
     }
 
+    private IEnumerator StartGameRoutine(string levelName)
+    {
+        if (transition != null)
+            yield return transition.FadeOutRoutine();
+
+        SceneManager.LoadScene(levelName);
+    }
+
+    // =================================================
+    // FILTER FADE
+    // =================================================
+
+    private IEnumerator FilterFade(float target)
+    {
+        if (menuMusicSource == null || menuMusicSource.player == null)
+            yield break;
+
+        float start = currentFilterValue;
+        float time = 0f;
+
+        while (time < filterFadeDuration)
+        {
+            time += Time.deltaTime;
+            currentFilterValue = Mathf.Lerp(start, target, time / filterFadeDuration);
+
+            menuMusicSource.player.SetAisacControl(menuLowPassAisacName, currentFilterValue);
+            yield return null;
+        }
+
+        currentFilterValue = target;
+        menuMusicSource.player.SetAisacControl(menuLowPassAisacName, currentFilterValue);
+    }
+
+    // =================================================
+    // GAME OVER / RESULT
+    // =================================================
+
     public void ShowGameOver(string reason)
     {
-        StartCoroutine(EndGameRoutine(gameOverPanel, () => {
-            gameOverReasonText.text = reason;
+        StartCoroutine(EndGameRoutine(gameOverPanel, () =>
+        {
+            if (gameOverReasonText != null)
+                gameOverReasonText.text = reason;
         }));
     }
 
     public void ShowResult(float finalVisibility)
     {
-        StartCoroutine(EndGameRoutine(resultPanel, () => {
-            resultScoreText.text = $"{100f - finalVisibility:F1}% Camouflage";
-            resultRankText.text = GetRank(finalVisibility);
-            resultRankText.color = GetRankColor(resultRankText.text);
+        StartCoroutine(EndGameRoutine(resultPanel, () =>
+        {
+            if (resultScoreText != null)
+                resultScoreText.text = (100f - finalVisibility).ToString("F1") + "% Camouflage";
+
+            if (resultRankText != null)
+            {
+                resultRankText.text = GetRank(finalVisibility);
+                resultRankText.color = GetRankColor(resultRankText.text);
+            }
+
+            PlayUI(leaderboardSource);
         }));
-    }
-
-    // --- ���[�`������ ---
-
-    private IEnumerator StartGameRoutine(string levelName)
-    {
-        yield return transition.FadeOutRoutine();
-        SceneManager.LoadScene(levelName);
     }
 
     private IEnumerator EndGameRoutine(GameObject targetPanel, System.Action onPanelReady)
     {
-        yield return new WaitForSecondsRealtime(1.0f); // �����̗]�C
-        yield return transition.FadeOutRoutine();
+        yield return new WaitForSecondsRealtime(1f);
+
+        if (transition != null)
+            yield return transition.FadeOutRoutine();
 
         HideAll();
-        targetPanel.SetActive(true);
+        if (targetPanel != null) targetPanel.SetActive(true);
         onPanelReady?.Invoke();
 
-        yield return transition.FadeInRoutine();
+        if (transition != null)
+            yield return transition.FadeInRoutine();
     }
 
     public void BackToTitle()
     {
+        if (isTransitioning) return;
+
+        isTransitioning = true;
+
+        PlayUI(menuConfirmSource);
+
         StartCoroutine(BackToTitleRoutine());
     }
 
     private IEnumerator BackToTitleRoutine()
     {
-        yield return transition.FadeOutRoutine();
-        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-        SceneManager.LoadScene(1); // �^�C�g���V�[��
+        yield return StartCoroutine(FilterFade(0f));
+
+        if (transition != null)
+            yield return transition.FadeOutRoutine();
+
+        SceneManager.LoadScene(1);
     }
 
     private void HideAll()
     {
-        menuPanel.SetActive(false);
-        levelSelectPanel.SetActive(false);
-        gameOverPanel.SetActive(false);
-        resultPanel.SetActive(false);
-        if (hudPanel) hudPanel.SetActive(false);
+        if (menuPanel != null) menuPanel.SetActive(false);
+        if (levelSelectPanel != null) levelSelectPanel.SetActive(false);
+        if (gameOverPanel != null) gameOverPanel.SetActive(false);
+        if (resultPanel != null) resultPanel.SetActive(false);
+        if (hudPanel != null) hudPanel.SetActive(false);
     }
 
-    // --- ���o�p�⏕���\�b�h ---
+    // =================================================
+    // RANK LOGIC
+    // =================================================
 
     private string GetRank(float visibility)
     {
@@ -135,11 +255,11 @@ public class UIManager : MonoBehaviour
 
     public void OpenTutorial()
     {
-        tutorialManager.StartTutorial();
+        tutorialManager?.StartTutorial();
     }
 
     public void OpenStory()
     {
-        storyManager.StartStory();
+        storyManager?.StartStory();
     }
 }

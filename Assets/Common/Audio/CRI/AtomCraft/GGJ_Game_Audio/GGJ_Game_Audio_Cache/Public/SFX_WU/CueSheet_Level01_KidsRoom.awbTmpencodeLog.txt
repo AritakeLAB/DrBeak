@@ -1,0 +1,42 @@
+AMB_Doors_Creak.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/b6040402a1231c9ec67b5b755e07957f.hca
+Amb_Rustle.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/aa013923aa1ae688166d69d76df2b1c3.hca
+Amb_Room_Tone.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/87814725dd3d4d9c89dd90d565b8a629.hca
+Amb_Wind.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/3bbcd07f54508ad8bf6f93f0cca6d04e.hca
+Amb_birds.wav_2 => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/f7a0c7fd2302cc158ea19257384f139f.hca
+Amb_birds.wav => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/9875df7e06b2e5b501d07d47827ceeae.hca
+Amb_birds.wav_1 => C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/8401227cefc93b6c7d46b0a853272301.hca
+========== Encoding : AMB_Doors_Creak.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_AMB_Doors_Creak/AMB_Doors_Creak.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/AMB_Doors_Creak.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/b6040402a1231c9ec67b5b755e07957f.hca"
+Unhash : AMB_Doors_Creak_Enc_48000HCAHigh_2ch3Trimmer(0.000000-15483.858835)Fade([0.000000,2,1.000000][1096.413427,1,1.000000])_Public_c5db10de_94e39cec.hca
+========== Encoding : Amb_Wind.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_Amb_Wind/Amb_Wind.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/Amb_Wind.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/3bbcd07f54508ad8bf6f93f0cca6d04e.hca"
+Unhash : Amb_Wind_Enc_48000HCAHigh_2ch3Trimmer(6000.000000-17749.337842)Fade([6103.287941,2,1.720000][7640.389420,1,1.000000])_Public_9067d656_94e39cec.hca
+========== Encoding : Amb_Rustle.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_Amb_Rustle/Amb_Rustle.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/AMB_LEAVES_RUSTLE.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/aa013923aa1ae688166d69d76df2b1c3.hca"
+Unhash : AMB_LEAVES_RUSTLE_Enc_48000HCAHigh_2ch_v3_503Trimmer(0.000000-15577.438100)Fade([523.873597,2,1.000000][4059.698949,1,1.000000])_Public_160bc505_94e39cec.hca
+========== Encoding : Amb_Room_Tone.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Level01_Room/Track_Amb_Room_Tone/Amb_Room_Tone.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/Amb_Room_Tone.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/87814725dd3d4d9c89dd90d565b8a629.hca"
+Unhash : Amb_Room_Tone_Enc_48000HCAHigh_2ch3Trimmer(90.363444-21294.270800)Fade([0.000000,2,1.000000][11.827158,1,1.000000])_Public_281dc19e_94e39cec.hca
+========== Encoding : Amb_birds.wav_2 ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_Silent/Amb_birds.wav_2
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/Amb_birds.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/f7a0c7fd2302cc158ea19257384f139f.hca"
+Unhash : Amb_birds_Enc_48000HCAHigh_2ch3Trimmer(0.000000-1878.566021)_Public_8707f6d6_94e39cec.hca
+========== Encoding : Amb_birds.wav ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_Amb_birds/Amb_birds.wav
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/Amb_birds.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/9875df7e06b2e5b501d07d47827ceeae.hca"
+Unhash : Amb_birds_Enc_48000HCAHigh_2ch3Trimmer(0.000000-6175.281663)_Public_8707f6d6_94e39cec.hca
+========== Encoding : Amb_birds.wav_1 ==========
+waveformSynthPath : /CriAtomCraftV2Root/WorkUnits/SFX_WU/CueSheetFolder/SFX_WU/CueSheet_Level01_KidsRoom/Amb_Foley/Track_Amb_birds/Amb_birds.wav_1
+materialPath      : C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/WorkUnits/SFX_WU/Materials/Environment/Amb_birds.wav
+Use cache. "C:/Gaming/Game Dev/CAMELEON_GGJ/Assets/Common/Audio/CRI/AtomCraft/GGJ_Game_Audio/GGJ_Game_Audio_Cache/SFX_WU_SFX_WU_CueSheet_Level01_KidsRoom/8401227cefc93b6c7d46b0a853272301.hca"
+Unhash : Amb_birds_Enc_48000HCAHigh_2ch3Trimmer(11118.087670-16196.668728)Fade([720.539893,2,1.000000][813.610848,1,1.000000])_Public_8707f6d6_94e39cec.hca
