@@ -205,6 +205,11 @@ public class GameDirector : MonoBehaviour
         }
 
         TriggerFinalMusic(true);
+        isFollowingCamera = false;
+        painter.SetPaintingEnabled(false);
+        painter.SetAnimating(true);
+        girl.SetState(GirlController.GirlState.Idle);
+        yield return StartCoroutine(MoveToPoint(goalPoint.position, moveSpeed * escapeSpeedMultiplier));
         uiManager.ShowResult(totalVisibility);
     }
 
@@ -245,7 +250,8 @@ public class GameDirector : MonoBehaviour
             }
 
             TriggerFinalMusic(false);
-            uiManager.ShowGameOver("You Lose");
+            string reason = accuracy < 50f ? "Too different from background!" : "Cumulative visibility exceeded 100%!";
+            uiManager.ShowGameOver(reason);
             yield break;
         }
 

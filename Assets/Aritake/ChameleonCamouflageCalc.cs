@@ -280,24 +280,30 @@ public class ChameleonCamouflageCalc : MonoBehaviour
     {
         if (target == null) return 0;
 
+        // パフォーマンスのため、配列を一括取得
         Color[] playerPixels = writableTextures[0].GetPixels();
         Color[] maskPixels = frameTextures[0].GetPixels();
+        Color[] targetPixels = target.GetPixels();
 
-        int width = writableTextures[0].width;
-
-        float total = 0;
-        float diff = 0;
+        float totalWeight = 0f;
+        float weightedMatchScore = 0f;
 
         for (int i = 0; i < playerPixels.Length; i++)
         {
             if (maskPixels[i].a > 0.1f)
             {
-                total++;
-                if (playerPixels[i] != target.GetPixel(i % width, i / width))
-                    diff++;
+                float weight = targetPixels[i].a;
+
+                if (weight > 0f)
+                {
+                    totalWeight += weight;
+                    if (playerPixels[i] == targetPixels[i])
+                        weightedMatchScore += weight;
+                }
             }
         }
-
-        return total == 0 ? 0 : (1f - diff / total) * 100f;
+        if (totalWeight <= 0.0001f) return 0f;
+        Debug.Log((weightedMatchScore / totalWeight) * 100f);
+        return (weightedMatchScore / totalWeight) * 100f;
     }
 }

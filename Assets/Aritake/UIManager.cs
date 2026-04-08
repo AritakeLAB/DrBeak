@@ -49,6 +49,7 @@ public class UIManager : MonoBehaviour
 
         ShowMenuImmediate();
         StartCoroutine(InitializeMenuMusic());
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
     private IEnumerator InitializeMenuMusic()
